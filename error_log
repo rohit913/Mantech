@@ -1,0 +1,11 @@
+[26-Dec-2023 09:39:41 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home4/mararagency/public_html/mantech/dbAjaxNew.php on line 1
+[26-Dec-2023 09:40:09 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home4/mararagency/public_html/mantech/dbAjaxNew.php on line 1
+[26-Dec-2023 09:41:35 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home4/mararagency/public_html/mantech/dbAjaxNew.php on line 1
+[27-Dec-2023 17:10:20 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'ENCRYPTION_STARTTLS' in /home4/mararagency/public_html/mantech/sendEmail.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/mararagency/public_html/mantech/sendEmail.php on line 30
+[27-Dec-2023 17:10:42 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'ENCRYPTION_STARTTLS' in /home4/mararagency/public_html/mantech/sendEmail.php:30
+Stack trace:
+#0 {main}
+  thrown in /home4/mararagency/public_html/mantech/sendEmail.php on line 30

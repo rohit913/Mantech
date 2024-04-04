@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Mantech | Honeywell Analytics</title>
+   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+
+    <style>
+      .c-height
+      {
+         height: 400px;
+      }
+
+      .im-sr
+      {
+         border: 1px solid #eee;
+         text-align: center;
+         padding: 5px 0px 10px 0px;
+         margin-bottom: 30px;
+      }
+
+      .container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content input{
+  display: none;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 32%;
+  margin-right: 50px;
+}
+
+.content .list label{
+  cursor: pointer;
+  height: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  /*padding-left: 25px;*/
+  color: #2f2f2f;
+  transition: all 0.5s ease;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #AE0809;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  /*border-radius: 12px;*/
+  transition: all 0.5s ease;
+  
+  /*background: #ae0809;*/
+}
+
+#home:checked ~ .list .slider{
+  top: 0;
+}
+
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+
+.content .text-content{
+  width: 68%;
+  height: 100%;
+  color: #2f2f2f;
+}
+
+.content .text{
+  display: none;
+}
+
+.content .text .title{
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.container .text p{
+  text-align: justify;
+}
+
+.content .text-content .home{
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+
+.im-image
+{
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.im-images
+{
+   border: 1px solid #ccc;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.c-botm
+{
+   margin-bottom: 40px;
+}
+
+.dn-botm
+{
+  margin-bottom: 5px!important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.c-pr-img
+{
+  width: 85%;
+}
+
+
+
+   </style>
+</head>
+<body class="theme-creote">
+   <div id="page" class="page_wapper hfeed site">
+      <div id="wrapper_full" class="content_all_warpper">
+         <div class="header_area" id="header_contents">
+            <div class="top_bar style_one">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-12">
+                        <div class="top_inner">
+                           <div class="left_side common_css">
+                              <div class="contntent address">
+                                 <i class="icon-placeholder"></i>
+                                 <div class="text">
+                                    <small>Corporate Office</small>
+                                    <span>Janakpuri, New Delhi</span>
+                                 </div>
+                              </div>
+                              <div class="contntent email">
+                                 <i class="icon-email"></i>
+                                 <div class="text">
+                                    <small>Email</small>
+                                    <a href="mailto:enquiry@mantech.in">enquiry@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="right_side common_css">
+                              <div class="contntent phone">
+                                 <i class="icon-phone-call"></i>
+                                 <div class="text">
+                                    <small>Phone</small>
+                                    <a href="tel:011-25516281">011-25516281</a>
+                                 </div>
+                              </div>
+                              <div class="contntent media">
+                                 
+                                 <div class="text">
+                                    <a href="https://www.facebook.com/mantech.automation.33" target=_blank rel=nofollow>
+                                       <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target=_blank rel=nofollow>
+                                       <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target=_blank rel=nofollow>
+                                       <i class="fa fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <header class="header header_default style_one get_sticky_header">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
+                        <div class="header_logo_box">
+                           <a href="index.html" class="logo navbar-brand">
+                              <img src="assets/images/logo.png" alt="" class="logo_default">
+                              <img src="assets/images/logo.png" alt="" class="logo__sticky">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
+                        <div class="navbar_togglers hamburger_menu">
+                           <span class="line"></span>
+                           <span class="line"></span>
+                           <span class="line"></span>
+                        </div>
+                        <div class="header_content_collapse">
+                           <div class="header_menu_box">
+                              <div class="navigation_menu">
+                                 <ul id="myNavbar" class="navbar_nav">
+                                    <li class="menu-item">
+                                       <a href="index.html" class="dropdown-toggle nav-link">
+                                          <span>Home</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="about.html" class="dropdown-toggle nav-link">
+                                          <span>About Us</span>
+                                       </a>
+                                    </li>
+                                   <li
+                                       class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                       <a href="javascript:;" class="dropdown-toggle nav-link"><span>Products</span></a>
+                                       <ul class="dropdown-menu width_60_percentage">
+                                          <li>
+                                             <div class="row">
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-thermal-solutions.html"><h5 class="h-thrml">Honeywell Thermal Solutions</h5></a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="burners.html">
+                                                               <img src="assets/images/mn.png" class="im-menu">
+                                                               <p class="brn-mn">Burners</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="sequence-controllers.html">
+                                                               <img src="assets/images/mn1.png" class="im-menu">
+                                                               <p class="brn-mn">Sequence Controllers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="regulators-valves.html">
+                                                               <img src="assets/images/mn2.png" class="im-menu">
+                                                               <p class="brn-mn">Regulators, Valves & Actuators</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="filters-pressure-switch.html">
+                                                               <img src="assets/images/mn3.png" class="im-menu">
+                                                               <p class="brn-mn">Filters, Pressure Switch & Gauges</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="ignition.html">
+                                                               <img src="assets/images/mn12.png" class="im-menu">
+                                                               <p class="brn-mn">Ignition And Flame Monitoring</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="customized-solutions.html">
+                                                               <img src="assets/images/mn13.png" class="im-menu">
+                                                               <p class="brn-mn">Customized <br>Solutions</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                                
+                                                
+
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-analytics.html">
+                                                    <h5 class="h-thrml">Honeywell Analytics</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honey-fixed.html">
+                                                               <img src="assets/images/mn4.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Fixed Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="fixed-type-flame-detectors.html">
+                                                               <img src="assets/images/mn5.png" class="im-menu">
+                                                               <p class="brn-mn">Fixed Type Flame Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                    <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="gas-detection-control-panel.html">
+                                                               <img src="assets/images/mn6.png" class="im-menu">
+                                                               <p class="brn-mn">GAS Detection Control Panel</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honeywell-portable-gas-detectors.html">
+                                                               <img src="assets/images/mn8.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Portable Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-lg-4 m_column">
+                                                   <a href="drae-ger.html">
+                                                    <h5 class="h-thrml">Draeger</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                      <div class="row">
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-protection.html">
+                                                               <img src="assets/images/mn11.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Protection Portfolio</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-flue.html">
+                                                               <img src="assets/images/mn9.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Flue Gas Analyzers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-impairment.html">
+                                                                  <img src="assets/images/mn10.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Impairment Check</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                    
+                                                   </div>
+                                                </div>
+
+                                       
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </li>
+
+                                    
+                                    
+                                    <li class="menu-item">
+                                       <a href="services.html" class="dropdown-toggle nav-link">
+                                          <span>Services</span>
+                                       </a>
+                                    </li>
+                                    
+                                    <li class="menu-item">
+                                       <a href="case.html" class="dropdown-toggle nav-link">
+                                          <span>Case Studies</span>
+                                       </a>
+                                    </li>
+                                    
+                                    
+                                       <li class="menu-item">
+                                          <a href="knowledge-bank.html" class="dropdown-toggle nav-link">
+                                             <span>Knowledge Bank</span>
+                                          </a>
+                                       </li>
+                                    <li class="menu-item">
+                                      <a href="client.html" class="dropdown-toggle nav-link">
+                                         <span>Clients</span>
+                                      </a>
+                                   </li>
+
+                                    <li class="menu-item">
+                                       <a href="career.html" class="dropdown-toggle nav-link">
+                                          <span>Career</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="contact.html" class="dropdown-toggle nav-link">
+                                          <span>Contact</span>
+                                       </a>
+                                    </li>
+                                 
+                                 
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="header_right_content">
+                              <ul>
+                                <li>
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+        
+
+
+        <div class="page_header_default style_one ">
+            <div class="parallax_cover">
+               <img src="assets/images/hn-analyt.png"  alt="bg_image" class="cover-parallax">
+            </div>
+            <div class="page_header_content">
+               <div class="auto-container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="banner_title_inner">
+                           <div class="title_page">
+                              Honeywell Analytics
+
+                              <p style="margin-top: 10px;">Reliable Gas Detection Solutions From Honeywell, the Gas Detection Experts.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="breadcrumbs creote">
+                           <ul class="breadcrumb m-auto">
+                              <li><a href="index.html">Home</a> </li>
+                              <li class="active">Honeywell Analytics</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+ <div id="content" class="site-content">
+
+  <section class="contact-section" style="padding-top: 80px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Honeywell</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 150px;">
+                                          <img src="assets/images/ht.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Sensepoint XCD</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Flammable, toxic and oxygen gas detector for industrial applications.</p>
+                                             <p class="dn-botm" style="display: list-item;">User friendly and intuitive tri-color backlit display  with digits, bar graph and icons and  Fully configurable via magnetic switches.</p>
+                                            
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Global Approvals</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">US and Latin America, European, Canadian and Asian</p>
+                                             <p class="dn-botm" style="display: list-item;">Compliant with UL, INMETRO, ATEX, IECEx, CSA, KTL, PA, GB and CCCF standards</p>
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Industrial manufacturing facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Power plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Waste water facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Utilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Food and beverage production</p>
+                                             <p class="dn-botm" style="display: list-item;">Refineries and chemical plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Onshore oil and gas terminals</p>
+                                             <p class="dn-botm" style="display: list-item;">Production platforms</p>
+                                             <p class="dn-botm" style="display: list-item;">Exploration and drilling</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 40px;">
+                                          <img src="assets/images/ht31.webp" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                Sensepoint XCD RFD/ RTD</a>
+                                            </h2>
+
+                                             <p style="margin-bottom: 0px;">Remotely monitor toxic gases in Class 1, Div 2 areas while reducing the maintenance, training and overall cost of gas monitoring.</p>
+                                             <p style="margin-bottom: 0px;">With remote toxic and Oxygen sensor mounting of up to 100 feet (30m) away from the transmitter.</p>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                   <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 250px;">
+                                          <img src="assets/images/ht2.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                Sensepoint XRL</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Sensepoint XRL is a fixed point gas leak detector that is designed to meet the needs of industrial applications</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Sensepoint XRL's smartphone interface with Bluetooth for much faster calibration, configuration and bump tests.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Multi-color visual indicator to show status makes it easier to know the detector status immediately and identify detectors that require attention or are warning of danger.</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               CERTIFICATIONS</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;" style="font-weight: 700;">ELECTRICAL SAFETY</p>
+                                             <p class="dn-botm" style="display: list-item;">EN/IEC/UL 61010-1, CSA C22.2 No. 61010-1-12, EMC: EN 50270:2015, RADIO: RED, FCC, IC</p>
+
+                                             <p class="dn-botm" style="display: list-item;" style="font-weight: 700;">HAZARDOUS AREA</p>
+                                             <p class="dn-botm" style="display: list-item;">ATEX, II 2 GD, Ex db IIC T6 Gb, Ex tb IIIC T85 °C Db Tamb −40 to +65 °C, IECEx, Ex db IIC T6 Gb, Ex tb IIIC T85 °C Db Tamb −40 to +65 °C, cULus, Class I, Division 1 & 2, Groups B, C and D Class II, Division 1 & 2, Groups E, F and G, Class I, Zone 1, AEx db IIC T6 Zone 21, AEx tb IIIC T85°C, IP6X, Ex db IIC T6 GbX, Ex tb IIIC T85°C DbX Tamb −40 to +65 °C, Temp Code T6</p>
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Manufacturing facilities and factories</p>
+                                             <p class="dn-botm" style="display: list-item;">Water treatment plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Battery charging facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Vehicle test facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Petrochemical plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Fuelling depots</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 250px;">
+                                          <img src="assets/images/ht3.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 Sensepoint XCL</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Sensepoint XCL is a fixed point gas leak detector that is designed to meet the needs of commercial and light industrial applications.</p>
+                                             <p class="dn-botm" style="display: list-item;">Sensepoint XCL is available with either mA loop analog output or Modbus RTU with the option for relays on both.</p>
+                                             <p class="dn-botm" style="display: list-item;">Simplified maintenance with familiar smartphone technology saves money and time.</p>
+                                             <p class="dn-botm" style="display: list-item;">Multi-color visual indicator to show status makes it easier to know the detector status immediately and identify detectors that require attention or are warning of danger.</p>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               APPROVALS</a>
+                                            </h2>
+                                             <ul>
+                                               <li><b>ELECTRICAL SAFETY</b> : EN/UL/IEC61010-1, CSA-C22.2 No. 61010-1-12</li>
+                                               <li><b>EMC</b> : EN 50270, RADIO: RED, FCC, OTHER: UL2075 (CO and CH4), AS 1668.2</li>
+                                            </ul>
+  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                             <ul>
+                                               <li>Kitchens and food processing</li>
+                                               <li>Manufacturing facilities and factories</li>
+                                               <li>Hospitals</li>
+                                               <li>Retail sites</li>
+                                               <li>Transportation and parking</li>
+                                               <li>Laboratories</li>
+                                               <li>Hotel and leisure</li>
+                                               <li>Apartments, accommodation blocks and condominiums</li>
+                                            </ul>
+  
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 250px;">
+                                          <img src="assets/images/ht4.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Series 3000 MkII and MkIII</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">2-wire loop powered toxic and Oxygen gas detector for use in potentially explosive atmospheres - explosion proof and intrinsically safe versions.</p>
+                                             <p class="dn-botm" style="display: list-item;">These low powered gas detectors all feature a loop powered 4-20 mA connection, making them ideal for both new and retrofit installations</p>
+                                             <p class="dn-botm" style="display: list-item;">Proven electrochemical sensing technology and Long-life sensing elements.</p>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Regulatory compliance</a>
+                                            </h2>
+                                             <ul>
+                                               <li>European (ATEX)</li>
+                                               <li>US (UL)</li>
+                                               <li>Canadian (c-UL)</li>
+                                               <li>South America (Inmetro)</li>
+                                               <li>International (IECEx)</li>
+                                              
+                                            </ul>
+                                          </div>
+                                          </div>
+
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical applications</a>
+                                            </h2>
+                                             <ul>
+                                               <li>Exploration and drilling platform</li>
+                                               <li>Production Platforms</li>
+                                               <li>Onshore oil and gas terminals</li>
+                                               <li>Refineries and chemical plants</li>
+                                               <li>Power plants</li>
+                                               <li>Waste water facilities</li>
+                                               <li>Utilities</li>
+                                              
+                                            </ul>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 190px;">
+                                          <img src="assets/images/ht5.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                   XNX Universal Transmitter</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">A universal transmitter compatible with all Honeywell Analytics gas sensor technologies.</p>
+                                             <p class="dn-botm" style="display: list-item;">XNX has three basic personalities (configurations) which support different types of sensor.</p>
+                                             <p class="dn-botm" style="display: list-item;">XNX has two integral mounting lugs on the transmitter body. The transmitter may be fixed directly to a surface, or to a horizontal or vertical pipe/ structure.</p>
+                                             <p class="dn-botm" style="display: list-item;">XNX is designed for use in potentially explosive atmospheres.</p>
+
+                                           
+                                            <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Global Approvals</a>
+                                            </h2>
+                                             <ul>
+                                               <li>European, US and Canadian</li>
+                                               <li>Compliant with ATEX, UL and CSA standards</li>
+                                               <li>ATEX, UL and CSA performance approval</li>
+                                               <li>IEC61508 SIL 2</li>
+                                            </ul>
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                             <ul>
+                                               <li>Offshore oil and production platforms</li>
+                                               <li>Oil and gas exploration and drilling</li>
+                                               <li>Refineries</li>
+                                               <li>Chemical and petrochemical plants</li>
+                                               <li>Onshore oil and gas terminals</li>
+                                               <li>Gas transmission</li>
+                                               <li>Power stations</li>
+                                            </ul>
+                                          </div>
+                                          </div>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 220px;">
+                                          <img src="assets/images/ht6.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                    Searchpoint Optima Plus</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Advanced infrared point gas detector</p>
+                                             <p class="dn-botm" style="display: list-item;">It Optional HART® over 4-20mA output and can detect a wide range of hydrocarbon gases including solvents</p>
+                                             <p class="dn-botm" style="display: list-item;">Searchpoint Optima Plus is an infrared point Hydrocarbon gas detector certified for use in potentially explosive atmospheres.</p>
+                                             <hr>
+                                             <p class="dn-botm" style="display: list-item;"><b>Safety Approvals ATEX</b> : Baseefa13ATEX0296X, II 2 GD Ex d op is IIC Gb Ex tb IIIC Db, T96°C (Tamb -40°C to +65°C), T86°C (Tamb -40°C to +55°C), IP 66/67, UL / CSA: Class 1, Div 1, groups B, C, and D (-40°C to +65°C),</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>IECEx</b> : II 2 GD Ex d op is IIC Gb Ex tb IIIC Db T86°C (Tamb -40°C to +55°C) or T96°C (Tamb -40°C to +65°C) IP66/67,            CU-TR-EX (Russian Customs Union) - XTC Version 1Ex d op is IIC T5/T4 Gb X (Tamb -60°C to +65°C)</p>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                              Applications</a>
+                                            </h2>
+                                             <ul>
+                                               <li>Offshore oil and gas platforms, floating</li>
+                                               <li>Production storage and offloading (FPSO) vessels</li>
+                                               <li>Tankers, onshore oil and gas terminals,</li>
+                                               <li>Refineries</li>
+                                               <li>LNG / LPG bottling plants</li>
+                                               <li>Gas compressor / metering stations,</li>
+                                               <li>Gas turbine</li>
+                                               <li>Power plants</li>
+                                               <li>Solvent printing and coating plants.</li>
+                                            
+                                            </ul>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht7.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  RAEGuard 3</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Universal transmitter with standard configuration of 3-wire, 4-20mA and RS485 MODBUS output for use with a wide range of applications for the detection of flammable, toxic and Oxygen gas hazards.</p>
+                                             <p class="dn-botm" style="display: list-item;">3-wire 4-20mA current output can be fine-tuned to avoid the signal attenuation caused by wiring and its optional Bluetooth® for easy remote operation and maintenance via mobile app.</p>
+                                             <p class="dn-botm" style="display: list-item;">Fully configurable via non-intrusive magnetic switches by single person</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Certification</a>
+                                            </h2>
+                                             <ul>
+                                               <li><b>EU </b>: CE，EMC, ATEX,  IECEx,  TUV SIL2</li>
+                                            </ul>
+  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+                                             <ul>
+                                               <li>Oil & Gas,  Chemical industry,  Oil & Gas Storage and Transportation,  Food/beverage,  Refineries,  Power plants,  Steel plants,  Laboratory,  Waste water facilities,  Utilities,  Pharmaceutical plant,  Chemical Storage,  Automotive industry</li>
+                                            </ul>
+  
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht8.jpeg" alt="img" style="width: 40%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                   RAEGuard 2 PID Fixed photoionisation detector (PID)</a>
+                                            </h2>
+                                              <p class="dn-botm" style="display: list-item;">The RAEGuard 2 PID has a graphic display and LED light status indicator for fault and alarm conditions.</p>
+                                              <p class="dn-botm" style="display: list-item;">It comes in three diffrent ranges 1-1000 PPM, 0.1-1000 PPM, 0.01-100 PPM. </p>
+                                              <p class="dn-botm" style="display: list-item;">The RAEGuard 2 PID operates on 10 to 28 VDC and provides an analogue (4-20 mA) three-wire signal output, and RS-485 Modbus digital signal output</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+
+                                            <p>Oil & Gas,  Chemical industry,  Oil & Gas Storage and Transportation,  Food/beverage,  Refineries,  Power plants,  Steel plants,  Laboratory,  Waste water facilities,  Utilities,  Pharmaceutical plant,  Chemical Storage,  Automotive industry.</p>
+                                            
+                                          </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 220px;">
+                                          <img src="assets/images/ht9.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                   Sensepoint Zareba/ RANGE
+                                                 </a>
+                                            </h2>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+
+                                            <p class="dn-botm" style="display: list-item;">The Sensepoint range of flammable, toxic and Oxygen gas detectors Offers users a cost-effective solution to their gas monitoring needs</p>
+                                            <p class="dn-botm" style="display: list-item;">Its Operating humidity range is Continuous: 20-90% RH (non condensing), Intermittent: 10-99% RH (non condensing)</p>
+                                            <p class="dn-botm" style="display: list-item;">The junction box is suitable for mounting onto any suitable flat surface able to support the weight of the unit such that when installed, the sensor is in a downward position.</p>
+                                            <p class="dn-botm" style="display: list-item;">SurecellTM electrochemical sensors with Poison resistant catalytic bead</p>
+                                            
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               ATEX Certified</a>
+                                            </h2>
+
+                                            <p class="dn-botm" style="display: list-item;">Complies with the latest European standards</p>
+                                            <p class="dn-botm" style="display: list-item;">Hazardous area and performance approvals</p>
+                                            <p class="dn-botm" style="display: list-item;">Can be used for uncertified applications</p>
+                                            
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+
+                                            <p class="dn-botm" style="display: list-item;">Oil & Gas,  Chemical industry,  Oil & Gas Storage and Transportation,  Food/beverage,  Refineries,  Power plants,  Steel plants,  Laboratory,  Waste water facilities,  Utilities,  Pharmaceutical plant,  Chemical Storage,  Automotive industry.</p>
+                                            
+                                          </div>
+                                          </div>
+
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht10.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                   Sensepoint High Temperature (HT) Sensor
+                                                 </a>
+                                            </h2>
+
+                                            <p class="dn-botm" style="display: list-item;">The Sensepoint High Temperature (HT) Combustible Gas Sensor is a sealed disposable sensor for the detection of flammable gases. </p>
+                                            <p class="dn-botm" style="display: list-item;">Measuring ranges from 0-20% LEL to 0-100% LEL with Wide range of accessories.</p>
+                                            <p class="dn-botm" style="display: list-item;">Thermally matched beads provide optimum accuracy and stability and Proven technology from the World leader in combustible gas detection.</p>
+                                            <p class="dn-botm" style="display: list-item;"><b>Certification :</b> II 2 GD Ex d IIC T3 Gb Tamb -55°C to +150°C, tb IIIC T200ºC Db IP66 A21, Baseefa08ATEX0264X, IECEx BAS08.0069X</p>
+                                            <p class="dn-botm" style="display: list-item;">Typical applications include turbine enclosures and drying ovens used in solvent based printing and coating machines.</p>
+
+                                          </div>
+
+                                      
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht11.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Midas Gas Detector
+                                                 </a>
+                                            </h2>
+
+                                            <p class="dn-botm" style="display: list-item;">Bringing new visibility, reliability and ease of use to gas detection in semiconductor processing and industrial manufacturing.</p>
+                                            <p class="dn-botm" style="display: list-item;">Bright LEDs and intuitive icon driven, large multicolor backlit LCD display and Isolated 0-21 mA analog output with fault and event reporting.</p>
+                                            <p class="dn-botm" style="display: list-item;">The device monitors points up to 30 meters (100 feet) away while using patented technology to regulate flow rates and ensure error-free gas detection.</p>
+
+                                          </div>
+
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Certification and Specification</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">CE marked</p>
+                                             <p class="dn-botm" style="display: list-item;">Meets EN 50270:2006 (Type2) and</p>
+                                             <p class="dn-botm" style="display: list-item;">EN 61000-6-4:2007</p>
+                                             <p class="dn-botm" style="display: list-item;">ETL approved UL 61010-1 Ed:3</p>
+                                             <p class="dn-botm" style="display: list-item;">IEEE 802.3af-2003</p>
+                                          </div>
+                                          </div>
+
+                                          <p class="dn-botm" style="display: list-item;">Applications, including semiconductor processing, light industrial, manufacturing, university laboratories, aerospace, wastewater and more.</p>
+
+                                          
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 20px;">
+                                          <img src="assets/images/ht12.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 MIDAS - M</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Midas-M is a Fixed Extractive Single Point with 4-in-1 Multi Gas Detector to detect more than 30 gases - precisely, easily, quickly, that draws a sample locally or from a remote point to a sensor cartridge that is located inside the detector's chassis. A side range of toxic, flammable and oxygen gas sensor cartridges are available that enable detection of gases used or generated in the Semiconductor and other manufacturing industries.     </p>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 20px;">
+                                          <img src="assets/images/ht12.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 MIDAS - M</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Midas-M is a Fixed Extractive Single Point with 4-in-1 Multi Gas Detector to detect more than 30 gases - precisely, easily, quickly, that draws a sample locally or from a remote point to a sensor cartridge that is located inside the detector's chassis. A side range of toxic, flammable and oxygen gas sensor cartridges are available that enable detection of gases used or generated in the Semiconductor and other manufacturing industries.     </p>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 50px;">
+                                          <img src="assets/images/ht13.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 Combustible Gas Detector -Model: SP-1102/ SP-2102 Plus/ SP-2104 Plus </a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Flame-proof (d) structure, fixed-mounted combustible gas detector adopting smart sensor detection technology.</p>
+                                             <p class="dn-botm" style="display: list-item;">3-wire 4~20mA analog output signal and one relay output.</p>
+                                             <p class="dn-botm" style="display: list-item;">4-digit high-flux LED screen and local alarm indication</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>Certification :</b> Ex d llC T6 Gb, DIP A21 TA, T6</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>Applications :</b> Petroleum, petrifaction Metallurgy, chemicals.Environmental protection Papermaking, printing Municipal administration Scientific research, education National defence</p>
+
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 350px;">
+                                          <img src="assets/images/ht14.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 Searchline Excel- open path gas detector/ Searchline Excel Plus</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Searchline Excel is the World’s best selling infrared open path gas detector</p>
+                                             <p class="dn-botm" style="display: list-item;">Path Length - Short Range 5m to 40m (15ft to 130ft.), Medium Range 40m to 120m (130ft to 390ft.) and Long Range 120m to 200m (390ft to 650ft.) and 2m to 120m for plus</p>
+
+                                             <p class="dn-botm" style="display: list-item;">MAXIMIZE SAFETY COVERAGE EVEN IN MINIMAL VISIBILITY to Ensure optimal fire and gas safety by deploying cutting-edge optical gas detection that can see through even thick fog better than any other open path gas detectors whether NDIR or laser based.</p>
+                                             <p class="dn-botm" style="display: list-item;">Safety Approval ATEX</p>
+                                            
+
+                                          </div>
+
+                                           <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Transmitter:</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">II 2 G Ex d op is IIC T5 (Tamb -40°C to +65°C) Gb</p>
+                                             <p class="dn-botm" style="display: list-item;">II 2 G Ex d op is IIC T6 (Tamb -40°C to +40°C) Gb</p>
+                                          </div>
+                                          </div>
+
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Receiver:</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">II 2 G Ex d IIC T5 (Tamb -40°C to +65°C) Gb</p>
+                                             <p class="dn-botm" style="display: list-item;">II 2 G Ex d IIC T6 (Tamb -40°C to +40°C) Gb</p>
+                                          </div>
+                                          </div>
+
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               IECEx <br>Transmitter:</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Ex d op is IIC T5 (Tamb =-40°C to +65°C) Gb</p>
+                                             <p class="dn-botm" style="display: list-item;">Ex d op is IIC T6 (Tamb =-40°C to +40°C) Gb</p>
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Receiver:</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Ex d IIC T5 (Tamb -40°C to +65°C) Gb</p>
+                                             <p class="dn-botm" style="display: list-item;">Ex d IIC T6 (Tamb -40°C to +40°C) Gb</p>
+                                          </div>
+                                          </div>
+
+                                          <p class="dn-botm" style="display: list-item;"><b>UL :</b> Class 1 Groups B, C, D and Class 1 Zone 1 AEx d IIB + Hydrogen (Amb -40°C to +65°C)</p>
+                                          <p class="dn-botm" style="display: list-item;"><b>CSA :</b> Class 1 Div 1 groups B, C, D, T5 and Exd IIC T5 (Amb -40°C to +65°C)</p>
+                                          <p class="dn-botm" style="display: list-item;"><b>FM :</b> Class 1 Div 1 groups B, C, D & T5 (Tamb -40 to +65°C)</p>
+                                          <p class="dn-botm" style="display: list-item;"><b>Other :</b> GOST</p>
+                                          <p class="dn-botm" style="display: list-item;">Independently assessed to IEC61508</p>
+                                          <hr>
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications include</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Offshore platforms & vessels (FPSO’s)</p>
+                                             <p class="dn-botm" style="display: list-item;">Downstream chemical processing plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Gas transport and pipelines</p>
+                                             <p class="dn-botm" style="display: list-item;">Large storage areas & buildings</p>
+                                             <p class="dn-botm" style="display: list-item;">Perimeter detection</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 150px;">
+                                          <img src="assets/images/ht15.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 Searchzone Sonic</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Provides reliable gas leak detection in a wide range of applications and working environments. By using a solid state sensor, completely sealed from moisture and contaminants, the Searchzone Sonik™ will identify gas leaks even in the harshest environments and adverse weather conditions.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Its robust sealed design with no moving parts and the advanced solid-state sensor allow for mounting in any orientation, even in the harshest environments.</p>
+
+                                             <p class="dn-botm" style="display: list-item;"> The acoustic gas leak detector will respond quickly to a gas leak within a sensing range radius of typically 20m (65 ft), dependent upon background noise.</p>
+                                             <p class="dn-botm" style="display: list-item;">Gas detection devices, adding ultrasonic technology to a reliable mix of point and open-path gas detectors. </p>
+                                            
+
+                                          </div>
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications include</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Offshore platforms & vessels (FPSO’s)</p>
+                                             <p class="dn-botm" style="display: list-item;">Downstream chemical processing plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Gas transport and pipelines</p>
+                                             <p class="dn-botm" style="display: list-item;">Large storage areas & buildings</p>
+                                             <p class="dn-botm" style="display: list-item;">Perimeter detection</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht16.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 OELD (Optima Excel Local Display)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">OELD is a smart junction box for either a Searchpoint Optima Plus or Searchline Excel gas detector.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">OELD is hazardous location certified junction box for use with detectors that feature a 4-20 mA output.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The OELD unit has five entries – either M25 or 3/4” NPT (dependent on the version) and is supplied with three certified blanking plugs. Increased safety (Ex e)-approved versions of OELD has five entries for M25x1.5 only.</p>
+                                            
+
+                                          </div>
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Approvals</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">ATEX and IECEx approved for use in either Zone 1 (gas) or Zone 21 (dust) hazardous areas. Flameproof versions are also cULus approved for use in Class I Division 1 or Class II Division 1.</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht17.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 SPMFlex</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Improving safety and productivity with the most flexible, D104 user-friendly tape-based gas detector for low-level toxics</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Stands up to harsh conditions. Working in the sun and rain, around blasts of steam, or other challenging environmental conditions.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Crisp, clear visibility — from near and far</p>
+                                             <p class="dn-botm" style="display: list-item;">The SPM Flex, capable of working as both a fixed and a portable unit, is an important addition to your toxic gas monitoring system.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">It is highly automated single-point monitor is intuitive, easy to use, and designed to fit the unique needs of your operation.</p>
+                                            
+
+                                          </div>
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Oil and gas, cold storage, water/wastewater treatment, chemicals, engine rooms, plastics and fibers, agriculture, printing and light industrial, semiconductor manufacturing, aerospace propulsion, specialty chemicals industry, research laboratories, emergency response.</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+                            
+                           </section>
+                
+                     </div>
+                     
+                  </div>
+               </div>
+         </div>
+      </div>
+
+
+     <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Honeywell</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+                              <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht18.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                FSL100 Series Flame Detectors UV, UV/IR, IR3</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The FSL100 Series of flame detectors from Honeywell delivers robust, fast, and reliable detection of flaming fires in a wide range of applications.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">With a large field of view it can detect a range of different types of fire including hydrocarbon and non-hydrocarbon sources.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">High speed sensors and microprocessor with False alarm rejection.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Especially suitable fires that emit large amounts of smoke</p>
+                                             <p class="dn-botm" style="display: list-item;">Affected less by window contamination or smoky fires</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Semi-conductor, pharmaceutical, & hospital operating rooms, CNG filling/refilling for buses (public transportation), Cold storage, Diesel engine rooms, Electric power transformers, Engine test cells/rooms, Fume hoods, Gas cabinets, Gas/Gasoline engine rooms, Heating rooms for chemicals, Indoor chemical, fuel, and solvent storage, Indoor hydrocarbon storage and processing, Indoor hydrogen storage and processing, Laboratories, Oil and Gas pipe line and pumping stations, Outdoor chemical, fuel, paint, and solvent storage, Outdoor hydrogen storage and processing, Paint spray booths, Radio amplifier rooms / Isolators for antennas, Recycling and waste processing plants</p>
+                                             <p class="dn-botm" style="display: list-item;">ATEX certificate, FM3260 approval</p>
+
+                                             
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 280px;">
+                                          <img src="assets/images/ht19.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                FS20X - Multi-Spectrum UV/Dual IR/VIS Fire and Flame Detector</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The FS20X is the latest generation high technology Multi Spectrum (UV/Dual IR/VIS) Fire and Flame Detector, which is part of the FSX family of advanced technology Electro-Optical Flame detectors. </p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Detects hydrocarbon and non-hydrocarbon fuel fires in all environmental conditions.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">PC software and interface module (FSIM) for fault diagnostics real-time graphs (RTGs), and downloading of FirePics™ and event log</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Automatic Optical Path and Electronic self-test</p>
+                                             <p class="dn-botm" style="display: list-item;">Event log — Up to 200 events with date and time stamp</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               FM hazardous area approved</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Ex d ATEX approved</p>
+                                             <p class="dn-botm" style="display: list-item;">CU-TR approved</p>
+                                             <p class="dn-botm" style="display: list-item;">INMETRO approved</p>
+                                          </div>
+                                          </div>
+
+                                           <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               APPLICATIONS</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Refineries and oil production facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Off-Shore platforms</p>
+                                             <p class="dn-botm" style="display: list-item;">Turbine/Compressor enclosures</p>
+                                             <p class="dn-botm" style="display: list-item;">Acetylene processing and storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Oil and Gas pipelines and pumping stations</p>
+                                             <p class="dn-botm" style="display: list-item;">LNG/LPG loading and unloading facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Natural Gas and CNG plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Ethanol, Methanol, and IPA production and storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Crude oil and gasoline storage and tank farms</p>
+                                             <p class="dn-botm" style="display: list-item;">Aircraft hangars</p>
+                                             <p class="dn-botm" style="display: list-item;">Hydrogen plants and storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Paint and solvent storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Chemical production, storage, and loading facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Power plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Silane gas storage</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+                                 
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 350px;">
+                                          <img src="assets/images/ht20.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                FS24X -Multi-Spectrum QuadBand Triple IR /FS24X Plus Multi-Spectrum QuadBand Triple IR Flame Detector</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">FS24X is a quantum leap in flame and fire detection with its sophisticated software and detection technology.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The FS24X Plus is a triple IR flame detector using Honeywell’s WideBand IR™ infrared technology to detect hydrocarbon and hydrogen fires quickly and reliably — before they grow — even in the presence of environmental inhibitors like rain, fog, and smoke.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Dual microprocessors provide a high level of fail-safe operation combined with fast and reliable performance. </p>
+
+                                             <p class="dn-botm" style="display: list-item;">The FSX family of detectors feature our patented FirePic data storage and information retrieval facility. FirePic™ records pre-fire data, which can be recovered from the Detector’s non-volatile flash memory for post fire analysis and postulation of the fire cause</p>
+                                             <p class="dn-botm" style="display: list-item;">The FS24X detector has a detection range greater than 60 m (200 feet) (Very High Sensitivity setting) for the detection of a 0.1 m2 (one square-foot) Heptane reference fire and has a cone of vision far greater in volumetric coverage than any other Multi-Spectrum IR Detector.</p>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               CERTIFICATIONS</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;"><b>FM :</b> Class I, Div. 1 & 2, Groups B, C, & D; Class II, Div. 1 & 2, Groups E, F, & G; Class III</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>FM :</b> II 2 G Ex db IIC T4 (Ta: -60 to +110°C), T5 (Ta: -60 to +75°C), T6 (Ta: -60 to +60°C), II 2 D Ex tb IIIC T135°C (FS24X-9, 90° Field of View) II 2 G Ex db IIC T4 (Ta: -40 to +110°C), T5 (Ta: -40 to +75°C), T6 (Ta: -40 to +60°C), II 2 D Ex tb IIIC T135°C (FS24X-9, 110° Field of View): Complies with EN6100-6-4 & EN50130-4 INMETRO CU-TR</p>
+
+                                             <p class="dn-botm" style="display: list-item;"><b>SIL Rating :</b> FMEDA available on request</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>EN54-10 :</b> FS20X certified 1175a/01 (LPCB); CPR 0832-CPR-F0515</p>
+                                           
+                                          </div>
+                                          </div>
+
+                                           <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               APPLICATIONS</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Refineries and oil production facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Off-Shore platforms</p>
+                                             <p class="dn-botm" style="display: list-item;">Turbine/Compressor enclosures</p>
+                                             <p class="dn-botm" style="display: list-item;">Acetylene processing and storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Oil and Gas pipelines and pumping stations</p>
+                                             <p class="dn-botm" style="display: list-item;">LNG/LPG loading and unloading facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Natural Gas and CNG plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Ethanol, Methanol, and IPA production and storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Crude oil and gasoline storage and tank farms</p>
+                                             <p class="dn-botm" style="display: list-item;">Aircraft hangars</p>
+                                             <p class="dn-botm" style="display: list-item;">Paint and solvent storage</p>
+                                             <p class="dn-botm" style="display: list-item;">Chemical production, storage, and loading facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Power plants</p>
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  
+
+                              </div>
+                            
+                           </section>
+                
+                     </div>
+                     
+                  </div>
+               </div>
+         </div>
+      </div>
+      
+
+      <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Honeywell</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+                              <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 100px;">
+                                          <img src="assets/images/ht21.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 Touchpoint Plus Control Panel</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Touchpoint Plus brings a whole new control experience to your small system of gas detectors.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Touchpoint Plus is an easily configurable, wall mounted control system that supports up to sixteen channels of gas detection.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Built-in battery backup for constant uptime.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Robust, shockproof housing for a wide range of industrial environments.</p>
+                                             <p class="dn-botm" style="display: list-item;">Compatible with the full range of Honeywell gas detectors.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Optional Modbus output for integration with a higher level system.</p>
+                                             <p class="dn-botm" style="display: list-item;">Large colour touchscreen LCD with Multilingual capabilities and Green-yellow-red status at a glance</p>
+                                             <p class="dn-botm" style="display: list-item;">Electromagnetic Compatibility and Electrical Safety- EMC/RFI (EN 50270:2015) LVD (EN 61010-1:2010) CSA-C22.2 No. 61010-1-04 UL 61010-1 (3rd Edition) and 508 Performance- EN 50271:2010; EN 60079-29-1:2007/2016; EN 45544-1 /-2 /-3:2015; EN 50104:2010 C22.2 No. 152-M1984, ISA 12.13.01 Safety Integrity -IEC 61508:2010 Ed.2 SIL2, EN 50271:2010 Hazardous Location- Class I, Division 2, Group A, B, C and D or non-hazardous only </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 220px;">
+                                          <img src="assets/images/ht22.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Touchpoint Plus Wireless Control Panel</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Touchpoint™ Plus Wireless is a hybrid multi-channel controller with a built-in wireless modem that is designed for integration with RAE Systems by Honeywell MeshGuard intelligent network of connected sensors combined with traditional hard wired sensors.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;"> It is the command-and-control element of the wireless gas detection system that gathers data, monitors and activate alarms from MeshGuard toxic, flammable gas and flame detection monitors.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Flexible to handle a variety of data processing and communication needs.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The Touchpoint™ Plus wireless does have additional 8 analogue 4-20 mA inputs for combination of traditional wired products and wireless products.</p>
+                                             <p class="dn-botm" style="display: list-item;">The built-in wireless modem automatically links with MeshGuard monitors, and the controller has built-in security safeguards to resist tampering.</p>
+                                           
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Approvals</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Electromagnetic Compatibility and Electrical Safety- EMC/RFI (EN 50270:2015), LVD (EN 61010-1:2010), CSA-C22.2 No. 61010-1-04 UL 61010-1 (3rd Edition) and 508,  Hazardous Location- Class I, Division 2, Group A, B, C, and D, or non-hazardous only</p>
+                                             
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;"> Drilling rigs</p>
+                                             <p class="dn-botm" style="display: list-item;"> Petrochemical plants</p>
+                                             <p class="dn-botm" style="display: list-item;"> Tank farms</p>
+                                             <p class="dn-botm" style="display: list-item;"> Shipyards and maritime</p>
+                                             <p class="dn-botm" style="display: list-item;"> Steel mills</p>
+                                             <p class="dn-botm" style="display: list-item;"> Industrial safety</p>
+                                             
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 50px;">
+                                          <img src="assets/images/ht23.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Touchpoint Pro</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Honeywell’s Touchpoint Pro makes gas control system design, installation, configuration and operation simple. Touchpoint Pro uses a ‘building block’ approach, providing unrivalled flexibility.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Touchpoint Pro can be configured as a centralized system helping to save costs by re-using existing cabling.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Touchpoint Pro has been designed to deliver flexibility, allowing the system to be freely configured to meet customers’ varying needs.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Touchpoint Pro offers a comprehensive range of outputs including relays, digital outputs and industry standard protocols like Modbus®.</p>
+                                             <p class="dn-botm" style="display: list-item;">ATEX Performance Approvals - EN 50271:2010; EN 60079-29-1; EN 45544-1 /-2 /-3; EN 50104:2010, C22.2 No. 152-M1984, FM Std. 6310 and 6320</p>
+                                           
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 220px;">
+                                          <img src="assets/images/ht24.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Gas DigiGuard Control Panel</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The GAS DIGIGUARD is a multi-channel 19” Rack mounted Controller system that monitors the levels of up to sixteen remotely mounted Gas Sensors.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Every channel Card with independent 14-bit Microcontroller in modular configuration.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Bright blue OLED 20 Character x 4-line Display for System Parameters.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Dedicated analog 4-20 mA DC retransmission for each channel</p>
+                                             <p class="dn-botm" style="display: list-item;">Certifications</p>
+                                           
+                                          </div>
+
+                                            <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Industrial manufacturing facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Power plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Waste water facilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Utilities</p>
+                                             <p class="dn-botm" style="display: list-item;">Food and beverage production</p>
+                                             <p class="dn-botm" style="display: list-item;">Refineries and chemical plants</p>
+                                             <p class="dn-botm" style="display: list-item;">Onshore oil and gas terminals</p>
+                                             <p class="dn-botm" style="display: list-item;">Production platforms</p>
+                                             <p class="dn-botm" style="display: list-item;">Exploration and drilling</p>
+                                            
+                                          </div>
+                                          </div>
+
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 150px;">
+                                          <img src="assets/images/ht25.jpg" alt="img" style="width: 40%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  Unipoint DIN Controller</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Unipoint, a simple DIN rail mounted controller.</p>
+                                             <p class="dn-botm" style="display: list-item;">3 wire mV bridge, 2 and 3-wire 4-20mA inputs</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Compatible with a wide range of gas detectors</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Ultra-bright steady / flashing LEDs subject to condition; alarm (red), power (green), fault (amber). In-built audible alarm 63db at 0.3 meters</p>
+                                             <p class="dn-botm" style="display: list-item;">EMC/RFI - EN50270, Electrical Safety -EN61010, UL61010b, Performance ATEX measuring function- EN60079-29-1, SIRA10ATEX8243X, Other CE, TUV</p>
+                                           
+                                          </div>
+
+                                            <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Typical Applications</a>
+                                            </h2>
+                                              <p class="dn-botm" style="display: list-item;">Small and medium integrated systems</p>
+                                              <p class="dn-botm" style="display: list-item;">Custom control cabinets and panels</p>
+                                              <p class="dn-botm" style="display: list-item;">Unmanned equipment rooms</p>
+                                              <p class="dn-botm" style="display: list-item;">Boiler houses</p>
+                                              <p class="dn-botm" style="display: list-item;">HVAC systems</p>
+                                              <p class="dn-botm" style="display: list-item;">Analyser houses</p>
+                                              <p class="dn-botm" style="display: list-item;">Car parks</p>
+                                              <p class="dn-botm" style="display: list-item;">Crane cabs</p>
+                                              <p class="dn-botm" style="display: list-item;">Laboratories</p>
+                                            
+                                          </div>
+                                          </div>
+
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 20px;">
+                                          <img src="assets/images/ht25.jpg" alt="img" style="width: 40%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                  PANELS</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">MANTECH also provide customized Panel as per customer needs and applications for Gas detection System.</p>
+                                           
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                              </div>
+                            
+                           </section>
+                
+                     </div>
+                     
+                  </div>
+               </div>
+         </div>
+      </div>
+
+      <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Honeywell</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+                              <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht27.jpg" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 MeshGuard S- RAE Systems by Honeywell Battery-Powered Wireless Gas Detector</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The RAE Systems by Honeywell MeshGuard gas detection monitor is a key building block of the MeshGuard intelligent network of connected sensors for gas detection in industrial safety and oil and gas applications.</p>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Self-forming wireless network; units come online automatically</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Multiple controller options for realtime wireless data collection and viewing</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Self-healing network automatically routes data back to controller through best wireless path available</p>
+                                             <p class="dn-botm" style="display: list-item;">Magnetic mounting option for quick and easy MeshGuard installation</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               US and Canada</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Class I, Division 1, Groups A, B, C,D, T4 Europe: ATEX IM1/II 1G Ex ia I/IIC T4
+                                            Customs Union: PO Ex ia I Ma/0Ex ia IIC T4 Ga PB Ex d ia I Mb/1Ex d ia IIC T4 Gb Contact manufacturer for country-specific certification</p>  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications: Oil and gas drilling operations</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Oil and gas production</p>  
+                                             <p class="dn-botm" style="display: list-item;">Plant maintenance turnarounds</p>  
+                                             <p class="dn-botm" style="display: list-item;">Industrial safety</p>  
+                                             <p class="dn-botm" style="display: list-item;">Tank farms</p>  
+                                             <p class="dn-botm" style="display: list-item;">Shipyards and maritime</p>  
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht28.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 ToxiRAE Pro- Personal Wireless Monitor for Toxic Gases and Oxygen</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Personal Wireless Monitor for Toxic Gases and Oxygen</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Wireless access to real-time instrument readings and alarm status from any location</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Over 20 intelligent interchangeable sensor options to cover a wide variety of gases</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Unmistakable five-way local and remote wireless notification of alarm conditions</p>
+                                             <p class="dn-botm" style="display: list-item;"> Easy to maintain with replaceable sensor, filter, and Li-ion battery</p>
+                                             <p class="dn-botm" style="display: list-item;">Fully-automatic bump testing and calibration with AutoRAE 2</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Approvals</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">CSA: Class I, Division 1, Groups A, B, C and D. T-code T4 Class I, Zone 0 A/Exia IIC T4 ATEX: , II 1G, Ex ia IIC Ga T4 IECEx: Ex ia IIC Ga T4 China Ex: Ex ia IIC T4</p>  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications:</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Agriculture</p>  
+                                             <p class="dn-botm" style="display: list-item;">Chemical</p>  
+                                             <p class="dn-botm" style="display: list-item;">Fire service / HazMat</p>  
+                                             <p class="dn-botm" style="display: list-item;">Food and beverage</p>  
+                                             <p class="dn-botm" style="display: list-item;">Oil and gas</p>  
+                                             <p class="dn-botm" style="display: list-item;">Pharmaceutical</p>  
+                                             <p class="dn-botm" style="display: list-item;">Pulp and paper</p>  
+                                             <p class="dn-botm" style="display: list-item;">Steel manufacturing</p>  
+                                             <p class="dn-botm" style="display: list-item;">Water and wastewater industries</p>  
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht29.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 MultiRAE Lite -  Wireless Portable Multi-Gas Monitor</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The MultiRAE Lite is the optimal one-to-six1-gas monitor for personal protection and leak detection applications.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The MultiRAE Lite is available in pumped and diffusion versions and features the broadest selection of sensor options in its class.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Wireless access to real-time instrument readings and alarm status from any location</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Unmistakable five-way local and remote wireless notification of alarm conditions including Man Down Alarm</p>
+                                             <p class="dn-botm" style="display: list-item;"> Intelligent sensors store calibration data, so they can be swapped in the field</p>
+                                             <p class="dn-botm" style="display: list-item;">Large graphical display with easy-touse, icon-driven user interface</p>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Approvals</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">CSA: Class I, Division 1, Groups A, B, C and D, T4 Class II, Division 1, Groups E, F, G T85°C ATEX: 0575 II 1G Ex ia IIC T4 Ga 2G Ex ia d IIC T4 Gb with IR Sensor installed I M1 Ex ia I Ma IECEx: Ex ia IIC T4 Ga Ex ia d IIC T4 Gb with IR Sensor installed I M1 Ex ia I Ma IECEx/ANZEx: Ex ia IIC T4 Ga Ex ia d IIC T4 Gb with IR Sensor installed Ex ia I Ma</p>  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Applications: Personal protection and multi-gas leak detection in industries such as:</a>
+                                            </h2>  
+                                             <p class="dn-botm" style="display: list-item;">Chemical</p>  
+                                             <p class="dn-botm" style="display: list-item;">Food and beverage</p>  
+                                             <p class="dn-botm" style="display: list-item;">Oil and gas (downstream)</p>  
+                                             <p class="dn-botm" style="display: list-item;">Pharmaceutical</p>  
+                                             <p class="dn-botm" style="display: list-item;">Telecommunications</p>    
+                                             <p class="dn-botm" style="display: list-item;">Wastewater treatment</p>  
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top: 200px;">
+                                          <img src="assets/images/ht30.png" alt="img" style="width: 70%;">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                                 QRAE 3 Wireless 4-Gas Monitor</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">QRAE 3 is a wireless compact monitor for one to four gases.</p>
+                                             <p class="dn-botm" style="display: list-item;">Strong, protective, concussion-proof design</p>
+                                             <p class="dn-botm" style="display: list-item;">Real-time gas concentration readings and alarm status enabled by state-ofthe- art wireless technology</p>
+                                             <p class="dn-botm" style="display: list-item;">Large graphical display icon-driven user interface through intuitive, simple-tooperate two-button user interface.</p>
+                                             <p class="dn-botm" style="display: list-item;">Device Management with Honeywell SafetySuite</p>
+                                             <p class="dn-botm" style="display: list-item;">Easy access to pump, sensors, filter and battery compartment</p>
+                                             <p class="dn-botm" style="display: list-item;">Man Down Alarm with pre-alarm and real-time remote wireless notification</p>
+
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               US and Canada</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">classified for use in Class I, Division 1, Groups A, B, C and D Europe: IECEx/ATEX (II 1G Ex ia IIC T4)</p>  
+                                          </div>
+                                          </div>
+
+                                          <div class="auhtour_box">
+                                             <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                               Application: Industrial safety</a>
+                                            </h2>  
+                                             <p class="dn-botm" style="display: list-item;">Oil and gas</p>  
+                                             <p class="dn-botm" style="display: list-item;">Fireground “Toxic Twins” detection</p>    
+                                             <p class="dn-botm" style="display: list-item;">Environmental</p>    
+                                             <p class="dn-botm" style="display: list-item;">Fire and Emergency response</p>    
+                                          </div>
+                                          </div>
+
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                              </div>
+                            
+                           </section>
+                
+                     </div>
+                     
+                  </div>
+               </div>
+         </div>
+      </div>
+
+         
+<div class="sliding_form slide_out">
+        <a href="javascript:;" id="form_trigger">Get Quote</a>
+        <div class="sliding_form_inner">
+            <form class="fastconc"  method="post">
+
+               <h4 class="g-qute">Get Quote</h4>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="name" placeholder="Name" class="fields_box" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="email" placeholder="Email" class="fields_box" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="phone" placeholder="Phone" class="fields_box" required>
+                    </div>
+                </div>
+               
+               
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea name="enquiry" placeholder="Enquiry" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                     <button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button>
+                    </div>
+                 </div>
+               
+            </form>
+        </div>
+    </div>
+    
+    
+    
+
+
+            
+         </div>
+      </div>
+      <div class="footer_area" id="footer_contents">
+         <div class="footer_widgets_wrap bg_dark_2">
+            <div class="pd_top_80"></div>
+            <div class="container">
+               <div class="row">
+
+               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Get In Touch</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6> Location</h6>
+                                 <p>
+                                    614, Kirti Shikhar, District Centre, Janak Puri, New Delhi -110 058, Delhi
+                                 </p>
+                              </div>
+                              <div class="bottom">
+                                 <h6> Contact</h6>
+                                 <div class="con_content">
+                                    <h5> Phone :</h5>
+                                    <a href="tel:011-25516281"> 011-25516281</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5> Mail Us :</h5>
+                                    <a href="tel:mantech@mantech.in"> mantech@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Quick Links</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+
+                              <ul class="menu">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>
+                                 <li><a href="client.html">Clients</a></li>
+                                 <li><a href="knowledge-bank.html">Knowledge Bank</a></li>
+                                 <li><a href="case.html">Case Studies</a></li>
+                                 <li><a href="career.html">Career</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Our Expertise</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+
+                                  <ul class="menu">
+                                    <li><a href="honeywell-thermal-solutions.html">Honeywell Thermal Solutions</a></li>
+                                    <li><a href="honeywell-analytics.html">Honeywell Analytics</a></li>
+                                    <li><a href="drae-ger.html">Draeger</a></li>
+                  
+                                 </ul>
+
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+                              </a>
+                              <div class="pd_bottom_30"></div>
+                           </div>
+                           <div class="content_box">
+                              <p>
+                                 Established in 1996, MANTECH AUTOMATION today is the leading products and solution provider in the field of Industrial Automation, Thermal Solutions, Gas Leak Detection, and Fluid Control.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            
+            <div class="pd_bottom_50"></div>
+         </div>
+         <div class="creote-footer-copyright bg_dark_3">
+
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content color_white">
+                        © 2023 - Mantech. Designed and Developed by 
+                        <a target="_blank" rel="nofollow" href="https://mararmedia.com/" style="color: #fff;">Marar Media</a>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 text-md-end">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content_right">
+                        <div class="social_media_v_one">
+                           <ul>
+                              <li>
+                                 <a href="https://www.facebook.com/mantech.automation.33" target="_blank">
+                                    <span class="fa fa-facebook"></span>
+                                    <small>facebook</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                                    <span class="fa fa-instagram"></span>
+                                    <small>instagram</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                    <small>linkedin</small>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="crt_mobile_menu">
+         <div class="menu-backdrop"></div>
+         <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <form role="search" method="get" action="#">
+               <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+               <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+            </form>
+            <div class="menu-outer">
+               
+            </div>
+         </nav>
+      </div>
+    
+      <div id="search-popup" class="search-popup">
+         <div class="close-search"><i class="fa fa-times"></i></div>
+         <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+               <fieldset>
+                  <form role="search" method="get" action="#">
+                     <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                  </form>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+   
+      <div class="modal_popup one">
+         <div class="modal-popup-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <div class="modal_box">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12 form_inner">
+                     <div class="form_content">
+                        <form class="contact-form fastconc" method="post" action="">
+                           <p>
+                              <label>Name<br />
+                                 <input type="text" name="name" value="" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Name" />
+                                 <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label>Email<br />
+                                 <input type="email" name="email" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Email" />
+                                 <br />
+                                 <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Phone<br />
+                                 <input type="text" name="phone" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Phne no" />
+                                 <br />
+                                 <i class="fa fa-phone"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Enquiry<br />
+                                 <textarea name="enquiry" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    aria-invalid="false" placeholder="Enquiry"></textarea>
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button></p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about_company_inner">
+                     <div class="abt_content">
+                        <div class="logo">
+                           <img src="assets/images/logo.png" alt="img" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                           <p> Thank you for reaching out to us! We appreciate the time you took to fill out our inquiry form. Your message is important to us, and we will make every effort to respond as quickly as possible.</p>
+                            <p>Our team is dedicated to providing excellent service, and we are thrilled that you are considering us</p>
+                            <p>Rest assured that we have received your information and will get back to you shortly</p>
+                            <p>In the meantime, if you have any urgent matters or additional details to share, please feel free to contact us directly at enquiry@mantech.in, mantech@mantech.in</p>
+                            <p>Thank you once again for choosing Mantech. We look forward to the opportunity to assist you.</p>
+                        </div>
+                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="side_bar_cart" id="mini_cart">
+         <div class="cart_overlay"></div>
+         <div class="cart_right_conten">
+            <div class="close">
+               <div class="close_btn_mini"><i class="icon-close"></i></div>
+            </div>
+            <div class="cart_content_box">
+               <div class="contnet_cart_box">
+                  <div class="widget_shopping_cart_content">
+                     <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="floating_menu_box">
+         <ul class="float_menu_box">
+            <i class="close fa fa-times"></i>
+            <li class="floating_menu_text active">
+               <a href="index.html"> Home </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="about.html">About Us</a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="client.html"> Clients </a>
+            </li>
+
+             <li class="floating_menu_text ">
+               <a href="knowledge-bank.html">Knowledge Bank </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="case.html"> Case Studies </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="career.html"> Career </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="contact.html"> Contact </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+   
+   <script>
+      $(document).ready(function() {
+
+    var formWidth = $('.sliding_form').width();
+    $('.sliding_form').css('right', '-' + formWidth + 'px');
+    $("#form_trigger").on('click', function() {
+
+        if ($('.sliding_form').hasClass('slide_out')) {
+            $('.sliding_form').removeClass('slide_out').addClass('slide_in')
+            $(".sliding_form").animate({ right: 0 + 'px' });
+        } else {
+            $('.sliding_form').removeClass('slide_in').addClass('slide_out')
+            $('.sliding_form').animate({ right: '-' + formWidth + 'px' });
+        }
+
+    });
+});
+   </script>
+   
+</body>
+</html>

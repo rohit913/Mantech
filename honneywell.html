@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Mantech | Honeywell Thermal Solutions</title>
+   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+
+
+   <style>
+      .c-height
+      {
+         height: 400px;
+      }
+
+      .im-sr
+      {
+         border: 1px solid #eee;
+         text-align: center;
+         padding: 5px 0px 10px 0px;
+         margin-bottom: 30px;
+      }
+
+      .container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content input{
+  display: none;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 32%;
+  margin-right: 50px;
+}
+
+.content .list label{
+  cursor: pointer;
+  height: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  /*padding-left: 25px;*/
+  color: #2f2f2f;
+  transition: all 0.5s ease;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #AE0809;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  /*border-radius: 12px;*/
+  transition: all 0.5s ease;
+  
+  /*background: #ae0809;*/
+}
+
+#home:checked ~ .list .slider{
+  top: 0;
+}
+
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+
+.content .text-content{
+  width: 68%;
+  height: 100%;
+  color: #2f2f2f;
+}
+
+.content .text{
+  display: none;
+}
+
+.content .text .title{
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.container .text p{
+  text-align: justify;
+}
+
+.content .text-content .home{
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+
+.im-image
+{
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.im-images
+{
+   border: 1px solid #ccc;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.c-botm
+{
+   margin-bottom: 40px;
+}
+
+   </style>
+</head>
+<body class="theme-creote">
+   <div id="page" class="page_wapper hfeed site">
+      <div id="wrapper_full" class="content_all_warpper">
+         <div class="header_area" id="header_contents">
+            <div class="top_bar style_one">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-12">
+                        <div class="top_inner">
+                           <div class="left_side common_css">
+                              <div class="contntent address">
+                                 <i class="icon-placeholder"></i>
+                                 <div class="text">
+                                    <small>Corporate Office</small>
+                                    <span>Janakpuri, New Delhi</span>
+                                 </div>
+                              </div>
+                              <div class="contntent email">
+                                 <i class="icon-email"></i>
+                                 <div class="text">
+                                    <small>Email</small>
+                                    <a href="mailto:enquiry@mantech.in">enquiry@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="right_side common_css">
+                              <div class="contntent phone">
+                                 <i class="icon-phone-call"></i>
+                                 <div class="text">
+                                    <small>Phone</small>
+                                    <a href="tel:011-25516281">011-25516281</a>
+                                 </div>
+                              </div>
+                              <div class="contntent media">
+                                 
+                                 <div class="text">
+                                    <a href="https://www.facebook.com/mantech.automation.33" target=_blank rel=nofollow>
+                                       <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target=_blank rel=nofollow>
+                                       <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target=_blank rel=nofollow>
+                                       <i class="fa fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <header class="header header_default style_one get_sticky_header">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
+                        <div class="header_logo_box">
+                           <a href="index.html" class="logo navbar-brand">
+                              <img src="assets/images/logo.png" alt="" class="logo_default">
+                              <img src="assets/images/logo.png" alt="" class="logo__sticky">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
+                        <div class="navbar_togglers hamburger_menu">
+                           <span class="line"></span>
+                           <span class="line"></span>
+                           <span class="line"></span>
+                        </div>
+                        <div class="header_content_collapse">
+                           <div class="header_menu_box">
+                              <div class="navigation_menu">
+                                 <ul id="myNavbar" class="navbar_nav">
+                                    <li class="menu-item">
+                                       <a href="index.html" class="dropdown-toggle nav-link">
+                                          <span>Home</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="about.html" class="dropdown-toggle nav-link">
+                                          <span>About Us</span>
+                                       </a>
+                                    </li>
+                                   <li
+                                       class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                       <a href="javascript:;" class="dropdown-toggle nav-link"><span>Products</span></a>
+                                       <ul class="dropdown-menu width_60_percentage">
+                                          <li>
+                                             <div class="row">
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-thermal-solutions.html"><h5 class="h-thrml">Honeywell Thermal Solutions</h5></a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="burners.html">
+                                                               <img src="assets/images/mn.png" class="im-menu">
+                                                               <p class="brn-mn">Burners</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="sequence-controllers.html">
+                                                               <img src="assets/images/mn1.png" class="im-menu">
+                                                               <p class="brn-mn">Sequence Controllers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="regulators-valves.html">
+                                                               <img src="assets/images/mn2.png" class="im-menu">
+                                                               <p class="brn-mn">Regulators, Valves & Actuators</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="filters-pressure-switch.html">
+                                                               <img src="assets/images/mn3.png" class="im-menu">
+                                                               <p class="brn-mn">Filters, Pressure Switch & Gauges</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="ignition.html">
+                                                               <img src="assets/images/mn12.png" class="im-menu">
+                                                               <p class="brn-mn">Ignition And Flame Monitoring</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="customized-solutions.html">
+                                                               <img src="assets/images/mn13.png" class="im-menu">
+                                                               <p class="brn-mn">Customized <br>Solutions</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                                
+                                                
+
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-analytics.html">
+                                                    <h5 class="h-thrml">Honeywell Analytics</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honey-fixed.html">
+                                                               <img src="assets/images/mn4.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Fixed Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="fixed-type-flame-detectors.html">
+                                                               <img src="assets/images/mn5.png" class="im-menu">
+                                                               <p class="brn-mn">Fixed Type Flame Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                    <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="gas-detection-control-panel.html">
+                                                               <img src="assets/images/mn6.png" class="im-menu">
+                                                               <p class="brn-mn">GAS Detection Control Panel</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honeywell-portable-gas-detectors.html">
+                                                               <img src="assets/images/mn8.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Portable Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-lg-4 m_column">
+                                                   <a href="drae-ger.html">
+                                                    <h5 class="h-thrml">Draeger</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                      <div class="row">
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-protection.html">
+                                                               <img src="assets/images/mn11.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Protection Portfolio</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-flue.html">
+                                                               <img src="assets/images/mn9.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Flue Gas Analyzers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-impairment.html">
+                                                                  <img src="assets/images/mn10.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Impairment Check</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                    
+                                                   </div>
+                                                </div>
+
+                                       
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </li>
+           
+                                    <li class="menu-item">
+                                       <a href="services.html" class="dropdown-toggle nav-link">
+                                          <span>Services</span>
+                                       </a>
+                                    </li>
+                                    
+                                    <li class="menu-item">
+                                       <a href="case.html" class="dropdown-toggle nav-link">
+                                          <span>Case Studies</span>
+                                       </a>
+                                    </li>
+                                    
+                                    
+                                       <li class="menu-item">
+                                          <a href="knowledge-bank.html" class="dropdown-toggle nav-link">
+                                             <span>Knowledge Bank</span>
+                                          </a>
+                                       </li>
+                                    <li class="menu-item">
+                                      <a href="client.html" class="dropdown-toggle nav-link">
+                                         <span>Clients</span>
+                                      </a>
+                                   </li>
+
+                                    <li class="menu-item">
+                                       <a href="career.html" class="dropdown-toggle nav-link">
+                                          <span>Career</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="contact.html" class="dropdown-toggle nav-link">
+                                          <span>Contact</span>
+                                       </a>
+                                    </li>
+                                 
+                                 
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="header_right_content">
+                              <ul>
+                                <li>
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+        
+
+
+
+   <div id="content" class="site-content">
+
+   <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Honeywell Thermal Solutions</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+      <div class="container" style="margin-top:55px;margin-bottom: 50px;">
+        <div class="content">
+            <input type="radio" name="slider" checked id="home">
+            <input type="radio" name="slider" id="blog">
+            <input type="radio" name="slider" id="help">
+            <input type="radio" name="slider" id="code">
+            <input type="radio" name="slider" id="about">
+
+            <div class="list">
+                <label for="home" class="home">
+                    <span>Pressure Regulators</span>
+                </label>
+                <label for="blog" class="blog">
+                    <span>Valves and Butterfly Valves</span>
+                </label>
+                <label for="help" class="help">
+                    <span>Pressure Switches</span>
+                </label>
+                <label for="code" class="code">
+                    <span>Electric Flame Monitoring and Control Units</span>
+                </label>
+                <label for="about" class="about">
+                    <span>Further Ignition and Monitoring Components</span>
+                </label>
+                <div class="slider"></div>
+            </div>
+
+            <div class="text-content">
+                <div class="home text">
+
+                  <div class="row">
+                     <div class="col-md-9">
+                        <div class="title">GAS PRESSURE FILTERS & REGULATORS : HUF/HUP/HUPF</div>
+                    <p><b>Description:</b></p>
+                    <p>These are gas Filters (HUF), Gas Pressure Regulators (HUP) and Gas Pressure Regulators with inbuilt filter (HUPF)</p>
+
+                    <p>Sizes: Upto 2"" are available in threaded version and sizes 2 ½ "" upto 4"" in flange versions.
+                     Separate springs are available for various outlet pressures (5-150 mbar)</p>
+                     </div>
+
+                     <div class="col-md-3">
+                        <div class="im-image">
+                        <img src="assets/images/ser.jpg">
+                     </div>
+                     </div>
+                  </div>
+                </div>
+
+
+                <div class="blog text">
+                    <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser1.jpg">
+                   </div>
+                        <div class="title">COMBUSTION GAS VALVES- VQ 400</div>
+                    <p><b>Description:</b></p>
+                    <p>Combination gas valve without pressure regulation, Class ""A"" Combination Gas Valve.
+                        For control and regulation of gaseous fluids in gas power burners, ovens, furnaces and other gas consuming appliances.
+                        Gas valve type – 2 safety shutoff valves in series
+                        Media- natural gas, propane, air.</p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser2.jpg">
+                   </div>
+
+                     <div class="title">COMBUSTION GAS VALVES- VR 400</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                        Combination gas valve with pressure regulation, Class ""A"" Servo Regulated Combination Gas Valve.
+                        For control and regulation of gaseous fluids in gas power burners, ovens, furnace and other gas consuming appliances.
+                        Gas valve type- 2 safety shutoff valves in series with pressure regulation
+                        Media – natural gas, propane, air.
+                     </p>
+                     </div>
+                  </div>
+
+
+               
+                   <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser3.jpg">
+                   </div>
+                        <div class="title">VALVE PROVING SYSTEM- V4021</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       V4021 is self-checking microprocessor based valve providing system. This acts prior to firing of the burner. This checks the effective closure of automatic shutoff valves for leakages with the help of pressure switches, in case of leakages this will not allow firing of burners to take place.
+                     </p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser4.jpg">
+                   </div>
+
+                     <div class="title">FLUID POWER ACTUATOR- V4055/V4062/V9055</div>
+                    <p><b>Description:</b></p>
+                  <p> These are special actuators powered by a fluid pump used for on-off or hi-low or modulation Slow opening & fast closingFail safe duty Used to control gas supply or to provide manual reset, safety shutoff functions for commercial & industrial burners Suitable for used with VE5065A/V5055/V5097 Valves
+               </p>
+                     </div>
+                  </div>
+
+
+
+                   <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser5.jpg">
+                   </div>
+                        <div class="title">PORT VALVE- V5197A</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       The V5197A is an integrated valve train butterfly gas valve. It is a firing rate valve used to provide variable flow control of air, natural gas, Liquefied Petroleum (LP) and manufactured gases The V5197A is actuated by a firing rate motor that can be mounted directly on the valve or can be actuated with Modutrol motors with proper linkages.
+                     
+                     </p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser6.jpg">
+                   </div>
+
+                     <div class="title">BUTTERFLY GAS/AIR VALVE- V51E</div>
+                    <p><b>Description:</b></p>
+
+                  <p> V51E Butterfly gas/air valve provides modulating control of natural, manufactured, LP gases or air, Modutrol Motor can be fitted directly on the valve with proper linkages.    
+               </p>
+                     </div>
+                  </div>
+
+
+                   <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser7.jpg">
+                   </div>
+                        <div class="title">ACTUATORS- Modutrol Motor</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                        Modutrol IV Motor Provide Following Features
+                        Dual Shaft/Nema 3 housing/ Higher holding torques/ Improved spring return holding torque/ reduced power consumption.
+                        Add on features available:
+                        Diff Voltage models with field addable Transformer
+                        Diff strokes, timings and control inputs [on/off, SPDT Floating/ Modulating]
+                        Diff torque rating as per application.
+                     
+                     
+                     </p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser8.jpg">
+                   </div>
+
+                     <div class="title">ACTUATORS- OM Series Actuator</div>
+                    <p><b>Description:</b></p>
+
+            <p>The OM series is equipped with standard on-off or modulating (4-20mA, 1-5V, or 0(2)~10V select by DIP-switch) control quarter-turn electric actuator.
+                        Torque Range: 35-3500Nm
+                        The OM series can also provide feedback output signal:
+                        Dry contact for On-Off version;
+                        0~5V, 0~10V,4~20mA(selected by DIP-Switch) for modulating version
+                        Auxiliary Switch is optional.
+                         
+                      </p>
+                     </div>
+                  </div>
+
+
+
+                    <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser9.jpg">
+                   </div>
+                        <div class="title">GAS AIR PRESSURE SWITCHES- C6097</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                        These are safety devices used in positive pressure or differential pressure system to sense gas or air pressure. C6097 Standard Range
+                  </p>
+               </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser10.jpg">
+                   </div>
+
+                     <div class="title">SLOW OPENING GAS VALVES- VE4000C</div>
+                    <p><b>Description:</b></p>
+
+                     <p>Solenoid gas valve, normally closed, with characterized opening, Class 'A' safety shutoff Solenoid Gas Valve with threaded connection and maximum flow rate adjustment and characterized opening
+                        For control and regulation of gaseous fluids in gas power burn ovens, furnaces and other gas consumption appliances.
+                        Gas valve type – non regulated normally closed, slow opening
+                        Media- natural gas, propane, air  
+                      </p>
+                     </div>
+                  </div>
+
+
+
+                   <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser11.jpg">
+                   </div>
+                        <div class="title">NORMALLY OPEN GAS VALVES- VE4000S</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       Solenoid gas valve, normally closed, with characterized opening, Class 'A' safety shutoff Solenoid Gas Valve with threaded connection and maximum flow rate adjustment and characterized opening
+                        For control and regulation of gaseous fluids in gas power burn ovens, furnaces and other gas consumption appliances.
+                        Gas valve type – non regulated normally closed, slow opening
+                        Media- natural gas, propane, air.
+                  </p>
+               </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser12.jpg">
+                   </div>
+
+                     <div class="title">SAFETY SHUTOFF GAS VALVES- VE4000A</div>
+                    <p><b>Description:</b></p>
+
+                     <p>
+                       Solenoid gas valve normally open. The VE4000S1 and VE4000S2 series gas valves are safety relief used as vent valves in gas power burners, gas boilers, owens, gas consuming appliances
+                        Gas valve type- non regulated ON/OFF normally open Media-natural gas, propane, air
+                        VE4000S1- CPI Switch Optional
+                        VE4000S2- CPI Switch Mounted
+                      </p>
+                     </div>
+                  </div>
+
+
+
+                   <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser13.jpg">
+                   </div>
+                        <div class="title">SAFETY SHUTOFF GAS VALVES- VE400AA</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       
+                      Solenoid gas valve, normally closed, Class ""A"" Safety Shutoff Solenoid Gas Valve with threaded connection.
+                        For control and regulation of gaseous fluid in gas power burner, ovens, furnaces and other gas consumption appliances.
+                        Gas valve type- non regulated ON/OFF normally closed, fast opening
+                        Media- natural gas, propane, air.
+                     
+                  </p>
+               </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser14.jpg">
+                   </div>
+
+                     <div class="title">SAFETY SHUTOFF GAS VALVES- VE4000B1</div>
+                    <p><b>Description:</b></p>
+
+                     <p>
+                       
+                      Solenoid gas valve, normally closed, Class ""A"" Safety Shutoff Solenoid Gas Valve with threaded connection.
+                        For control and regulation of gaseous fluids in gas power burners, ovens, furnaces and other gas consuming appliances
+                        Gas valve type- non regulated ON/OFF normally closed, fast opening
+                        Media- natural gas, propane, air.
+
+                     
+                      </p>
+                     </div>
+                  </div>
+
+
+                  <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser15.jpg">
+                   </div>
+                        <div class="title">SAFETY SHUTOFF GAS VALVES- VE4000B3</div>
+                    <p><b>Description:</b></p>
+                    <p> 
+                      Solenoid gas valve, normally closed, Class ""A"" Safety Shutoff Solenoid Gas Valve with flanged connection.
+                        For control and regulation of gaseous fluids in gas power burners, ovens, furnaces and other gas consuming appliances Media- natural gas, propane, air.  
+                  </p>
+               </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser16.jpg">
+                   </div>
+
+                     <div class="title">MANUAL RESET GAS VALVES- VG400AA</div>
+                    <p><b>Description:</b></p>
+
+                     <p>
+                       Small manual reset gas valve, normally closed, Class ""A"", manually open, safety shutoff solenoid Gas valve. For use in gas leak detection systems or other applications Gas Valve type- non regulated ON/OFF Media – natural gas, propane, air.
+                      </p>
+                     </div>
+                  </div>
+
+
+                  <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser17.jpg">
+                   </div>
+                        <div class="title">MANUAL RESET GAS VALVES- VG4000A3</div>
+                    <p><b>Description:</b></p>
+                    <p> 
+                      Manual reset gas valve, normally closed, Class ""A"", manually open, Safety Shutoff Solenoid Gas Valve with flange connections.
+                        For use in gas leak detection systems or other applications
+                        Gas valve type- non regulated ON/OFF
+                        Media- Natural gas, propane, air 
+                  </p>
+               </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser18.jpg">
+                   </div>
+
+                     <div class="title">MANUAL RESET GAS VALVES- VG4000A1</div>
+                    <p><b>Description:</b></p>
+
+                     <p>
+                       Manual reset gas valve, normally closed, Class ""A"", Manually open, Safety Shutoff Solenoid Gas Valve. For Use in gas leak detection systems or other appliances
+                      Gas valve type- non regulated ON/OFF Media- natural gas, propane, air.
+
+                      </p>
+                     </div>
+                  </div>
+
+
+
+                  <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser19.jpg">
+                   </div>
+                        <div class="title">MANUAL RESET GAS VALVES- VG4000S3</div>
+                    <p><b>Description:</b></p>
+                    <p> 
+                       Manual reset gas valve, normally open. Manually opening/closing. Safety Shutoff Solenoid Gas Valve with flange connections For use in gas leak detection systems or other applications Gas valve type – non regulated ON/OFF Media- natural gas, propane, air.
+                  </p>
+               </div>
+            </div>
+
+
+
+                </div>
+
+
+                <div class="help text">
+                    <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser20.jpg">
+                   </div>
+                        <div class="title">PRESSURETROL CONTROLLERS- L404</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                        Provides operating control, automatic or manual reset limit protection for pressure system upto 300 psi.
+                        Use with steam, air, non combustible gases or other fluids non corrosive to pressure.</p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser21.jpg">
+                   </div>
+
+                     <div class="title">PRESSURETROL CONTROLLERS- L91</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    Provides modulating pressure operating controls for regulation of liquid or air and other non corrosive gases Use with steam, air, non combustible gases or other fluids non corrosive to the brass or phos-bronze (300 psi model) bellows Siphon loop included with the models for `0 to 300 psi ranges
+                     </p>
+                     </div>
+                  </div>
+
+
+                  <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser22.jpg">
+                   </div>
+                        <div class="title">PRESSURETROL CONTROLLERS- C437D,E 2000 Series Gas Pressure Switches</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                         The C437D, E Series 2000 Gas Pressure Switches are pressure actuated switching devices used in industrial gas system applications for safety shutoff, pressure control, and differential pressure control. All Series 2000 models have MicroSwitch™ snap switches to open or close a circuit on pressure rise or drop
+                     </p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser23.jpg">
+                   </div>
+
+                     <div class="title">FEMA PRESSURE SWITCHES- DCM/DNM</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    The universal pressure switch can be used in general mechanical engineering and printing machine industry, pneumatics and hydraulics.Medium: Liquid and Gases Pressure Range: 400mbar-63bar, suitable for SIL 2 according ICE 61508-2
+                  </p>
+              </div>
+          </div>
+
+
+
+          <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser24.jpg">
+                   </div>
+                        <div class="title">FEMA PRESSURE SWITCHES- EX-DCM/EX-DNM</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                         The given range of pressure switch is available in explosion proof versions certified for ATEX area classification EEx de IIC T6, PTB approval: PTB 02 ATEX 1121
+                     
+                     </p>
+                     </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser25.jpg">
+                   </div>
+
+                     <div class="title">FEMA PRESSURE SWITCHES- DNS/VNS</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   Pressure switches of DNS series are suitable for monitoring and controlling pressures in chemical plants, process engineering and any situation where the pressure of aggressive liquids and gases are to monitored.
+                    All components of the sensor system are made of high-quality stainless steel (1.4571) and welded, using latest methods without filler metals. Pressure sensors is gasket-free plasma-welded.
+                     
+                  </p>
+              </div>
+          </div>
+
+
+              <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser26.jpg">
+                   </div>
+                        <div class="title">FEMA PRESSURE SWITCHES- DDCM</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   FEMA differential pressure monitors are suitable for monitoring and controlling differential pressures, flow monitoring and automatic supervision of filter systems.
+                    A double chamber system with stainless steel bellows or Perbunan diaphragm detects the difference between the two applied pressures.
+                    The desired switching pressure is adjustable within the ranges mentioned.
+                    All differential pressure monitors can be used in vacuum range, hysteresis is not adjustable
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser27.jpg">
+                   </div>
+
+                     <div class="title">FEMA PRESSURE SWITCHES- VCM/VNM</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   These pressure switches are used for vacuum applications.Range available from 15mbar to 0.1bar.
+                    The zero relevant point on the scale of the unit corresponds to the relevant atmospheric pressure.  
+                  </p>
+              </div>
+          </div>
+
+
+                <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser28.jpg">
+                   </div>
+                        <div class="title">FEMA PRESSURE SWITCHES- SMART DCM</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   
+                   The robust, microprocessor-supported electronic pressure switches in the Smart DCM series measure relative pressures in range from -1 to +1 and 0-40 bar.
+                     
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser29.jpg">
+                   </div>
+
+                     <div class="title">GAS AIR PRESSURE SWITCHES- C6097</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   These are safety devices used in positive pressure or differential pressure system to sense gas or air pressure. C6097 Standard Range
+                    1-10 mbar
+                    2.5-50 mbar
+                    30-150 mbar
+                    100-500 mbar  
+                  </p>
+              </div>
+          </div>
+
+
+
+  </div>
+
+
+
+                <div class="code text">
+                     <div class="row c-botm">
+                     <div class="col-md-12">
+                     
+                    <div class="title">U2 Integrated Flame Detectors</div>
+                    <p><b>Description:</b></p>
+                    <p>The U2 all-in-one Viewing head with integrated signal processors delivers flame discrimination in toughest environments. With automatic setup and ability to monitor UV and IR flames simultaneously or separately, the all-in-one flame scanner offers improved burner up time and reliability. 
+                  </p>
+                    <p><b>Applications</b></p>
+                    <ul>
+                      <li>Industrial process burners</li>
+                      <li>Multiple burner system</li>
+                      <li>Multiple burner system</li>
+                   </ul>
+
+                   <p><b>Features</b></p>
+                   <p> Touch screen user interface. Tempered and fully sealed glass touch wheel sensors: no mechanical moving parts.
+                  Protection class: NEMA 4x, IP66 Class 1,Div 1/2., IIC, T6 (approved by IECEx and CCoE)
+                  Immune to X-Rays and Gamma radiation, making them ideal for critical applications
+                  U2 performs background pulse counting for UV tube health and therefore doesn't need a mechanical shutter system for self-checking
+                  Output: Flame Relay (Contact Output). Fault Relay (Contact Output) and 4-20 mA (Current Output)
+
+                     </p>
+
+                </div>
+          </div>
+
+
+                <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser30.jpg">
+                   </div>
+                        <div class="title">U2-1010-PF Integrated Flame Detectors</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p>Suitable for area classification – Class 1, Div 1, IIC, T6 Default cable length: 3 meters (extension cable and junction boxes available as separate accessories) 
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser31.jpg">
+                   </div>
+
+                     <div class="title">U2-1010 Integrated Flame Detectors</div>
+                    <p><b>Description:</b></p>
+                    <p> Suitable for area classification- Class 1, Div 2, IIC, T6, Default cable length:  3metres (extension cable and junction boxes available as separate accessories)
+                     
+                  </p>
+              </div>
+          </div>
+
+
+          <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser32.jpg">
+                   </div>
+                        <div class="title">S55X SERIES  Flame Detectors</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> S55xBE flame detector ensures flame discrimination in toughest environments and is capable to detect flame of almost every available fuel type or mixture. These Viewing Heads are suitable for Class 1, Div. 2 area classifications (approved by IECEx and CCoE). These are used in conjunction with P532, P531 or P522 Processors. 
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser33.jpg">
+                   </div>
+
+                     <div class="title">700 SERIES FLAME DETECTOR WITH PROCESSOR UNIT- S700/6 Flame Detectors</div>
+                    <p><b>Description:</b></p>
+                    <p>These compact Viewing Head detects the presence or absence of flame and features a quick disconnect plug with 2 embedded indicator LEDs. These viewing heads are used in conjunction with 700 Series Processor. Suitable for Class 1, Div 2 area classifications (approved by IECEx and CCoE). 
+                  </p>
+              </div>
+          </div>
+
+
+           <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser34.jpg">
+                   </div>
+                        <div class="title">700 Series Processor</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> The 700 is a signal processor which amplifies and conditions the Viewing Head signal for used with a burners management system. It provides a 0/4-20mA output signal, two SPDT flame relay outputs and one SPDT self-check relay output.  
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser35.jpg">
+                   </div>
+
+                     <div class="title">FLAME DETECTORS -C7027/35</div>
+                    <p><b>Description:</b></p>
+                    <p>Model C7027/35 is a compact flame detector used in flame safeguard controls and compatible flame amplifier.
+                     
+                  </p>
+              </div>
+          </div>
+
+
+           <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser36.jpg">
+                   </div>
+                        <div class="title">FLAME DETECTORS -C7012</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> Model C7012 is a solid state electronic flame detector used with Honeywell flame safe guard controls and amplifier. Sense ultraviolet radiation produced by combustion of gas oil or other fuels. Weather proof & Ex proof versions also available.
+                       
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser37.jpg">
+                   </div>
+
+                     <div class="title">FLAME DETECTORS -C7076</div>
+                    <p><b>Description:</b></p>
+                    <p> Model C7076 is a solid state dynamic self check adjustable sensitivity flame detector, used with compatible Honeywell flame safe guard controls and amplifier. This is recommended for off-process fuels such as H2S or flames that are difficult to detect eg Coal, BF, Producer Gas etc.
+                     
+                     
+                  </p>
+              </div>
+          </div>
+
+
+
+           <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser38.jpg">
+                   </div>
+                        <div class="title">FLAME DETECTORS -C7915</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> Model C7915 includes a lead sulfide photocell that is sensitive to infrared radiations emitted by combustion of fuels, such as natural gas, oil and coal.   
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser39.jpg">
+                   </div>
+
+                     <div class="title">FLAME SWITCHES- R4343</div>
+                    <p><b>Description:</b></p>
+                    <p>Model R4343 performs flame detection function only. R4343D and R4343E are switches, when used with the appropriate sensors can signal the presence or absence of flame. 
+                  </p>
+              </div>
+          </div>
+
+
+          <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser40.jpg">
+                   </div>
+                        <div class="title">FLAME SWITCHES- R4348</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> Model R4348 is used for application in large commercial and industrial burner installation where they are used as simple flame switch. This can perform flame detection and burners safe start function. The potential free relay contacts enables the use of this with wide range of logic schemes as per customer needs. The add-on features include; flame intensity bar graph display and 4-20mA flame intensity output.
+                     
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser41.jpg">
+                   </div>
+
+                     <div class="title">FLAME SWITCHES- EC/RM7823</div>
+                    <p><b>Description:</b></p>
+                    <p>Microprocessor-based integrated flame switch for detecting a flame using rectification, UV or IR source. Can be fitted with any 7800 series amplifier to provide relay action from 2 single pole double throw[SPDT] relays when flame is present or not present. This is a flame detection relay only, 3 LEDs to indicate power, flame and alarm.  
+                  </p>
+              </div>
+          </div>
+
+
+
+          <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser42.jpg">
+                   </div>
+                        <div class="title">FLAME SWITCHES- BC 1000</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p> The BC 1000 series is a flame switch for intermittent operation to indicate presence or absence of a flame and to be applied in commercial or industrial burner installations. It can also be used as a primary control for manually operated burner systems using a start/stop station.  
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser43.jpg">
+                   </div>
+
+                     <div class="title">BURNER CONTROLLERS -EC/RM7800</div>
+                    <p><b>Description:</b></p>
+                    <p>The 7800 series burner control comprises a relay module, wiring subbase, purge timer and amplifier. Available options allow 7800 series installation to perform intelligent controls. Accessories Subbase Q7800A Key Board Display Module S7800A Flame Amplifiers R7847/R7848/R7886/R7861 Purge Timers ST7800A
+                       
+                  </p>
+              </div>
+          </div>
+
+
+          <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser44.jpg">
+                   </div>
+                        <div class="title">BURNER CONTROLLERS -DBC 2000</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p>DBC 2000 series microprocessors based controllers, are used to control and monitor gas and oil burners for on/off or modulating control. Two models are available: ""standard"" model and enhanced model with integrated valve proofing system as well as profibus or Modbus (future feature) communication possibilities.
+                     DBC 2000 is suitable for use with both, Flame Rod and UV flame detectors (C7027, C7035, C7044). It has an integrated flame amplifier. A jumper located at the back of the device controls the selection of flame Rod or UV Flame detector.
+                      
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser45.jpg">
+                   </div>
+
+                     <div class="title">BURNER CONTROLLERS -TBC 1800</div>
+                    <p><b>Description:</b></p>
+                    <p>TBC1800 is a high-performance burner controller which is designed for pulse firing and modulating burner applications. TBC1C00 has capacity of providing fast on/off or low/high firing. Features Flame Valve digital display Fault display o front plate Remote reset
+                    Simple setting of flame threshold (applicable incase of UV detectors are user for flame detection).   
+                  </p>
+              </div>
+          </div>
+
+
+      </div>
+
+
+
+                <div class="about text">
+                    
+                    <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser46.jpg">
+                   </div>
+                        <div class="title">SPARK IGNITION MODULE -S87</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p>
+                    Compact flame switches with built in spark generator (ignition transformer).
+                    Used with ionization rods/unirod.
+                    Operates on a 24 Vac power supply.
+                    Switches on valve ignites spark, reattempts ignition in case of flame failure.
+                    Optional 30 seconds, Pre purging time.
+                    Typically suitable for smaller batch type furnace, Ovens, Powder coating and surface treatment ovens, Cost effective
+                        
+                  </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser47.jpg">
+                   </div>
+
+                     <div class="title">IGNITION TRANSFORMERS -ZT 871/900/930/932</div>
+                    <p><b>Description:</b></p>
+                    <p>Ignition transformers for oil and gas burner ignition
+                       
+                  </p>
+              </div>
+          </div>
+
+
+                <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/ser48.jpg">
+                   </div>
+                        <div class="title">IGNITION TRANSFORMERS -ET401/2</div>
+                    <p><b>Description:</b></p>
+                   
+                    <p>
+                     ET401 has single high voltage output pin connection, suitable for use with gas burners ET402 has double high voltage output pin connections, suitable for use with gas, oil and dual fuel burners.    
+                  </p>
+                </div>
+          </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+
+         
+
+
+            <section class="newsteller style_one bg_dark_1">
+               <div class="pd_top_40"></div>
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-6 col-md-12">
+                        <div class="content">
+                           <h2>Join us for a Safer</h2>
+                           <p>More Secure Industrial Future.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12">
+                        <div class="item_scubscribe">
+                           <div class="input_group">
+                              <form class="mc4wp-form" method="post" data-name="Subscibe">
+                                 <div class="mc4wp-form-fields">
+                                    <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                    <input type="submit" value="Sign up">
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pd_bottom_40"></div>
+            </section>
+         </div>
+      </div>
+      
+     <div class="sliding_form slide_out">
+        <a href="javascript:;" id="form_trigger">Get Quote</a>
+        <div class="sliding_form_inner">
+            <form class="fastconc"  method="post">
+
+               <h4 class="g-qute">Get Quote</h4>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="name" placeholder="Name" class="fields_box" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="email" placeholder="Email" class="fields_box" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="phone" placeholder="Phone" class="fields_box" required>
+                    </div>
+                </div>
+               
+               
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea name="enquiry" placeholder="Enquiry" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                     <button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button>
+                    </div>
+                 </div>
+               
+            </form>
+        </div>
+    </div>
+
+
+
+     <div class="footer_area" id="footer_contents">
+         <div class="footer_widgets_wrap bg_dark_2">
+            <div class="pd_top_80"></div>
+            <div class="container">
+               <div class="row">
+
+               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Get In Touch</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6> Location</h6>
+                                 <p>
+                                    614, Kirti Shikhar, District Centre, Janak Puri, New Delhi -110 058, Delhi
+                                 </p>
+                              </div>
+                              <div class="bottom">
+                                 <h6> Contact</h6>
+                                 <div class="con_content">
+                                    <h5> Phone :</h5>
+                                    <a href="tel:011-25516281"> 011-25516281</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5> Mail Us :</h5>
+                                    <a href="tel:mantech@mantech.in"> mantech@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Quick Links</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+
+                              <ul class="menu">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>
+                                 <li><a href="client.html">Clients</a></li>
+                                 <li><a href="knowledge-bank.html">Knowledge Bank</a></li>
+                                 <li><a href="case.html">Case Studies</a></li>
+                                 <li><a href="career.html">Career</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Our Expertise</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+
+                                 <ul class="menu">
+                                    <li><a href="honeywell-thermal-solutions.html">Honeywell Thermal Solutions</a></li>
+                                    <li><a href="honeywell-analytics.html">Honeywell Analytics</a></li>
+                                    <li><a href="drae-ger.html">Draeger</a></li>
+                  
+                                 </ul>
+
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+                              </a>
+                              <div class="pd_bottom_30"></div>
+                           </div>
+                           <div class="content_box">
+                              <p>
+                                 Established in 1996, MANTECH AUTOMATION today is the leading products and solution provider in the field of Industrial Automation, Thermal Solutions, Gas Leak Detection, and Fluid Control.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            
+            <div class="pd_bottom_50"></div>
+         </div>
+         <div class="creote-footer-copyright bg_dark_3">
+
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content color_white">
+                        © 2023 - Mantech. Designed and Developed by 
+                        <a target="_blank" rel="nofollow" href="https://mararmedia.com/" style="color: #fff;">Marar Media</a>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 text-md-end">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content_right">
+                        <div class="social_media_v_one">
+                           <ul>
+                              <li>
+                                 <a href="https://www.facebook.com/mantech.automation.33" target="_blank">
+                                    <span class="fa fa-facebook"></span>
+                                    <small>facebook</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                                    <span class="fa fa-instagram"></span>
+                                    <small>instagram</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                    <small>linkedin</small>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="crt_mobile_menu">
+         <div class="menu-backdrop"></div>
+         <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <form role="search" method="get" action="#">
+               <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+               <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+            </form>
+            <div class="menu-outer">
+               
+            </div>
+         </nav>
+      </div>
+    
+      <div id="search-popup" class="search-popup">
+         <div class="close-search"><i class="fa fa-times"></i></div>
+         <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+               <fieldset>
+                  <form role="search" method="get" action="#">
+                     <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                  </form>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+   
+      <div class="modal_popup one">
+         <div class="modal-popup-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <div class="modal_box">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12 form_inner">
+                     <div class="form_content">
+                        <form class="contact-form fastconc" method="post" action="">
+                           <p>
+                              <label>Name<br />
+                                 <input type="text" name="name" value="" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Name" />
+                                 <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label>Email<br />
+                                 <input type="email" name="email" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Email" />
+                                 <br />
+                                 <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Phone<br />
+                                 <input type="text" name="phone" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Phne no" />
+                                 <br />
+                                 <i class="fa fa-phone"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Enquiry<br />
+                                 <textarea name="enquiry" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    aria-invalid="false" placeholder="Enquiry"></textarea>
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button></p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about_company_inner">
+                     <div class="abt_content">
+                        <div class="logo">
+                           <img src="assets/images/logo.png" alt="img" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                           <p> Thank you for reaching out to us! We appreciate the time you took to fill out our inquiry form. Your message is important to us, and we will make every effort to respond as quickly as possible.</p>
+                            <p>Our team is dedicated to providing excellent service, and we are thrilled that you are considering us</p>
+                            <p>Rest assured that we have received your information and will get back to you shortly</p>
+                            <p>In the meantime, if you have any urgent matters or additional details to share, please feel free to contact us directly at enquiry@mantech.in, mantech@mantech.in</p>
+                            <p>Thank you once again for choosing Mantech. We look forward to the opportunity to assist you.</p>
+                        </div>
+                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="side_bar_cart" id="mini_cart">
+         <div class="cart_overlay"></div>
+         <div class="cart_right_conten">
+            <div class="close">
+               <div class="close_btn_mini"><i class="icon-close"></i></div>
+            </div>
+            <div class="cart_content_box">
+               <div class="contnet_cart_box">
+                  <div class="widget_shopping_cart_content">
+                     <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="floating_menu_box">
+         <ul class="float_menu_box">
+            <i class="close fa fa-times"></i>
+            <li class="floating_menu_text active">
+               <a href="index.html"> Home </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="about.html">About Us</a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="client.html"> Clients </a>
+            </li>
+
+             <li class="floating_menu_text ">
+               <a href="knowledge-bank.html">Knowledge Bank </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="case.html"> Case Studies </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="career.html"> Career </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="contact.html"> Contact </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+   
+   <script>
+      $(document).ready(function() {
+
+    var formWidth = $('.sliding_form').width();
+    $('.sliding_form').css('right', '-' + formWidth + 'px');
+    $("#form_trigger").on('click', function() {
+
+        if ($('.sliding_form').hasClass('slide_out')) {
+            $('.sliding_form').removeClass('slide_out').addClass('slide_in')
+            $(".sliding_form").animate({ right: 0 + 'px' });
+        } else {
+            $('.sliding_form').removeClass('slide_in').addClass('slide_out')
+            $('.sliding_form').animate({ right: '-' + formWidth + 'px' });
+        }
+
+    });
+});
+   </script>
+   
+   
+</body>
+</html>

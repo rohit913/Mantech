@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Mantech | Burners</title>
+   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+
+
+   <style>
+      .news_box.default_style.list_view .image {
+         margin-bottom: 17px;
+      }
+
+      .c-height {
+         height: 400px;
+      }
+
+      .im-sr {
+         border: 1px solid #eee;
+         text-align: center;
+         padding: 5px 0px 10px 0px;
+         margin-bottom: 30px;
+      }
+
+      .container .topic {
+         font-size: 30px;
+         font-weight: 500;
+         margin-bottom: 20px;
+         color: rgba(255, 255, 255, 0.7);
+      }
+
+      .content input {
+         display: none;
+      }
+
+      .content {
+         display: flex;
+         justify-content: space-between;
+         /*align-items: center;*/
+      }
+
+      .content .list {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         width: 32%;
+         margin-right: 50px;
+      }
+
+      .content .list label {
+         cursor: pointer;
+         height: 40px;
+         line-height: 20px;
+         font-size: 16px;
+         font-weight: 700;
+         /*color: rgba(255, 255, 255, 0.5);*/
+         /*padding-left: 25px;*/
+         color: #2f2f2f;
+         transition: all 0.5s ease;
+         z-index: 10;
+         border-bottom: 1px solid #ccc;
+         margin-bottom: 10px;
+         margin-top: 10px;
+      }
+
+      #home:checked~.list label.home,
+      #blog:checked~.list label.blog,
+      #help:checked~.list label.help,
+      #code:checked~.list label.code,
+      #about:checked~.list label.about {
+         color: #AE0809;
+      }
+
+      .content .slider {
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 60px;
+         width: 100%;
+         /*border-radius: 12px;*/
+         transition: all 0.5s ease;
+
+         /*background: #ae0809;*/
+      }
+
+      #home:checked~.list .slider {
+         top: 0;
+      }
+
+      #blog:checked~.list .slider {
+         top: 60px;
+      }
+
+      #help:checked~.list .slider {
+         top: 120px;
+      }
+
+      #code:checked~.list .slider {
+         top: 180px;
+      }
+
+      #about:checked~.list .slider {
+         top: 240px;
+      }
+
+      .content .text-content {
+         width: 68%;
+         height: 100%;
+         color: #2f2f2f;
+      }
+
+      .content .text {
+         display: none;
+      }
+
+      .content .text .title {
+         font-size: 19px;
+         margin-bottom: 10px;
+         font-weight: 500;
+      }
+
+      .container .text p {
+         text-align: justify;
+      }
+
+      .content .text-content .home {
+         display: block;
+      }
+
+      #home:checked~.text-content .home,
+      #blog:checked~.text-content .blog,
+      #help:checked~.text-content .help,
+      #code:checked~.text-content .code,
+      #about:checked~.text-content .about {
+         display: block;
+      }
+
+      #blog:checked~.text-content .home,
+      #help:checked~.text-content .home,
+      #code:checked~.text-content .home,
+      #about:checked~.text-content .home {
+         display: none;
+      }
+
+      .im-image {
+         border: 1px solid #ccc;
+         padding: 10px;
+      }
+
+      .im-images {
+         border: 1px solid #ccc;
+         text-align: center;
+         margin-bottom: 25px;
+      }
+
+      .c-botm {
+         margin-bottom: 40px;
+      }
+
+      .dn-botm {
+         margin-bottom: 5px !important;
+         font-weight: 500;
+         font-size: 15px;
+      }
+
+      .c-pr-img {
+         width: 85%;
+      }
+   </style>
+</head>
+
+<body class="theme-creote">
+   <div id="page" class="page_wapper hfeed site">
+      <div id="wrapper_full" class="content_all_warpper">
+         <div class="header_area" id="header_contents">
+            <div class="top_bar style_one">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-12">
+                        <div class="top_inner">
+                           <div class="left_side common_css">
+                              <div class="contntent address">
+                                 <i class="icon-placeholder"></i>
+                                 <div class="text">
+                                    <small>Corporate Office</small>
+                                    <span>Janakpuri, New Delhi</span>
+                                 </div>
+                              </div>
+                              <div class="contntent email">
+                                 <i class="icon-email"></i>
+                                 <div class="text">
+                                    <small>Email</small>
+                                    <a href="mailto:enquiry@mantech.in">enquiry@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="right_side common_css">
+                              <div class="contntent phone">
+                                 <i class="icon-phone-call"></i>
+                                 <div class="text">
+                                    <small>Phone</small>
+                                    <a href="tel:011-25516281">011-25516281</a>
+                                 </div>
+                              </div>
+                              <div class="contntent media">
+
+                                 <div class="text">
+                                    <a href="https://www.facebook.com/mantech.automation.33" target=_blank rel=nofollow>
+                                       <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ=="
+                                       target=_blank rel=nofollow>
+                                       <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target=_blank
+                                       rel=nofollow>
+                                       <i class="fa fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <header class="header header_default style_one get_sticky_header">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
+                        <div class="header_logo_box">
+                           <a href="index.html" class="logo navbar-brand">
+                              <img src="assets/images/logo.png" alt="" class="logo_default">
+                              <img src="assets/images/logo.png" alt="" class="logo__sticky">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
+                        <div class="navbar_togglers hamburger_menu">
+                           <span class="line"></span>
+                           <span class="line"></span>
+                           <span class="line"></span>
+                        </div>
+                        <div class="header_content_collapse">
+                           <div class="header_menu_box">
+                              <div class="navigation_menu">
+                                 <ul id="myNavbar" class="navbar_nav">
+                                    <li class="menu-item">
+                                       <a href="index.html" class="dropdown-toggle nav-link">
+                                          <span>Home</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="about.html" class="dropdown-toggle nav-link">
+                                          <span>About Us</span>
+                                       </a>
+                                    </li>
+
+                                    <li
+                                       class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                       <a href="javascript:;" class="dropdown-toggle nav-link"><span>Products</span></a>
+                                       <ul class="dropdown-menu width_60_percentage">
+                                          <li>
+                                             <div class="row">
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-thermal-solutions.html">
+                                                      <h5 class="h-thrml">Honeywell Thermal Solutions</h5>
+                                                   </a>
+                                                   <div class="list_item_box style_one">
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="burners.html">
+                                                                  <img src="assets/images/mn.png" class="im-menu">
+                                                                  <p class="brn-mn">Burners</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+                                                            <div class="menu-bx">
+                                                               <a href="sequence-controllers.html">
+                                                                  <img src="assets/images/mn1.png" class="im-menu">
+                                                                  <p class="brn-mn">Sequence Controllers</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <br>
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+
+                                                            <div class="menu-bx">
+                                                               <a href="regulators-valves.html">
+                                                                  <img src="assets/images/mn2.png" class="im-menu">
+                                                                  <p class="brn-mn">Regulators, Valves & Actuators</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+
+                                                            <div class="menu-bx">
+                                                               <a href="filters-pressure-switch.html">
+                                                                  <img src="assets/images/mn3.png" class="im-menu">
+                                                                  <p class="brn-mn">Filters, Pressure Switch & Gauges
+                                                                  </p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+
+                                                      <br>
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+
+                                                            <div class="menu-bx">
+                                                               <a href="ignition.html">
+                                                                  <img src="assets/images/mn12.png" class="im-menu">
+                                                                  <p class="brn-mn">Ignition And Flame Monitoring</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+
+                                                            <div class="menu-bx">
+                                                               <a href="customized-solutions.html">
+                                                                  <img src="assets/images/mn13.png" class="im-menu">
+                                                                  <p class="brn-mn">Customized <br>Solutions</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+
+
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-analytics.html">
+                                                      <h5 class="h-thrml">Honeywell Analytics</h5>
+                                                   </a>
+                                                   <div class="list_item_box style_one">
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="honey-fixed.html">
+                                                                  <img src="assets/images/mn4.png" class="im-menu">
+                                                                  <p class="brn-mn">Honeywell Fixed Gas Detectors</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+                                                            <div class="menu-bx">
+                                                               <a href="fixed-type-flame-detectors.html">
+                                                                  <img src="assets/images/mn5.png" class="im-menu">
+                                                                  <p class="brn-mn">Fixed Type Flame Detectors</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <br>
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="gas-detection-control-panel.html">
+                                                                  <img src="assets/images/mn6.png" class="im-menu">
+                                                                  <p class="brn-mn">GAS Detection Control Panel</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+                                                            <div class="menu-bx">
+                                                               <a href="honeywell-portable-gas-detectors.html">
+                                                                  <img src="assets/images/mn8.png" class="im-menu">
+                                                                  <p class="brn-mn">Honeywell Portable Gas Detectors</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-lg-4 m_column">
+                                                   <a href="drae-ger.html">
+                                                      <h5 class="h-thrml">Draeger</h5>
+                                                   </a>
+                                                   <div class="list_item_box style_one">
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-lt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-protection.html">
+                                                                  <img src="assets/images/mn11.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Protection Portfolio</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+
+
+                                                         <div class="col-md-6 pad-lt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-flue.html">
+                                                                  <img src="assets/images/mn9.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Flue Gas Analyzers</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+
+                                                      <br>
+
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-impairment.html">
+                                                                  <img src="assets/images/mn10.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Impairment Check</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+
+
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="services.html" class="dropdown-toggle nav-link">
+                                          <span>Services</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="case.html" class="dropdown-toggle nav-link">
+                                          <span>Case Studies</span>
+                                       </a>
+                                    </li>
+
+
+                                    <li class="menu-item">
+                                       <a href="knowledge-bank.html" class="dropdown-toggle nav-link">
+                                          <span>Knowledge Bank</span>
+                                       </a>
+                                    </li>
+                                    <li class="menu-item">
+                                       <a href="client.html" class="dropdown-toggle nav-link">
+                                          <span>Clients</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="career.html" class="dropdown-toggle nav-link">
+                                          <span>Career</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="contact.html" class="dropdown-toggle nav-link">
+                                          <span>Contact</span>
+                                       </a>
+                                    </li>
+
+
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="header_right_content">
+                              <ul>
+                                 <li>
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+
+
+
+
+         <div id="content" class="site-content">
+
+
+            <section class="contact-section" style="margin-top: 40px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-12">
+                        <h3 style="text-align: center;">MAXON</h3>
+                     </div>
+
+                  </div>
+               </div>
+            </section>
+
+
+            <div class="auto-container">
+               <div class="row default_row">
+                  <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                     <section class="blog_post_section one_column style_two">
+                        <div class="pd_top_60"></div>
+                        <div class="grid_show_case grid_layout clearfix">
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1"
+                                    style="text-align: center;margin-top:20px; margin-bottom: 10px;">
+                                    <img src="assets/images/pr/pr97.jpg" class="c-pr-img" style="width: 60%;" alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             OVENPAK</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">OVENPAK Burners are nozzle-mixing
+                                          gas burners for many
+                                          industrial direct-fired applications</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns any clean fuel gas</p>
+                                       <p class="dn-botm" style="display: list-item;">Fires into passing air streams</p>
+                                       <p class="dn-botm" style="display: list-item;">Requires only low pressure gas</p>
+                                       <p class="dn-botm" style="display: list-item;">Provides clean combustion with low
+                                          NOx levels</p>
+                                       <p class="dn-botm" style="display: list-item;">Compact burner design provides
+                                          quick and easy installation</p>
+                                       <p class="dn-botm" style="display: list-item;">Simple field adjustment and
+                                          maintenance</p>
+                                       <p class="dn-botm" style="display: list-item;">Gas Burners provide outstanding
+                                          performance in ovens and
+                                          dryers, paint finishing lines, paper and textile machines, food baking ovens,
+                                          coffee roasters, grain dryers, and fume incinerators.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr102.webp" alt="img" style="width: 50%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             OVENPAK® LE</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Burns any clean fuel gas</p>
+                                       <p class="dn-botm" style="display: list-item;">Operates on low gas supply
+                                          pressures</p>
+                                       <p class="dn-botm" style="display: list-item;">Provides clean combustion with low
+                                          NOx and CO levels</p>
+                                       <p class="dn-botm" style="display: list-item;">Compact burner design provides
+                                          quick and easy installation</p>
+                                       <p class="dn-botm" style="display: list-item;">Balanced pressure design for easy
+                                          commissioning and adjustment
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Visible ignition action speeds
+                                          commissioning and maintenance
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">High turndown for exceptional
+                                          process control</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr105.jpg" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Unopack-300</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">9KW Min to 325KW Max Capacity</p>
+                                       <p class="dn-botm" style="display: list-item;">Up to 36:1 Thermal Turndown</p>
+                                       <p class="dn-botm" style="display: list-item;">Gas Flow: 0.9Nm /hr to 33Nm /hr
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Works with NG, LPG, or Propane</p>
+                                       <p class="dn-botm" style="display: list-item;">Precise Temperature Control </p>
+                                       <p class="dn-botm" style="display: list-item;">Inlet Pressure: 18-22mbar</p>
+                                       <p class="dn-botm" style="display: list-item;">Flame Length: 1000mm</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:50px;">
+                                    <img src="assets/images/pr/pr99.webp" alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Duct Fire Burner LV AIRFLO</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Series LV AIRFLO® burners provide
+                                          stable, efficient, raw gas
+                                          operations in air streams with relatively low duct velocities</p>
+                                       <p class="dn-botm" style="display: list-item;">Duct static pressure drops may be
+                                          as low as 0.2” wc</p>
+                                       <p class="dn-botm" style="display: list-item;">Produces clean and odor-free
+                                          combustion with natural or
+                                          propane gases</p>
+                                       <p class="dn-botm" style="display: list-item;">Air stream temperatures upstream
+                                          of a Series LV AIRFLO® burner
+                                          can be up to 1050°F</p>
+                                       <p class="dn-botm" style="display: list-item;">Low air stream oxygen levels can
+                                          be tolerated without a need
+                                          to add primary combustion air to the system</p>
+                                       <p class="dn-botm" style="display: list-item;">Modular burner design provides
+                                          burner assembly configurations
+                                          and total heat release for maximum application flexibility</p>
+                                       <p class="dn-botm" style="display: list-item;">17 varieties of Series LV AIRFLO®
+                                          burners available, each
+                                          optimized in materials and/or performance factors to match your specific
+                                          application requirements</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr100.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Linear Array Burner COMBUSTIFUME</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">For direct-fired fume incineration
+                                          and higher temperature
+                                          process air heating applications</p>
+                                       <p class="dn-botm" style="display: list-item;">Modular burner design provides
+                                          burner assembly configurations
+                                          and total heat release for maximum application flexibility</p>
+                                       <p class="dn-botm" style="display: list-item;">COMBUSTIFUME® Burner provides
+                                          stable, efficient, raw gas
+                                          operations in air streams with oxygen levels as low as 16% (by volume), or
+                                          with inlet temperatures up to 1050°F (566°C)</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns clean and odor-free with low
+                                          levels of NOx production
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">When air stream oxygen content is
+                                          low, primary combustion air
+                                          may be added through the COMBUSTIFUME® Burner system to produce combustion of
+                                          most clean gaseous fuels</p>
+                                       <p class="dn-botm" style="display: list-item;">Fume incineration costs are
+                                          minimized by direct firing
+                                          COMBUSTIFUME® Burner in the effluent air stream</p>
+                                       <p class="dn-botm" style="display: list-item;">12 different varieties of
+                                          COMBUSTIFUME® Line Burners
+                                          available, each optimized in materials and/or performance factors to match
+                                          your specific application requirements</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr101.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             M-PAKT</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Produces extremely low emissions
+                                          of NOx and CO</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns natural gas or propane</p>
+                                       <p class="dn-botm" style="display: list-item;">Flame contained almost entirely
+                                          inside the discharge sleeve
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Compact packaged design with a
+                                          variety of control methods</p>
+                                       <p class="dn-botm" style="display: list-item;">Durable steel outer construction
+                                          with stainless steel
+                                          internals</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr103.webp" alt="img" style="width: 50%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Tube-O-Flame</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Nozzle-mixing, refractory-less
+                                          burners for tube firing</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns any clean, low pressure fuel
+                                          gas</p>
+                                       <p class="dn-botm" style="display: list-item;">Increases heat transfer
+                                          efficiencies with long, swirling flame
+                                          pattern</p>
+                                       <p class="dn-botm" style="display: list-item;">Promotes faster bring-up times
+                                          with 20:1 turndown capabilities
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Easy installation due to
+                                          flange-mounted compact design</p>
+                                       <p class="dn-botm" style="display: list-item;">Simple start-up and field
+                                          adjustments</p>
+                                       <p class="dn-botm" style="display: list-item;">Low horsepower requirements reduce
+                                          initial and operating costs
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Produces low levels of NOx in
+                                          combustion products</p>
+                                       <p class="dn-botm" style="display: list-item;">Generates less noise than
+                                          open-port tube firing</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr104.jpg" alt="img" style="width: 50%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Tube-O-Therm</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Fires directly into small-bore
+                                          immersion tubes</p>
+                                       <p class="dn-botm" style="display: list-item;">Burner-to-tube direct firing
+                                          system allows uniform heat
+                                          transfer, eliminates “hot spots”, and produces faster bring-up times</p>
+                                       <p class="dn-botm" style="display: list-item;">Economical and efficient package
+                                          design with integral low
+                                          power blower costs less and saves energy (external blower models also
+                                          available)</p>
+                                       <p class="dn-botm" style="display: list-item;">No hassle installation and easy
+                                          maintenance access with wall
+                                          mounted design</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns natural, propane or butane
+                                          gas and produces reduced
+                                          levels of NOx and CO</p>
+                                       <p class="dn-botm" style="display: list-item;">Flame scanner capability for all
+                                          sizes</p>
+                                       <p class="dn-botm" style="display: list-item;">Four models sized for 3”, 4”, 6”,
+                                          8” and 10” diameter tubes
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Heat releases up to 8,500,000
+                                          Btu/hr</p>
+                                       <p class="dn-botm" style="display: list-item;">No powered exhaust required,
+                                          saving energy</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:70px;">
+                                    <img src="assets/images/pr/pr106.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             KINEDIZER LE</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Field proven low emissions.
+                                          State-of-the-art low NOx firing -
+                                          adjustable for application flexibility</p>
+                                       <p class="dn-botm" style="display: list-item;">Lower NOx and less excess air than
+                                          standard KINEDIZER® burners
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Rugged design for oxidizers,
+                                          process heaters, kilns, furnaces,
+                                          dryers, waste incineration and other high temperature applications</p>
+                                       <p class="dn-botm" style="display: list-item;">Available in a wide range of
+                                          capacities, each with turndown as
+                                          high as 20:1</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns natural gas, propane or
+                                          other fuel gases</p>
+                                       <p class="dn-botm" style="display: list-item;">Provides excellent stirring and
+                                          mixing with its medium
+                                          velocity exhaust</p>
+                                       <p class="dn-botm" style="display: list-item;">Accepts preheated and vitiated
+                                          combustion air</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr107.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             KINEMax LE</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Exit velocities up to 275 ft/s
+                                          (190 miles/h) to promote
+                                          workload heat penetration and better furnace temperature uniformity</p>
+                                       <p class="dn-botm" style="display: list-item;">Operate on-ratio, with excess fuel
+                                          or with excess air to meet
+                                          the specific demands of your combustion process needs</p>
+                                       <p class="dn-botm" style="display: list-item;">Burns most clean, low pressure
+                                          gaseous fuels or light oil</p>
+                                       <p class="dn-botm" style="display: list-item;">Turndown capability up to 48:1</p>
+                                       <p class="dn-botm" style="display: list-item;">Maximum application flexibility
+                                          with 7 different sizes and
+                                          maximum capacities ranging from 0.38 MBtu/h up to 8.4 MBtu/h</p>
+                                       <p class="dn-botm" style="display: list-item;">Lower fuel consumption using
+                                          preheated combustion air (up to
+                                          800 °F)</p>
+                                       <p class="dn-botm" style="display: list-item;">Refractory block for chamber
+                                          temperatures up to 3000 °F</p>
+                                       <p class="dn-botm" style="display: list-item;">Removable backplate, providing
+                                          access for easy inspection
+                                          and/or maintenance</p>
+                                       <p class="dn-botm" style="display: list-item;">KINEMAX® burners can be used with
+                                          oxygen enriched combustion
+                                          air</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr108.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             CROSSFIRE</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">High moisture air streams</p>
+                                       <p class="dn-botm" style="display: list-item;">Low O2 air streams</p>
+                                       <p class="dn-botm" style="display: list-item;">Highly inert air streams</p>
+                                       <p class="dn-botm" style="display: list-item;">Parallel velocities up to 4000
+                                          fpm, cross velocities up to
+                                          3000 fpm</p>
+                                       <p class="dn-botm" style="display: list-item;">NOx levels of 25 ppm and CO levels
+                                          of 250 ppm at 3% O2 are
+                                          possible</p>
+                                       <p class="dn-botm" style="display: list-item;">Contact your Maxon sales
+                                          representative about your specific
+                                          application</p>
+                                       <p class="dn-botm" style="display: list-item;">Temperature uniformity to enhance
+                                          product quality</p>
+                                       <p class="dn-botm" style="display: list-item;">Up to 25:1 turndown for process
+                                          flexibility</p>
+                                       <p class="dn-botm" style="display: list-item;">High firing capacity - up to
+                                          2,500,000 Btu/hr/ft (732 kW/ft)
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Nozzle-mixing line burner for use
+                                          with low pressure natural
+                                          gas firing</p>
+                                       <p class="dn-botm" style="display: list-item;">Also available in stainless steel
+                                          housings and nickel-plated
+                                          body versions</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr109.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             OPTIMA SLS</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Extremely Clean, reliable heat
+                                          with ultra Low NOx and CO
+                                          production for ease of air permitting and environmental compliance</p>
+                                       <p class="dn-botm" style="display: list-item;">Large capacity heat releases with
+                                          a compact, robust flame
+                                          geometry</p>
+                                       <p class="dn-botm" style="display: list-item;">Intelligent ratio control for
+                                          reliable operation and optimal
+                                          fuel efficiency</p>
+                                       <p class="dn-botm" style="display: list-item;">Direct factory operational support
+                                          with optional communication
+                                          gateway</p>
+                                       <p class="dn-botm" style="display: list-item;">All steel and high temperature
+                                          alloy construction for reduced
+                                          weight and increased durability</p>
+                                       <p class="dn-botm" style="display: list-item;">Fuel flexible with natural gas,
+                                          propane, and butane
+                                          capability. Contact MAXON for other fuels</p>
+                                       <p class="dn-botm" style="display: list-item;">Configurable for dryers, air
+                                          heaters, ovens, kilns, process
+                                          heaters, paper machines, and a variety of other industrial heating equipment
+                                       </p>
+
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr110.jpg" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Pilot Burner VALUPAK</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">High turndown.</p>
+                                       <p class="dn-botm" style="display: list-item;">Available in 6 sizes</p>
+                                       <p class="dn-botm" style="display: list-item;">Capacities: 0.007 MBtu/hr - 4
+                                          MBtu/hr.</p>
+                                       <p class="dn-botm" style="display: list-item;">Stable and clean combustion.</p>
+                                       <p class="dn-botm" style="display: list-item;">Suitable for UV scanner and flame
+                                          rod.</p>
+                                       <p class="dn-botm" style="display: list-item;">Natural gas and LPG.</p>
+                                       <p class="dn-botm" style="display: list-item;">Low gas pressure requirements.</p>
+                                       <p class="dn-botm" style="display: list-item;">Ease of installation and operation
+                                          with low maintenance
+                                          requirements.</p>
+                                       <p class="dn-botm" style="display: list-item;">All metal construction.</p>
+                                       <p class="dn-botm" style="display: list-item;">Multi voltage and frequency blower
+                                          motors.</p>
+
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </section>
+
+                  </div>
+               </div>
+            </div><section class="contact-section" style="padding-top: 40px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-12">
+                        <h3 style="text-align: center;">Kromschroeder</h3>
+                     </div>
+
+                  </div>
+               </div>
+            </section>
+
+
+            <div class="auto-container">
+               <div class="row default_row">
+                  <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                     <section class="blog_post_section one_column style_two">
+                        <div class="pd_top_60"></div>
+                        <div class="grid_show_case grid_layout clearfix">
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr113.webp" class="c-pr-img" style="width: 70%;"
+                                       alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             BIO</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Burner size: 50 to 200</p>
+                                       <p class="dn-botm" style="display: list-item;">Capacity: 40 to 1000 kW</p>
+                                       <p class="dn-botm" style="display: list-item;">Uses: cold air, hot air, flat flame,
+                                          high-temperature
+                                          applications</p>
+                                       <p class="dn-botm" style="display: list-item;">Fuel Type: natural gas, coke oven gas, town
+                                          gas
+                                          or liquefied
+                                          gases as well as biologically produced methane or low calorific value gases
+                                          upon request</p>
+                                       <p class="dn-botm" style="display: list-item;">Burner length: 50 to 1000 mm
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Gas connection: threaded</p>
+                                       <p class="dn-botm" style="display: list-item;">Air connection: threaded or flanged (BIOA:
+                                          tube
+                                          connection)</p>
+                                       <p class="dn-botm" style="display: list-item;">Versions Available: burner with integrated
+                                          ignition lance,
+                                          housing with internal insulation
+                                       </p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+
+                  </div>
+
+               </div>
+            </div>
+
+           
+                          
+               
+
+            <div class="auto-container">
+               <div class="row default_row">
+                  <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                     <section class="blog_post_section one_column style_two">
+                        <div class="pd_top_60"></div>
+                        <div class="grid_show_case grid_layout clearfix">
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr111.webp" class="c-pr-img" style="width: 70%;"
+                                       alt="img">
+                                 </div>
+                                 <div class="content_box" style="margin-top: 80px;">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             BICR</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Self-recuperative furnace
+                                          burner
+                                          with a small footprint</p>
+                                       <p class="dn-botm" style="display: list-item;">Burner size: 65/50 to 100/80
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Capacity: 20 to 100 kW</p>
+                                       <p class="dn-botm" style="display: list-item;">Fuel type: natural gas or
+                                          liquefied gases</p>
+                                       <p class="dn-botm" style="display: list-item;">Threaded air and gas
+                                          connections
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:50px;">
+                                    <img src="assets/images/pr/pr98.webp" alt="img" style="width: 70%;">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             ECOMAX</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Burners with integrated
+                                          recuperator for direct or indirect
+                                          heating of furnace systems</p>
+                                       <p class="dn-botm" style="display: list-item;">3 versions: with ceramic burled
+                                          tube recuperator, cast steel
+                                          ribbed tube recuperator or flat tube recuperator</p>
+                                       <p class="dn-botm" style="display: list-item;">7 sizes from 25 to 500 kW</p>
+                                       <p class="dn-botm" style="display: list-item;">Direct ignition and monitoring
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Gas type: natural gas, town
+                                          gas,
+                                          LPG or LCV gas</p>
+                                       <p class="dn-botm" style="display: list-item;">Flame velocity: 120 to 150 m/s
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Control: ON/OFF</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr98.webp" alt="img" style="width: 70%;">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             ECOMAX LE</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Flame and Flameless modes:
+                                          switching temperature of 850°C
+                                          (1560°F)</p>
+                                       <p class="dn-botm" style="display: list-item;">Up to 7% improved efficiency
+                                          over
+                                          standard ECOMAX®</p>
+                                       <p class="dn-botm" style="display: list-item;">3 burner sizes covering a
+                                          capacity
+                                          range of 36 to 100 kW (136
+                                          to 378 kBTU/h)</p>
+                                       <p class="dn-botm" style="display: list-item;">Available with metallic
+                                          recuperator (..M) or with a ceramic
+                                          recuperator (..C)</p>
+                                       <p class="dn-botm" style="display: list-item;">Fits in the same footprint as
+                                          the
+                                          current Ecomax® for easy
+                                          upgrades</p>
+                                       <p class="dn-botm" style="display: list-item;">Packaged with BCU4 series
+                                          controls
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Fuel type: natural gas, gas
+                                          supply
+                                          pressure 80 mbar / 32” w.c.
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Air supply pressure 90 mbar /
+                                          36”
+                                          w.c.</p>
+                                       <p class="dn-botm" style="display: list-item;">Flame velocity: 120 to 150 m/s
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Control: ON/OFF or HIGH/LOW
+                                          pulse
+                                       </p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr112.webp" alt="img" style="width: 70%;">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             BIC Burner</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Burner sizes: 50 to 200</p>
+                                       <p class="dn-botm" style="display: list-item;">Capacity: 10 to 1000 kW</p>
+                                       <p class="dn-botm" style="display: list-item;">Uses: cold air, hot air, flat
+                                          flame, and high-temperature
+                                          applications</p>
+                                       <p class="dn-botm" style="display: list-item;">Fuel Types: natural gas, coke
+                                          oven
+                                          gas, town gas or liquefied
+                                          gases as well as biologically produced methane or low calorific value gases
+                                          upon consultation</p>
+                                       <p class="dn-botm" style="display: list-item;">Burner length: 300 to 1200 mm
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Gas Connection: threaded</p>
+                                       <p class="dn-botm" style="display: list-item;">Versions Available: burner with
+                                          integrated ignition lance,
+                                          housing with internal insulation</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+
+                        </div>
+                     </section>
+
+                  </div>
+               </div>
+            </div>
+
+
+            <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-12">
+                        <h3 style="text-align: center;">ECLIPSE</h3>
+                     </div>
+
+                  </div>
+               </div>
+            </section>
+
+
+            <div class="auto-container">
+               <div class="row default_row">
+                  <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                     <section class="blog_post_section one_column style_two">
+                        <div class="pd_top_60"></div>
+                        <div class="grid_show_case grid_layout clearfix">
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr92.webp" class="c-pr-img" style="width: 60%;"
+                                       alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Thermjet</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">The ThermJet features the
+                                          highest
+                                          flame velocities available
+                                          in the industry.</p>
+                                       <p class="dn-botm" style="display: list-item;">Large turndown combined with
+                                          high
+                                          excess air. A wide turndown
+                                          range with high excess air means ThermJet delivers high velocity benefits
+                                          and
+                                          efficiencies across its operating range</p>
+
+                                       <p class="dn-botm" style="display: list-item;">Dependable ignition. With
+                                          ThermJet
+                                          you can light anywhere in
+                                          the ignition range with no pilot required</p>
+                                       <p class="dn-botm" style="display: list-item;">The burners are available in 14
+                                          sizes with maximum capacities
+                                          ranging from 150,000 to 20,000,000 Btu/hr</p>
+                                       <p class="dn-botm" style="display: list-item;">Installation, operation and
+                                          maintenance are simple and cost
+                                          effective.</p>
+                                       <p class="dn-botm" style="display: list-item;">The industry standard for
+                                          velocity
+                                          burners, the low NOx
+                                          ThermJet represents a technological leap forward in every area of design
+                                          and
+                                          performance.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr95.webp" alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Tube Firing Burner</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">Eclipse low emissions TFB
+                                          burners
+                                          are designed to fire radiant
+                                          and immersion tubes with inputs from 300,000 to 2,000,000 Btu/hr</p>
+                                       <p class="dn-botm" style="display: list-item;">Low NOx and low CO</p>
+                                       <p class="dn-botm" style="display: list-item;">Low excess air capability for
+                                          high
+                                          efficiency</p>
+                                       <p class="dn-botm" style="display: list-item;">Low air and gas pressure
+                                          requirements</p>
+                                       <p class="dn-botm" style="display: list-item;">High heat transfer at low noise
+                                          levels</p>
+                                       <p class="dn-botm" style="display: list-item;">Reliable ignition at a wide
+                                          range
+                                          of firing rates</p>
+                                       <p class="dn-botm" style="display: list-item;">Can be fitted with Eclipse
+                                          Bayonet-Ultra recuperators for
+                                          maximum system efficiency</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr96.webp" alt="img" style="width: 70%">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Bayonet Ultra Recuperator</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">High efficiency plug in
+                                          recuperators designed to be paired
+                                          with the Tube Firing Burner for improved fuel usage</p>
+                                       <p class="dn-botm" style="display: list-item;">They're frequently paired with
+                                          Tube Firing burners and
+                                          suitable for use with exhaust streams up to 2100 Degrees Fahrenheit provide
+                                          fuel savings up to 30%. Conventional recuperators have only one heat
+                                          transfer
+                                          tube</p>
+                                       <p class="dn-botm" style="display: list-item;">Versatility and adaptability
+                                          are
+                                          designed into the
+                                          Bayonet-Ultra</p>
+                                       <p class="dn-botm" style="display: list-item;">New or retrofit installations
+                                          rarely require special
+                                          brickwork, radiant tube or exhaust modifications</p>
+                                       <p class="dn-botm" style="display: list-item;">Bayonet-Ultra recuperators are
+                                          available in four sizes to fit
+                                          radiant tubes with inside diameters from 3" to 8"</p>
+                                       <p class="dn-botm" style="display: list-item;">A choice of pressure drops
+                                          makes
+                                          it easy to match most
+                                          existing blower systems</p>
+                                       <p class="dn-botm" style="display: list-item;">Tube lengths can be adjusted to
+                                          meet exact installation
+                                          requirements</p>
+                                       <p class="dn-botm" style="display: list-item;">During installation,
+                                          multiple-tube
+                                          furnaces don’t have to be
+                                          shut down; only the tube being fitted</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr93.webp" alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             BrightFire 200</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">The BrightFire 200 burner
+                                          provides
+                                          superior flame and heat
+                                          transfer adjustability by providing a gas flow adjustment in addition to
+                                          area
+                                          adjustment.</p>
+                                       <p class="dn-botm" style="display: list-item;">Very low NOx</p>
+                                       <p class="dn-botm" style="display: list-item;">Can be tuned to maximize heat
+                                          transfer and minimize NOx</p>
+                                       <p class="dn-botm" style="display: list-item;">Single gas connection for
+                                          simplified, cost effective
+                                          application</p>
+                                       <p class="dn-botm" style="display: list-item;">Compatible with Eclipse
+                                          mounting
+                                          bracket and socket plate for
+                                          easy installation</p>
+                                       <p class="dn-botm" style="display: list-item;">Compatible with current
+                                          BrightFire
+                                          gas and cooling air
+                                          connections for easy conversion</p>
+                                       <p class="dn-botm" style="display: list-item;">Nozzle combinations allow
+                                          firing
+                                          to be tailored to furnace
+                                          requirements</p>
+                                       <p class="dn-botm" style="display: list-item;">Durable construction</p>
+                                       <p class="dn-botm" style="display: list-item;">Low maintenance</p>
+                                       <p class="dn-botm" style="display: list-item;">Improved glass quality</p>
+                                       <p class="dn-botm" style="display: list-item;">Reduced fuel usage due to
+                                          improved
+                                          heat transfer into the
+                                          glass</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr94.webp" alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             Single Ended Radiant Tube Burner (SER)</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">The new, high efficiency
+                                          recuperator design incorporates a
+                                          unique dual finned combustor to provide an increased heat transfer surface
+                                          for
+                                          greater fuel savings</p>
+                                       <p class="dn-botm" style="display: list-item;">SER delivers exceptional heat
+                                          flux
+                                          and temperature uniformity
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">SER cuts fuel costs from 35% to
+                                          55% over sealed ambient air
+                                          burners and even more when replacing atmospheric type burners</p>
+                                       <p class="dn-botm" style="display: list-item;">NOx emissions are reduced by
+                                          more
+                                          than 50% over conventional
+                                          recuperative burners</p>
+                                       <p class="dn-botm" style="display: list-item;">Self-recuperative design
+                                          eliminates the need for external
+                                          recuperators and insulated piping</p>
+                                       <p class="dn-botm" style="display: list-item;">The insulated mounting flange
+                                          and
+                                          exhaust housing improve heat
+                                          recovery while creating a much cooler working environment</p>
+                                       <p class="dn-botm" style="display: list-item;">Burners can be installed either
+                                          vertically or horizontally in
+                                          nearly any furnace, either gas or electric.</p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
+
+
+
+
+
+                        </div>
+                     </section>
+
+                  </div>
+
+               </div>
+            </div>
+
+
+            <section class="contact-section" style="padding-top: 40px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-12">
+                        <h3 style="text-align: center;">HAUCK</h3>
+                     </div>
+
+                  </div>
+               </div>
+            </section>
+
+
+            <div class="auto-container">
+               <div class="row default_row">
+                  <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                     <section class="blog_post_section one_column style_two">
+                        <div class="pd_top_60"></div>
+                        <div class="grid_show_case grid_layout clearfix">
+
+
+                           <div class="grid_box _card">
+                              <div class="news_box default_style list_view has_images">
+                                 <div class="image img_hover-1" style="text-align: center;margin-top:40px;">
+                                    <img src="assets/images/pr/pr118.webp" class="c-pr-img" style="width: 70%;"
+                                       alt="img">
+                                 </div>
+                                 <div class="content_box">
+                                    <div class="source">
+                                       <h2 class="title">
+                                          <a href="javascript:;" rel="bookmark">
+                                             MegaStar</a>
+                                       </h2>
+                                       <p class="dn-botm" style="display: list-item;">The MegaStar burner supports a
+                                          wide variety of liquid and
+                                          gaseous fuels offering flexibility for optimizing fuel costs. </p>
+                                       <p class="dn-botm" style="display: list-item;">Emissions of NOX, CO and VOCs
+                                          are
+                                          minimized with proven and
+                                          effective technologies.</p>
+                                       <p class="dn-botm" style="display: list-item;">Available in sizes ranging from
+                                          a
+                                          nominal 25 to 150 million
+                                          Btu/h (7,327 to 43, 960 kW), for applications up to 1500 ºF (815 ºC).
+                                          Custom
+                                          lengths are also available for warm-mix applications.</p>
+                                       <p class="dn-botm" style="display: list-item;">Low motor starting current
+                                          reduces
+                                          utility demand charges</p>
+                                       <p class="dn-botm" style="display: list-item;">Ideal for sand drying
+                                          applications
+                                       </p>
+                                       <p class="dn-botm" style="display: list-item;">Reduction of thermal and
+                                          mechanical stresses on the motor
+                                          during starts</p>
+                                       <p class="dn-botm" style="display: list-item;">Standard and longnose versions
+                                          available</p>
+                                       <p class="dn-botm" style="display: list-item;">Simple installation and set-up
+                                       </p>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+
+      <div class="sliding_form slide_out">
+         <a href="javascript:;" id="form_trigger">Get Quote</a>
+         <div class="sliding_form_inner">
+            <form class="fastconc" method="post">
+
+               <h4 class="g-qute">Get Quote</h4>
+               <div class="form-group">
+                  <div class="col-md-12">
+                     <input type="text" name="name" placeholder="Name" class="fields_box" required>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="col-md-12">
+                     <input type="text" name="email" placeholder="Email" class="fields_box" required>
+                  </div>
+                  <div class="col-md-12">
+                     <input type="text" name="phone" placeholder="Phone" class="fields_box" required>
+                  </div>
+               </div>
+
+
+               <div class="form-group">
+                  <div class="col-md-12">
+                     <textarea name="enquiry" placeholder="Enquiry" required></textarea>
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <div class="col-md-12">
+                     <button class="theme-btn one animated"
+                        style="background: #ae0809;color: #fff;width: 100%;">Submit</button>
+                  </div>
+               </div>
+
+            </form>
+         </div>
+      </div>
+
+
+      <div class="footer_area" id="footer_contents">
+         <div class="footer_widgets_wrap bg_dark_2">
+            <div class="pd_top_80"></div>
+            <div class="container">
+               <div class="row">
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Get In Touch</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6> Location</h6>
+                                 <p>
+                                    614, Kirti Shikhar, District Centre, Janak Puri, New Delhi -110 058, Delhi
+                                 </p>
+                              </div>
+                              <div class="bottom">
+                                 <h6> Contact</h6>
+                                 <div class="con_content">
+                                    <h5> Phone :</h5>
+                                    <a href="tel:011-25516281"> 011-25516281</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5> Mail Us :</h5>
+                                    <a href="tel:mantech@mantech.in"> mantech@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Quick Links</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+
+                              <ul class="menu">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>
+                                 <li><a href="client.html">Clients</a></li>
+                                 <li><a href="knowledge-bank.html">Knowledge Bank</a></li>
+                                 <li><a href="case.html">Case Studies</a></li>
+                                 <li><a href="career.html">Career</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2> Our Expertise</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+
+                                 <ul class="menu">
+                                    <li><a href="honeywell-thermal-solutions.html">Honeywell Thermal Solutions</a>
+                                    </li>
+                                    <li><a href="honeywell-analytics.html">Honeywell Analytics</a></li>
+                                    <li><a href="drae-ger.html">Draeger</a></li>
+
+                                 </ul>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+                              </a>
+                              <div class="pd_bottom_30"></div>
+                           </div>
+                           <div class="content_box">
+                              <p>
+                                 Established in 1996, MANTECH AUTOMATION today is the leading products and solution
+                                 provider in the field of Industrial Automation, Thermal Solutions, Gas Leak
+                                 Detection,
+                                 and Fluid Control.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="pd_bottom_50"></div>
+         </div>
+         <div class="creote-footer-copyright bg_dark_3">
+
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content color_white">
+                        © 2023 - Mantech. Designed and Developed by
+                        <a target="_blank" rel="nofollow" href="https://mararmedia.com/" style="color: #fff;">Marar
+                           Media</a>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 text-md-end">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content_right">
+                        <div class="social_media_v_one">
+                           <ul>
+                              <li>
+                                 <a href="https://www.facebook.com/mantech.automation.33" target="_blank">
+                                    <span class="fa fa-facebook"></span>
+                                    <small>facebook</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ=="
+                                    target="_blank">
+                                    <span class="fa fa-instagram"></span>
+                                    <small>Instagram</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                    <small>linkedin</small>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="crt_mobile_menu">
+         <div class="menu-backdrop"></div>
+         <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <form role="search" method="get" action="#">
+               <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+               <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+            </form>
+            <div class="menu-outer">
+
+            </div>
+         </nav>
+      </div>
+
+      <div id="search-popup" class="search-popup">
+         <div class="close-search"><i class="fa fa-times"></i></div>
+         <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+               <fieldset>
+                  <form role="search" method="get" action="#">
+                     <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                  </form>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal_popup one">
+         <div class="modal-popup-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <div class="modal_box">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12 form_inner">
+                     <div class="form_content">
+                        <form class="contact-form fastconc" method="post" action="">
+                           <p>
+                              <label>Name<br />
+                                 <input type="text" name="name" value="" aria-required="true" aria-invalid="false"
+                                    placeholder="Enter Name" />
+                                 <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label>Email<br />
+                                 <input type="email" name="email" aria-required="true" aria-invalid="false"
+                                    placeholder="Enter Email" />
+                                 <br />
+                                 <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Phone<br />
+                                 <input type="text" name="phone" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Phne no" />
+                                 <br />
+                                 <i class="fa fa-phone"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Enquiry<br />
+                                 <textarea name="enquiry" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    aria-invalid="false" placeholder="Enquiry"></textarea>
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><button class="theme-btn one animated"
+                                 style="background: #ae0809;color: #fff;width: 100%;">Submit</button></p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about_company_inner">
+                     <div class="abt_content">
+                        <div class="logo">
+                           <img src="assets/images/logo.png" alt="img" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                           <p> Thank you for reaching out to us! We appreciate the time you took to fill out our
+                              inquiry
+                              form. Your message is important to us, and we will make every effort to respond as
+                              quickly
+                              as possible.</p>
+                           <p>Our team is dedicated to providing excellent service, and we are thrilled that you are
+                              considering us</p>
+                           <p>Rest assured that we have received your information and will get back to you shortly
+                           </p>
+                           <p>In the meantime, if you have any urgent matters or additional details to share, please
+                              feel free to contact us directly at enquiry@mantech.in, mantech@mantech.in</p>
+                           <p>Thank you once again for choosing Mantech. We look forward to the opportunity to assist
+                              you.</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="side_bar_cart" id="mini_cart">
+         <div class="cart_overlay"></div>
+         <div class="cart_right_conten">
+            <div class="close">
+               <div class="close_btn_mini"><i class="icon-close"></i></div>
+            </div>
+            <div class="cart_content_box">
+               <div class="contnet_cart_box">
+                  <div class="widget_shopping_cart_content">
+                     <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="floating_menu_box">
+         <ul class="float_menu_box">
+            <i class="close fa fa-times"></i>
+            <li class="floating_menu_text active">
+               <a href="index.html"> Home </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="about.html">About Us</a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="client.html"> Clients </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="knowledge-bank.html">Knowledge Bank </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="case.html"> Case Studies </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="career.html"> Career </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="contact.html"> Contact </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+
+   <script>
+      $(document).ready(function () {
+
+         var formWidth = $('.sliding_form').width();
+         $('.sliding_form').css('right', '-' + formWidth + 'px');
+         $("#form_trigger").on('click', function () {
+
+            if ($('.sliding_form').hasClass('slide_out')) {
+               $('.sliding_form').removeClass('slide_out').addClass('slide_in')
+               $(".sliding_form").animate({ right: 0 + 'px' });
+            } else {
+               $('.sliding_form').removeClass('slide_in').addClass('slide_out')
+               $('.sliding_form').animate({ right: '-' + formWidth + 'px' });
+            }
+
+         });
+      });
+   </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Mantech | Kromschroder</title>
+   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+
+
+   <style>
+      .c-height
+      {
+         height: 400px;
+      }
+
+      .im-sr
+      {
+         border: 1px solid #eee;
+         text-align: center;
+         padding: 5px 0px 10px 0px;
+         margin-bottom: 30px;
+      }
+
+      .container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content input{
+  display: none;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  margin-right: 50px;
+}
+
+.content .list label{
+  cursor: pointer;
+  height: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  /*padding-left: 25px;*/
+  color: #2f2f2f;
+  transition: all 0.5s ease;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#elec:checked ~ .list label.elec,
+#indus:checked ~ .list label.indus,
+#monts:checked ~ .list label.monts,
+#burne:checked ~ .list label.burne,
+#acces:checked ~ .list label.acces,
+#gas:checked ~ .list label.gas,
+#about:checked ~ .list label.about{
+  color: #AE0809;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  /*border-radius: 12px;*/
+  transition: all 0.5s ease;
+  
+  /*background: #ae0809;*/
+}
+
+#home:checked ~ .list .slider{
+  top: 0;
+}
+
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+
+#elec:checked ~ .list .slider{
+  top: 300px;
+}
+
+#indus:checked ~ .list .slider{
+  top: 360px;
+}
+
+#monts:checked ~ .list .slider{
+  top: 420px;
+}
+
+#burne:checked ~ .list .slider{
+  top: 480px;
+}
+
+#acces:checked ~ .list .slider{
+  top: 540px;
+}
+
+#gas:checked ~ .list .slider{
+  top: 600px;
+}
+
+.content .text-content{
+  width: 60%;
+  height: 100%;
+  color: #2f2f2f;
+}
+
+.content .text{
+  display: none;
+}
+
+.content .text .title{
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.container .text p{
+  text-align: justify;
+}
+
+.content .text-content .home{
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#elec:checked ~ .text-content .elec,
+#indus:checked ~ .text-content .indus,
+#monts:checked ~ .text-content .monts,
+#burne:checked ~ .text-content .burne,
+#acces:checked ~ .text-content .acces,
+#gas:checked ~ .text-content .gas,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#elec:checked ~ .text-content .home,
+#indus:checked ~ .text-content .home,
+#monts:checked ~ .text-content .home,
+#burne:checked ~ .text-content .home,
+#acces:checked ~ .text-content .home,
+#gas:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+
+.im-image
+{
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.im-images
+{
+   border: 1px solid #ccc;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.c-botm
+{
+   margin-bottom: 40px;
+}
+
+.dn-botm
+{
+  margin-bottom: 5px!important;
+  font-weight: 700;
+}
+
+   </style>
+</head>
+<body class="theme-creote">
+   <div id="page" class="page_wapper hfeed site">
+      <div id="wrapper_full" class="content_all_warpper">
+         <div class="header_area" id="header_contents">
+            <div class="top_bar style_one">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-12">
+                        <div class="top_inner">
+                           <div class="left_side common_css">
+                              <div class="contntent address">
+                                 <i class="icon-placeholder"></i>
+                                 <div class="text">
+                                    <small>Corporate Office</small>
+                                    <span>Janakpuri, New Delhi</span>
+                                 </div>
+                              </div>
+                              <div class="contntent email">
+                                 <i class="icon-email"></i>
+                                 <div class="text">
+                                    <small>Email</small>
+                                    <a href="mailto:enquiry@mantech.in">enquiry@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="right_side common_css">
+                              <div class="contntent phone">
+                                 <i class="icon-phone-call"></i>
+                                 <div class="text">
+                                    <small>Phone</small>
+                                    <a href="tel:011-25516281">011-25516281</a>
+                                 </div>
+                              </div>
+                              <div class="contntent media">
+                                 
+                                 <div class="text">
+                                    <a href="https://www.facebook.com/mantech.automation.33" target=_blank rel=nofollow>
+                                       <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target=_blank rel=nofollow>
+                                       <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target=_blank rel=nofollow>
+                                       <i class="fa fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <header class="header header_default style_one get_sticky_header">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
+                        <div class="header_logo_box">
+                           <a href="index.html" class="logo navbar-brand">
+                              <img src="assets/images/logo.png" alt="" class="logo_default">
+                              <img src="assets/images/logo.png" alt="" class="logo__sticky">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
+                        <div class="navbar_togglers hamburger_menu">
+                           <span class="line"></span>
+                           <span class="line"></span>
+                           <span class="line"></span>
+                        </div>
+                        <div class="header_content_collapse">
+                           <div class="header_menu_box">
+                              <div class="navigation_menu">
+                                 <ul id="myNavbar" class="navbar_nav">
+                                    <li class="menu-item">
+                                       <a href="index.html" class="dropdown-toggle nav-link">
+                                          <span>Home</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="about.html" class="dropdown-toggle nav-link">
+                                          <span>About Us</span>
+                                       </a>
+                                    </li>
+                                    
+                                   <li
+                                       class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                       <a href="javascript:;" class="dropdown-toggle nav-link"><span>Products</span></a>
+                                       <ul class="dropdown-menu width_60_percentage">
+                                          <li>
+                                             <div class="row">
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-thermal-solutions.html"><h5 class="h-thrml">Honeywell Thermal Solutions</h5></a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="burners.html">
+                                                               <img src="assets/images/mn.png" class="im-menu">
+                                                               <p class="brn-mn">Burners</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="sequence-controllers.html">
+                                                               <img src="assets/images/mn1.png" class="im-menu">
+                                                               <p class="brn-mn">Sequence Controllers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="regulators-valves.html">
+                                                               <img src="assets/images/mn2.png" class="im-menu">
+                                                               <p class="brn-mn">Regulators, Valves & Actuators</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="filters-pressure-switch.html">
+                                                               <img src="assets/images/mn3.png" class="im-menu">
+                                                               <p class="brn-mn">Filters, Pressure Switch & Gauges</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="ignition.html">
+                                                               <img src="assets/images/mn12.png" class="im-menu">
+                                                               <p class="brn-mn">Ignition And Flame Monitoring</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="customized-solutions.html">
+                                                               <img src="assets/images/mn13.png" class="im-menu">
+                                                               <p class="brn-mn">Customized <br>Solutions</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                                
+                                                
+
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-analytics.html">
+                                                    <h5 class="h-thrml">Honeywell Analytics</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honey-fixed.html">
+                                                               <img src="assets/images/mn4.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Fixed Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="fixed-type-flame-detectors.html">
+                                                               <img src="assets/images/mn5.png" class="im-menu">
+                                                               <p class="brn-mn">Fixed Type Flame Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                    <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="gas-detection-control-panel.html">
+                                                               <img src="assets/images/mn6.png" class="im-menu">
+                                                               <p class="brn-mn">GAS Detection Control Panel</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honeywell-portable-gas-detectors.html">
+                                                               <img src="assets/images/mn8.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Portable Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-lg-4 m_column">
+                                                   <a href="drae-ger.html">
+                                                    <h5 class="h-thrml">Draeger</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                      <div class="row">
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-protection.html">
+                                                               <img src="assets/images/mn11.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Protection Portfolio</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-flue.html">
+                                                               <img src="assets/images/mn9.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Flue Gas Analyzers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-impairment.html">
+                                                                  <img src="assets/images/mn10.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Impairment Check</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                    
+                                                   </div>
+                                                </div>
+
+                                       
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </li>
+
+                                    
+                                  
+                                    <li class="menu-item">
+                                       <a href="services.html" class="dropdown-toggle nav-link">
+                                          <span>Services</span>
+                                       </a>
+                                    </li>
+                                    
+                                    <li class="menu-item">
+                                       <a href="case.html" class="dropdown-toggle nav-link">
+                                          <span>Case Studies</span>
+                                       </a>
+                                    </li>
+                                    
+                                    
+                                       <li class="menu-item">
+                                          <a href="knowledge-bank.html" class="dropdown-toggle nav-link">
+                                             <span>Knowledge Bank</span>
+                                          </a>
+                                       </li>
+                                    <li class="menu-item">
+                                      <a href="client.html" class="dropdown-toggle nav-link">
+                                         <span>Clients</span>
+                                      </a>
+                                   </li>
+
+                                    <li class="menu-item">
+                                       <a href="career.html" class="dropdown-toggle nav-link">
+                                          <span>Career</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="contact.html" class="dropdown-toggle nav-link">
+                                          <span>Contact</span>
+                                       </a>
+                                    </li>
+                                 
+                                 
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="header_right_content">
+                              <ul>
+                                <li>
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+        
+
+
+
+   <div id="content" class="site-content">
+
+   <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Kromschroder</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+      <div class="container" style="margin-top:55px;margin-bottom: 50px;">
+        <div class="content">
+            <input type="radio" name="slider" checked id="home">
+            <input type="radio" name="slider" id="blog">
+            <input type="radio" name="slider" id="help">
+            <input type="radio" name="slider" id="code">
+            <input type="radio" name="slider" id="about">
+            <input type="radio" name="slider" id="elec">
+            <input type="radio" name="slider" id="indus">
+            <input type="radio" name="slider" id="monts">
+            <input type="radio" name="slider" id="burne">
+            <input type="radio" name="slider" id="acces">
+            <input type="radio" name="slider" id="gas">
+
+            <div class="list">
+                <label for="home" class="home">
+                    <span>Manual Valves and Filters</span>
+                </label>
+                <label for="blog" class="blog">
+                    <span>Pressure Regulators</span>
+                </label>
+                <label for="help" class="help">
+                    <span>Valves and Butterfly Valves</span>
+                </label>
+                <label for="code" class="code">
+                    <span>Pressure Switches</span>
+                </label>
+
+                <label for="about" class="about">
+                    <span>Combination Controls and Moduline</span>
+                </label>
+
+                <label for="elec" class="elec">
+                    <span>Electric Flame Monitoring and Control Units</span>
+                </label>
+
+                <label for="indus" class="indus">
+                    <span>Industrial Burners</span>
+                </label>
+
+                 <label for="monts" class="monts">
+                    <span>Further Ignition and Monitoring Components</span>
+                </label>
+
+                <label for="burne" class="burne">
+                    <span>Pilot Burners and Thermo-electric Safety devices</span>
+                </label>
+
+                <label for="acces" class="acces">
+                    <span>Accessories</span>
+                </label>
+
+                <label for="gas" class="gas">
+                    <span>Gas Flow Meter</span>
+                </label>
+
+                <div class="slider"></div>
+            </div>
+
+            <div class="text-content">
+                <div class="home text">
+
+                 <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k1.jpg">
+                   </div>
+                        <div class="title">GAS FILTERS : GFK</div>
+                    <p><b>Description:</b></p>
+                    <p>Gas filters with polypropylene fleece filter pads (50 µm as standard) for cleaning gas and air, EC type-tested and certified.</p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 15 to 250,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection: Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 1, 4 or 6 bar.</p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k2.jpg">
+                   </div>
+
+                     <div class="title">MANUAL VALVES : AKT</div>
+                    <p><b>Description:</b></p>
+                    <p>Manual shut-off valves, for gas, air and water, EC type-tested and certified.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 6 to 250,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection: Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 4, 5 or 16 bar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Brass, Steel or Ductile Cast iron Housing</p>
+                </div>
+             </div>
+
+                </div>
+
+
+                <div class="blog text">
+                  <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k3.jpg">
+                   </div>
+                        <div class="title">AIR/GAS RATIO CONTROLS : GIK</div>
+                    <p><b>Description:</b></p>
+                    <p>Air/gas ratio controls for maintaining a constant gas/air pressure ratio of 1:1, GIK for continuous  control, GIK..B for High/Low/Off control, EC type-tested and certified.</p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 15 to 150,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection: Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;">  PU : max. 200 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;">  PSA : 0.5 to 120 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;">  PD : 0.2 to 119 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;">  DELTA P : max. 100 mbar.</p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k4.jpg">
+                   </div>
+
+                     <div class="title">CIRCULATION PRESSURE CONTROL AND RELIEF REGULATORS : VAR</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    Relief pressure regulators for maintaining constant pressures in gas consumption equipment or for relieving brief pressure surges in control systems, in particular upstream of large-scale burners, circulation pressure control regulators for compensating for pressure fluctuations occurring on compressors or fans as the result of different flow rates. The pressure regulators comply with the requirements of EN 88, Class A, Group 2.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 25 to 150,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection: Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 200, 500 or 1000 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Opening pressure range pd: 10 to 500 mbar.</p>
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k6.jpg">
+                   </div>
+                        <div class="title">PRESSURE REGULATORS FOR GAS : GDJ</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    Spring-loaded pressure regulator with inlet pressure compensation diaphragm and zero shut-off to maintain the set outlet pressure pd constant despite changing gas flow rates, with safety diaphragm, therefore no purge line required, GDJ for gas, GDJ..L for air, EC type-tested and certified.
+                    DN: 15 to 50,</p>
+
+                    <p class="dn-botm" style="display: list-item;">  Connection : Thread,</p>
+                    <p class="dn-botm" style="display: list-item;">  PU : max. 400 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;">  PD : 2 to 160 mbar.</p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k7.jpg">
+                   </div>
+
+                     <div class="title">PRESSURE REGULATORS FOR GAS : VGBF</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    Spring-loaded pressure regulator with inlet pressure compensation diaphragm and zero shut-off to maintain the set outlet pressure pd constant despite changing gas flow rates, with safety diaphragm, therefore no purge line required, for gas, EC type-tested and certified.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 15 to 150,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection: Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 0.5 bar, 1 bar or 4 bar,</p>
+                    <p class="dn-botm" style="display: list-item;"> PD : 5 to 350 mbar.</p>
+                </div>
+             </div>
+
+
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k8.jpg">
+                   </div>
+                        <div class="title">RELIEF VALVE : VSBV</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                    Relief valve for eliminating short-term pressure surges or preventing pressure increases due to gas creeps, for gas, EC type-tested and certified.</p>
+
+                    <p class="dn-botm" style="display: list-item;">  DN: 25,</p>
+                    <p class="dn-botm" style="display: list-item;">  Connection : Thread,</p>
+                    <p class="dn-botm" style="display: list-item;">  PU : max. 4 bar,</p>
+                    <p class="dn-botm" style="display: list-item;">  PF : 20 to 500 mbar.</p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k9.jpg">
+                   </div>
+
+                     <div class="title">SAFETY SHUT-OFF VALVES : JSAV</div>
+                    <p><b>Description:</b></p>
+                    <p>Safety shut-off valve for securing all downstream fittings against excess gas pressure, with safety device, therefore no purge line required, for gas, EC type-tested and certified.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 25 to 100,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 4 bar,</p>
+                    <p class="dn-botm" style="display: list-item;"> PDO : 18 to 550 mbar.</p>
+                </div>
+             </div>
+
+
+                </div>
+
+
+                <div class="help text">
+
+                <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k10.jpg">
+                   </div>
+                        <div class="title">ACTUATORS : IC</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       Reversible gear motor to transmit rotary movements between 0 and 90°, for actuation of gas and air valves, IC 20, IC 30, IC 50 with voltage-free limit switches, Automatic/Manual mode changeover, position feedback and externally readable position indicator, IC 50 also with selectable direction of rotation,
+                        IC 40 for complex applications with programmable functions for flexible adjustment to the process, with statistics and fault history to support service personnel.</p>
+
+                      <p>Running time: IC 20: 7.5 to 60 s, IC 30: 30 and 60 s, IC 50: 3.7 to 60 s, IC 40: programmable.
+                        Mains voltage: IC 20: 120 to 230 V AC, IC 30: 24 V DC, IC 40: 100 to 230 V AC, IC 50: 24 to 230 V AC.
+                        Torque: IC 20, IC 40: 2.5 (at 50 Hz) and 3 Nm, IC 30: 3 Nm, IC 50: 3 to 30 Nm,
+                        controlled by</p>
+
+                    <p class="dn-botm" style="display: list-item;">  IC 30: Three-point Step,</p>
+                    <p class="dn-botm" style="display: list-item;">  IC 20, IC 50 : three-point step or continuous signal,</p>
+                    <p class="dn-botm" style="display: list-item;">  IC 40: three-point step, two-point, PLC or continuous signal.</p>
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k11.jpg">
+                   </div>
+
+                     <div class="title">BUTTERFLY VALVES : BVG, BVA, BVH</div>
+                    <p><b>Description:</b></p>
+                    <p>Butterfly valves for control ratios up to 10:1, prepared for attachment of an actuator IC 20 or IC 40 and for fitting between two flanges.
+                  </p>
+
+                  <p>BVA, BVAF for continuous control of an air flow rate,</p>
+                  <p>BVG, BVGF for continuous control of a gas flow rate,</p>
+                  <p>BVH, BVHS for continuous or staged control of a hot air or flue gas flow rate,</p>
+                  <p>BVG, BVGF, BVA, BVAF: pu max. 500 mbar, DN 40 to 150, medium temperature: -20 to +60°C.</p>
+                  <p>BVH, BVHS: pu max. 150 mbar, DN 40 to 100, medium temperature: max. +450°C.</p>
+                  <p>BVG, BVA can also be supplied with manual adjustment.</p>
+                  <p>BVGF, BVAF work clearance-free and the control command is executed without delay.</p>
+                  <p>BVH, BVHS: in conjunction with the stop bar, the TWINDISC valve disc ensures very low leakage rates.</p>
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k12.jpg">
+                   </div>
+                        <div class="title">BUTTERFLY VALVES : DKR</div>
+                    <p><b>Description:</b></p>
+                    <p>Butterfly valves for adjusting the flow rate of hot air or flue gas on gas burners, prepared for attachment of an actuator IC 50, for control ratios up to 1:10, with angle-of-rotation indicator.
+                        DN: 15 to 500, for fitting between two flanges,
+                        pu: max. 300 mbar,
+                        with manual adjustment or free shaft end,
+                        max. medium temperature: 100 to 650°C,
+                        with disc clearance or with stop bar.
+                     </p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k13.jpg">
+                   </div>
+
+                     <div class="title">GEAR MOTORS : GT</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                     Reversible gear motors to transmit rotary movements between 0 and 90° or 0 and 160°, for actuation of gas and air valves, with voltage-free limit switches, automatic/manual mode changeover (optional), position feedback and externally readable position indicator.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> Running Times : 3.7 to 214 s,</p>
+                    <p class="dn-botm" style="display: list-item;"> Mains Voltage : 24 V AC, 110/120 V AC or 220/240 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Torque : 1.2 to 20 Nm,</p>
+                    <p class="dn-botm" style="display: list-item;"> Controlled by three-point step signal, Continuous signal or two-point signal.</p>
+
+                </div>
+             </div>
+
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k14.jpg">
+                   </div>
+                        <div class="title">LINEAR FLOW CONTROLS : IFC, VFC</div>
+                    <p><b>Description:</b></p>
+                    <p>Linear flow controls IFC, VFC for controlling continuously regulated burner processes, linear ratio between input signal and flow rate, control ratio 25:1, for gas and air, EC type-tested and certified.
+                        Size: 1,
+                     </p>
+
+                     <p class="dn-botm" style="display: list-item;"> DN: 10 to 25,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Rp Internal Thread,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max 500 mbar.</p>
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k15.jpg">
+                   </div>
+
+                     <div class="title">MAGNETIC RELIEF VALVES : VAN</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       Magnetic relief valves, open when de-energized, for purging excess or leakage gas from tightness control devices, for gas and air, EC 
+                        type-tested and certified.
+                        DN: 15 to 40/32,
+                        connection: thread,
+                        pu: max. 200 or 1000 mbar,
+                        quick opening, quick closing,
+                        mains voltage: 24 V DC, 120 V AC or 220/240 V AC,
+                        electrical connection: terminals or standard plug with socket.
+                        The following versions are available: 
+                        valves with position indicator, 
+                        valves for biologically produced methane.
+                     
+                     </p>
+
+                </div>
+             </div>
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k16.jpg">
+                   </div>
+                        <div class="title">MOTORIZED VALVES FOR GAS : VK</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                       Hydraulically actuated class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, also for biologically produced methane, slow opening, quick closing, EC type-tested and certified.
+                        VK..Z for two-step operation, 
+                        VK..G with GGG 40 housing for steam boilers, open air or landfill systems, VK..H with stronger drives for higher pressures,
+                        VK..X explosion-proof design for zone 1 and 2 hazardous areas, 
+                        DN: 40 to 250,
+                        connection: thread or flange,
+                        pu: max. 230 mbar to max. 8 bar,
+                        mains voltage: 100 V AC to 220/240 V AC,
+                        AlSi or GGG 40 housing,
+                        electrical connection: terminals or standard plug with socket.
+                        The following versions are available: 
+                        valves with flow adjustment, 
+                        valves with position indicator, 
+                        valves with holding relay for manual restart, 
+                        valves with Viton valve disc seal.
+                     
+                     </p>
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k17.jpg">
+                   </div>
+
+                     <div class="title">PRESSURE REGULATORS WITH SOLENOID VALVE : VAD, VAG, VAH, VAV</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                      Class A pressure regulator to EN 88 with integrated class A safety valve to EN 161 for safeguarding and control of the gas pressure in the gas burner lines, for gas and air, pu max. 500 mbar, with blue pilot lamp, EC type-tested and certified, VAD, VAG: ANSI/CSA and AGA approved, VAD, VAG, VAH: FM approved, VAD, VAG, VAV: UL approved, VAD, VAG, VAV, VAH: certified for systems up to SIL 3 and PL e.
+                        VAD: universal pressure regulator,
+                        VAG: air/gas ratio control for maintaining a constant gas/air ratio of 1:1,
+                        VAH: flow rate regulator for maintaining a constant gas/air ratio for modulating-controlled and stage-controlled burners. The gas flow rate is controlled proportionally to the air flow rate,
+                        VAV: variable air/gas ratio control for maintaining a constant gas/air pressure ratio of 3:1,
+                        size: 1 to 3,
+                        DN: 10 to 65,
+                        connection: thread,
+                        mains voltage: 24 V DC, 120 V AC or 230 V AC,
+                        pd: max 100 mbar,
+                        electrical connection: terminals.
+                        The following versions are available: 
+                        valves with fitted bypass or pilot gas valve
+                        valves with fitted pressure switches DG../VC.
+                     </p>
+
+                </div>
+             </div>
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k18.jpg">
+                   </div>
+                        <div class="title">SOLENOID VALVES FOR AIR : VR</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                      Solenoid valves for air for staged control of industrial burners in cold air operating mode.
+                     </p>
+
+                     <p class="dn-botm" style="display: list-item;">DN : 25 to 65,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 150 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing or slow opening, slow closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : terminals or standard plug with socket,</p>
+                    <p class="dn-botm" style="display: list-item;"> with flow adjustment.</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with position indicator,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with bypass orifice.</p>
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k19.jpg">
+                   </div>
+
+                     <div class="title">SOLENOID VALVES FOR GAS : VAS, VCS</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                      
+                     Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, pu max. 500 mbar, with blue pilot lamp, with flow adjustment, EC type-tested and certified, FM and CSA approved, certified for systems up to SIL 3 and PL e.
+                     </p>
+
+
+                    <p class="dn-botm" style="display: list-item;"> Size : 1 to 9,</p>
+                    <p class="dn-botm" style="display: list-item;"> DN : 10 to 125,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing or slow opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> mains voltage: 24 V DC, 120 V AC or 230 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : Terminals.</p>
+                    <p class="dn-botm" style="display: list-item;"> The following versions are available :</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with position indicator and visual indicator,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with fitted bypass or pilot gas valve,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with fitted pressure switches DG../VC.</p>
+
+                </div>
+             </div>
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k20.jpg">
+                   </div>
+                        <div class="title">SOLENOID VALVES FOR GAS : VG</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                     Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, pu max"Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, EC type-tested and certified.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 6 to 65,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : double-cone olive, thread or flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 100, 200, 360, 500, 1000 or 1800 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing or slow opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> Mains voltage: 24 V DC, 120 V AC or 220/240 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical connection: terminals or standard plug with socket.</p>
+                    <p class="dn-botm" style="display: list-item;"> The following versions are available :</p>
+                    <p class="dn-botm" style="display: list-item;"> low-noise valves,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with flow adjustment,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves for biologically produced methane,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with Viton valve disc seal.</p>
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k19.jpg">
+                   </div>
+
+                     <div class="title">SOLENOID VALVES FOR GAS : VAS, VCS</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                      
+                     Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, pu max. 500 mbar, with blue pilot lamp, with flow adjustment, EC type-tested and certified, FM and CSA approved, certified for systems up to SIL 3 and PL e.
+                     </p>
+
+
+                    <p class="dn-botm" style="display: list-item;"> Size : 1 to 9,</p>
+                    <p class="dn-botm" style="display: list-item;"> DN : 10 to 125,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Thread or Flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing or slow opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> mains voltage: 24 V DC, 120 V AC or 230 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : Terminals.</p>
+                    <p class="dn-botm" style="display: list-item;"> The following versions are available :</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with position indicator and visual indicator,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with fitted bypass or pilot gas valve,</p>
+                    <p class="dn-botm" style="display: list-item;"> valves with fitted pressure switches DG../VC.</p>
+
+                </div>
+             </div>
+
+
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k21.jpg">
+                   </div>
+                        <div class="title">SOLENOID VALVES FOR GAS : VGP</div>
+                    <p><b>Description:</b></p>
+                    <p>Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, EC type-tested and certified.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 10 to 25,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : Thread,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 150 or 200 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> Mains Voltage : 120 V AC or 230 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : rectifier adapter with standard socket or socket with integrated rectifier circuit.</p>
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k22.jpg">
+                   </div>
+
+                     <div class="title">SOLENOID VALVES FOR GAS : VG</div>
+                    <p><b>Description:</b></p>
+                    <p>Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, pu max"Class A gas safety valves to EN 161, for automatic shut-off, closed when de-energized, for gas and air, EC type-tested and certified.
+                     </p>
+
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 6 to 65,</p>
+                    <p class="dn-botm" style="display: list-item;"> Connection : double-cone olive, thread or flange,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 100, 200, 360, 500, 1000 or 1800 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> Quick opening, quick closing or slow opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> Mains voltage : 24 V DC, 120 V AC or 220/240 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : terminals or standard plug with socket.</p>
+                    <p class="dn-botm" style="display: list-item;"> The following versions are available :</p>
+                    <p class="dn-botm" style="display: list-item;"> Low-noise valves,</p>
+                    <p class="dn-botm" style="display: list-item;"> Valves with flow adjustment, </p>
+                    <p class="dn-botm" style="display: list-item;"> Valves for biologically produced methane,</p>
+                    <p class="dn-botm" style="display: list-item;"> Valves with Viton valve disc seal.</p>
+                 
+
+                </div>
+             </div>
+
+
+
+             <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k23.jpg">
+                   </div>
+                        <div class="title">SOLENOID-OPERATED BUTTERFLY VALVES FOR AIR : MB 7/BVHM</div>
+                    <p><b>Description:</b></p>
+                    <p>Solenoid actuators MB 7 and butterfly valves BVHM for staged control of industrial burners in cold- or hot-air operating mode up to 450°C.
+                     </p>
+
+                    <p class="dn-botm" style="display: list-item;"> DN : 40 to 100,</p>
+                    <p class="dn-botm" style="display: list-item;"> For Fitting between two flanges,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max 150 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> with spring-loaded valve disc and position indicator,</p>
+                    <p class="dn-botm" style="display: list-item;"> MB 7N : quick opening, quick closing,</p>
+                    <p class="dn-botm" style="display: list-item;"> MB 7R : slow opening, slow closing, for High/Low control,</p>
+                    <p class="dn-botm" style="display: list-item;"> MB 7L : slow opening, quick closing, for On/Off control,</p>
+                    <p class="dn-botm" style="display: list-item;"> Mains Voltage : 24 V DC, 120 V AC or 220/240 V AC,</p>
+                    <p class="dn-botm" style="display: list-item;"> Electrical Connection : terminals or standard plug with socket.</p>
+                   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k24.jpg">
+                   </div>
+
+                     <div class="title">TIGHTNESS CONTROLS : TC</div>
+                    <p><b>Description:</b></p>
+                    <p>Tightness controls for checking two safety valves before or after burner run, with adjustable test period or measurement time for adjustment to different test volumes, leakage rates and inlet pressures, EC type-tested and certified.
+                     </p>
+
+
+                    <p class="dn-botm" style="display: list-item;"> TC 1V for attachment to valVario,</p>
+                    <p class="dn-botm" style="display: list-item;"> TC 1C for attachment to CG,</p>
+                    <p class="dn-botm" style="display: list-item;"> TC 2 for quick opening individual valves,</p>
+                    <p class="dn-botm" style="display: list-item;"> TC 3 for quick or slow opening individual valves,</p>
+                    <p class="dn-botm" style="display: list-item;"> PU : max. 500 mbar,</p>
+                    <p class="dn-botm" style="display: list-item;"> TC 1, TC 2, TC 3: mains and control voltage: 24 V=, 120 V~ or 230 V~.</p>
+                    <p class="dn-botm" style="display: list-item;"> TC 4 requires an external pressure switch for any inlet pressures and gas types.</p>
+                    <p class="dn-botm" style="display: list-item;">  TC 4: mains voltage: 24 V DC, 110/120 V AC or 220/240 V AC</p>
+                
+                </div>
+             </div>
+
+
+              </div>
+
+
+
+                <div class="code text">
+                  
+                  <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k25.jpg">
+                   </div>
+                        <div class="title">PRESSURE SWITCHES FOR AIR : DL..A</div>
+                    <p><b>Description:</b></p>
+                    <p>Diaphragm pressure switches with micro switch (silicone-free) for monitoring air pressures on industrial and commercial installations, for positive pressure, negative pressure and differential pressure, for air and flue gas, suitable for use as special-design pressure switches, EC type-tested and certified pursuant to the Gas Appliances Directive (90/396/EEC) and the Low Voltage Directive (2006/95/EC) in conjunction with EN 1854.
+                    Switching ranges: 0.2 to 150 mbar,
+                    with threaded and tube connections and hand wheel for switching point adjustment,
+                    electrical connection: terminals with M16x1.5 cable gland or standard coupler plug.
+                    The following versions are available:
+                    - Pressure switch with gold-plated contacts for voltages of < 24 V,
+                    - Pressure switch with pilot lamp,
+                    - Pressure switch with test keys for function checks in the case of positive pressure, negative pressure and differential pressure,
+                    - Pressure switch with external adjustment.</p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k26.jpg">
+                   </div>
+
+                     <div class="title">PRESSURE SWITCHES FOR AIR : DL..E</div>
+                    <p><b>Description:</b></p>
+                    <p>Diaphragm pressure switches with micro switch (silicone-free versions available) for monitoring air pressures on industrial and commercial installations, for positive pressure, negative pressure and differential pressure, for air and flue gas, partly suitable for use as special-design pressure switches, EC type-tested and certified pursuant to the Gas Appliances Directive (90/396/EEC) and the Low Voltage Directive (2006/95/EC) in conjunction with EN 1854.
+                    Switching ranges: 0.2 to 50 mbar,
+                    with tube connection and switching point set at factory.
+                    The following versions are available:
+                    - pressure switch with gold-plated contacts for voltages of < 24 V,
+                    - pressure switch with test tapping point,
+                    - NO contact or change-over contact.
+                    You are here: Home > Thermal Solutions > Products > 04 Pressure switches > Pressure switches for air DL..E > (Enter information subs
+                     
+                     </p>
+                
+                </div>
+             </div>
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k27.jpg">
+                   </div>
+                        <div class="title">PRESSURE SWITCHES FOR GAS : DG</div>
+                    <p><b>Description:</b></p>
+                    <p>Diaphragm pressure switches with micro switch (silicone-free) for monitoring gas pressures on industrial installations, for gas and air, also suitable for biologically produced methane, with hand wheel for switching point adjustment, suitable for use as special-design pressure switches, EC type-tested and certified pursuant to the Gas Appliances Directive (90/396/EEC), the Low Voltage Directive (2006/95/EC) and the Pressure Equipment Directive (97/23/EC) in conjunction with EN 1854.
+                    Switching ranges: 0.4 to 500 mbar,
+                    DG..B for positive pressure,
+                    DG..U for positive pressure, negative pressure and differential pressure,
+                    DG..H locks off with rising pressure,
+                    DG..N locks off with falling pressure,
+                    DG..I for negative gas pressure,
+                    electrical connection: terminals with M16x1.5 cable gland or standard plug with socket.
+                    The following versions are available:
+                    - Pressure switch with gold-plated contacts for voltages of < 24 V,
+                    - Pressure switch with pilot lamp,
+                    - Pressure switch DG..BS with diaphragm for oxygen and ammonia (not for fuel gas),
+                    - Pressure switch with external adjustment.
+
+                     </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k28.jpg">
+                   </div>
+
+                     <div class="title">PRESSURE SWITCHES FOR GAS : DG..C</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   Diaphragm pressure switches with micro switch (silicone-free) for monitoring gas pressures on boilers, for positive pressure, for gas, also suitable for biologically produced methane, switching point set at factory, DG..VC with infinitely adjustable hand wheel to switch between natural gas and LPG, EC type-tested and certified pursuant to the Gas Appliances Directive (90/396/EEC) and the Low Voltage Directive (2006/95/EC) in conjunction with EN 1854.
+                    Switching ranges: 2 to 360 mbar,
+                    with external thread: R 1/4 or R 1/8, internal thread: Rp 1/4, pressure test point, flat sealing lower sections,
+                    thread with sealant,
+                    electrical connection: AMP plug or standard socket,
+                    with NO contact or change-over contact.
+                    The following versions are available:
+                    - Pressure switch with gold-plated contacts for voltages of < 24 V,
+                    - DG..CT/DG..VCT: FM approved and UL listed.
+                     </p>
+                
+                </div>
+             </div>
+
+               </div>
+
+
+
+                <div class="about text">
+                  <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k29.jpg">
+                   </div>
+                        <div class="title">CONTROL VALVES RV, CONTROL VALVES WITH SOLENOID VALVE : RVS</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                  Control valves for controlling continuously regulated burner processes, linear ratio between input signal and flow rate, control ratio 100:1, for gas and air, EC type-tested and certified.
+                    Size: 2 to 3,
+                    DN: 25 to 100,
+                    valve seat: A to Z,
+                    connection: MODULINE system or flange,
+                    pu: max. 150, 200, 360, 500, 1000 mbar,
+                    mains voltage: 24 V AC, 110/120 V AC or 220/240 V AC,
+                    input signal: continuous or three-point step. 
+                    The following versions are available:
+                    valves for biologically produced methane,
+                    valves with Viton valve disc seal.
+                     </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k30.jpg">
+                   </div>
+
+                     <div class="title">LINEAR FLOW CONTROLS : LFC</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                   Linear flow controls for controlling continuously regulated burner processes, linear ratio between input signal and flow rate, control ratio 25:1, for gas and air, EC type-tested and certified.
+                    Size: 1 to 2,
+                    DN: 10 to 40,
+                    connection: MODULINE system,
+                    pu: max. 500 mbar,
+                    mains voltage: 24 V AC, 110/120 V AC or 220/240 V AC,
+                    controlled by three-point step signal, continuous signal or two-point signal. 
+                    The following versions are available:
+                    linear flow controls with potentiometer for position feedback,
+                    linear flow controls with automatic/manual mode changeover,
+                    linear flow controls suitable for biologically produced methane.
+                     </p>
+                
+                </div>
+             </div> 
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k31.jpg">
+                   </div>
+                        <div class="title">PRESSURE REGULATORS WITH SOLENOID VALVE : GV..ML</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                  Class A pressure regulator to EN 88 with integrated class A safety valve to EN 161 for safeguarding and control of the gas pressure in the gas burner lines, for gas and air, EC type-tested and certified.
+                    GVS: universal pressure regulator,
+                    GVD: universal pressure regulator with damped opening, 
+                    GVN: zero governor,
+                    GVE: electronic pressure regulator,
+                    GVI: air/gas ratio control for maintaining a constant gas/air ratio,
+                    GVIB: air/gas ratio control for High/Low/Off control,
+                    GVR: variable air/gas ratio control for a constant mixture control with adjustable air/gas ratio,
+                    GVRH: variable air/gas ratio control for maintaining a constant gas/air ratio on systems using preheated air,
+                    size: 1 to 3,
+                    DN: 10 to 50,
+                    connection: MODULINE system,
+                    pu: max. 100 or 200 mbar,
+                    control ratio: adjustable or fixed to 1:1 or 4:1,
+                    mains voltage: 24 V DC, 120 V AC or 220/240 V AC,
+                    electrical connection: terminals or standard plug with socket.
+
+                     </p>
+   
+                </div>   
+             </div> 
+                
+                </div>
+
+
+              <div class="elec text">
+               <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k32.jpg">
+                   </div>
+                        <div class="title">AUTOMATIC BURNER CONTROL UNITS FOR CONTINUOUS OPERATION : IFD 450, 454</div>
+                    <p><b>Description:</b></p>
+                    <p>Automatic burner control units for monitoring and control of gas burners, for continuous operation, ionization control, single-electrode operation possible, multi-flame control possible, EC type-tested and certified.
+                    IFD 450: fault lock-out following flame failure,
+                    IFD 454: restart following flame failure,
+                    safety time on start-up:
+                    3, 5 or 10 s,
+                    safety time operation for V2: 1 s,
+                    safety time operation for V1: 1 s,
+                    mains voltage: 220/240 V AC, for grounded or ungrounded mains.
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k33.jpg">
+                   </div>
+
+                     <div class="title">AUTOMATIC BURNER CONTROL UNITS : IFS 110IM, 111IM</div>
+                    <p><b>Description:</b></p>
+                    <p>Automatic burner control units for monitoring and control of gas burners, for intermittent operation, ionization or UV control, single-electrode operation possible, multi-flame control possible, EC type-tested and certified.
+                    IFS 110IM for grounded mains,
+                    IFS 111IM for ungrounded mains, 
+                    fault lock-out, restart or delayed reaction time for V1 following flame failure,
+                    safety time on start-up: 3, 5 or 10 s,
+                    safety time operation for V2: 1 s,
+                    safety time operation for V1: 1, 2, 3 or 5 s,
+                    mains voltage: 110/120 V AC or 220/240 V AC.
+                     
+                     </p>
+                
+                </div>
+             </div> 
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k34.jpg">
+                   </div>
+                        <div class="title">AUTOMATIC BURNER CONTROL UNITS : IFS/IFD 244</div>
+                    <p><b>Description:</b></p>
+                    <p>Automatic burner control units for monitoring and control of gas burners, for intermittent operation, ionization control, one valve connection, EC type-tested and certified. Restart following flame failure,
+                    safety time on start-up: 3, 5 or 10 s,
+                    safety time during operation: 1 s,
+                    mains voltage: 230 V AC, for grounded mains
+                    IFS 244..I with integrated ignition.     
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k35.jpg">
+                   </div>
+
+                     <div class="title">AUTOMATIC BURNER CONTROL UNITS : IFS/IFD 258</div>
+                    <p><b>Description:</b></p>
+                    <p>Automatic burner control units for monitoring and control of gas burners, for intermittent operation, ionization or UV control, infinitely adjustable cut-off threshold for flame signal, test jacks for uninterrupted flame signal measurement, single-electrode operation possible, operation and fault signalling contacts, EC type-tested and certified. 
+                    Immediate fault lock-out or restart following flame failure, 
+                    safety time on start-up: 3, 5 or 10 s, 
+                    safety time during operation: 1 s, 
+                    mains voltage: 100 V AC, 115 V AC, 200 V AC or 230 V AC, for grounded or ungrounded mains.
+                </p>
+                
+                </div>
+             </div>
+
+
+
+             <div class="row c-botm">
+                     <div class="col-md-12">
+                   
+                        <div class="title">AUTOMATIC BURNER CONTROL UNITS : PFS 778, 748</div>
+                    <p><b>Description:</b></p>
+                    <p>19'' rack-mounted automatic burner control units for monitoring and control of gas burners, for intermittent operation, ionization or UV control, comply with EC Machinery Directive.
+                    PFS 778: main gas after safety time or main gas after flame proving period, switchable for continuously controlled burners, single-electrode operation possible,
+                    PFS 748: main gas following flame signal for burners in On/Off intermittent operation,
+                    restart, immediate fault lock-out or delayed reaction time for V1 following flame failure, switchable, 
+                    air valve control possible,
+                    multi-flame control possible,
+                    safety time on start-up:
+                    3, 5 or 10 s,
+                    safety time operation for V2: 1 s, 
+                    safety time operation for V1:
+                    1, 3, 5 or 10 s,
+                    mains voltage: switchable from 220/240 V AC to 110/120 V AC, for grounded or ungrounded mains,
+                    controlled by standard 24 V DC signals.
+                         
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k36.jpg">
+                   </div>
+
+                     <div class="title">AUTOMATIC BURNER CONTROL UNITS : PFU</div>
+                    <p><b>Description:</b></p>
+                    <p>For controlling, igniting and monitoring impulse-controlled, modulating or stage-controlled gas burners, for continuous operation with ionization control, for intermittent operation with UV control (with UV sensors of type UVS) or as a variant for continuous operation with UV control (with UV sensor UVD 1). Display of the program status, unit parameters and flame signal. Diagnosis and adjustment of unit parameters via optical interface, with Manual mode and air valve control.
+                    PFU 778: for directly ignited burners of unlimited capacity,
+                    PFU 798: for pilot and main burners of unlimited capacity, both burners can be monitored independently.
+                    Safety time on start-up: 3, 5 or 10 s, 
+                    safety time during operation: 1 or 2 s, 
+                    mains voltage: 115 or 230 V AC, for grounded or ungrounded mains.    
+                </p>
+                
+                </div>
+             </div> 
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k37.jpg">
+                   </div>
+                        <div class="title">BURNER CONTROL UNIT : BCU 370</div>
+                    <p><b>Description:</b></p>
+                    <p>The burner control unit BCU 370 controls, ignites and monitors industrial forced draught burners of unlimited capacity in intermittent or continuous operation.
+                    Mains voltage:
+                    230 V AC, -15/+10%, 50/60 Hz or 120 V AC, -15/+10%, 50/60 Hz.
+                    Flame control with UV sensor or ionization sensor.
+                    Air pressure check during pre-purge and operation by external pressure switch DL.     
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k39.jpg">
+                   </div>
+
+                     <div class="title">AUTOMATIC BURNER CONTROL UNITS FOR CONTINUOUS OPERATION : IFD 450, 454</div>
+                    <p><b>Description:</b></p>
+                    <p>Burner control unit BCU 570 controls, ignites and monitors individual or forced draught burners of unlimited capacity in intermittent or continuous operation.
+                    It performs central safety functions such as pressure monitoring, valve proving and pre-purge, and controls an actuator to ensure safe ignition of the burner.
+                    The BCU 570 is approved to EN 61508/EN 13611 (for safety functions up to SIL 3).
+                    It is installed on a DIN rail in the control cabinet.
+                    Flame control with UV sensor or ionization sensor.
+                    Mains voltage:
+                    230 V, 50/60 Hz or
+                    120 V, 50/60 Hz
+                     
+                </p>
+                
+                </div>
+             </div>
+
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k40.jpg">
+                   </div>
+                        <div class="title">BURNER CONTROL UNITS : BCU 400</div>
+                    <p><b>Description:</b></p>
+                    <p>Automatic burner control unit, ignition transformer, Manual/Automatic mode and display of operating and fault statuses in a metal housing, for monitoring and control of gas burners, for continuous operation with ionization control, for intermittent operation with UV control (with UV sensors of type UVS) or as a variant for continuous operation with UV control (with UV sensor UVD 1), single-electrode operation possible, setting of various operating modes via optical interface using separate software, complies with EC Machinery Directive. 
+                    BCU 440 for ionization-controlled, directly ignited burners up to 350 kW. 
+                    BCU 460 for directly ignited burners of unlimited capacity, with air valve control (optional). 
+                    BCU 465 with extended air control.
+                    BCU 480 for pilot and main burners of unlimited capacity, with air valve control. 
+                    Safety time on start-up: 3, 5 or 10 s, 
+                    safety time during operation: 1 or 2 s, 
+                    mains voltage: 230 V AC or 115 V AC, for grounded or ungrounded mains.
+                    BCU..B1: burner control units for PROFIBUS DP.        
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k41.jpg">
+                   </div>
+
+                     <div class="title">FIELDBUS INTERFACE : PFA 700</div>
+                    <p><b>Description:</b></p>
+                    <p>19'' rack-mounted fieldbus interface for interworking of up to nine automatic burner control units PFS or PFD using PROFIBUS DP. The PFA 700 is integrated in the ready-wired module subrack BGT. The fieldbus interface PFA 700, together with the module subrack BGT, is certified by the PROFIBUS User Organization (PUO) and complies with the Low Voltage Directive (73/23/EEC) and the EMC Directive (89/336/EEC). 
+                    Four digital inputs and four digital outputs, integrated power supply for the bus interface and the inputs of the automatic burner control units, DIP switches for addressing the fieldbus interface, mains voltage: 110 to 240 V AC, no switchover required.    
+                </p>
+                
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k42.jpg">
+                   </div>
+                        <div class="title">FLAME DETECTOR FOR CONTINUOUS OPERATION : IFW 50</div>
+                    <p><b>Description:</b></p>
+                    <p>Flame detector for flame signalling or for multi-flame control in conjunction with IFD 450/454, for continuous operation, ionization control. Mains voltage: switchable from 220/240 V AC to 110/120 V AC, for grounded or ungrounded mains.
+                            
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k43.jpg">
+                   </div>
+
+                     <div class="title">FLAME DETECTOR : IFW 15</div>
+                    <p><b>Description:</b></p>
+                    <p>Flame detector for flame signalling or for multi-flame control in conjunction with IFS 110/111IM, for intermittent operation, ionization or UV control. For grounded or ungrounded mains, mains voltage:110/120 V AC or 220/240 V AC.
+                         
+                </p>
+                
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k44.jpg">
+                   </div>
+                        <div class="title">AUTOMATIC BURNER CONTROL UNITS FOR CONTINUOUS OPERATION : IFD 450, 454</div>
+                    <p><b>Description:</b></p>
+                    <p>
+               For all gas-fired heat-treatment furnaces where recirculation of the furnace atmosphere ensures a constant temperature distribution, thereby allowing shorter heating-up periods. For converting a controller signal to switch-on/switch-off times for gas burners in the case of intermittent operation, linear response between actuating signal and burner capacity.
+                Control of up to 8 burners, 
+                various operating modes,
+                outputs with positive logic,
+                single- and two-zone operation,
+                mains voltage: 110 to 240 V AC.
+             </p>
+          </div>
+      </div>
+  </div>
+
+              <div class="indus text">
+                 <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k45.jpg">
+                   </div>
+                        <div class="title">DIRECT FIRED FURNACE BURNERS- BURNERS FOR GAS : BIC, BICA, ZIC</div>
+                    <p><b>Description:</b></p>
+                    <p>Burners with housing made of cast steel (BIC), aluminium (BICA) or sheet steel (ZIC), 
+                      with ceramic tube connection.
+                      Burner size: 50 to 200,
+                      capacity: 10 to 1000 kW,
+                      use: cold air, hot air, flat flame, high-temperature applications,
+                      gas type: natural gas, coke oven gas, town gas or liquefied gases as well as biologically produced methane or low calorific value gases upon consultation,
+                      burner length: 300 to 1200 mm,
+                      gas connection: thread,
+                      air connection: thread or flange (BICA: tube connection).
+                      The following versions are available:
+                      burner with integrated ignition lance,
+                      housing with internal insulation.
+                        
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k46.jpg">
+                   </div>
+
+                     <div class="title">DIRECT FIRED FURNACE BURNERS- BURNERS FOR GAS : BIO, BIOA, ZIO</div>
+                    <p><b>Description:</b></p>
+                    <p>
+                        Burners with housing made of cast steel (BIO), aluminium (BIOA) or sheet steel (ZIO), 
+                        for combination with a burner quarl or with an extended steel burner tube.
+                        Burner size: 50 to 200,
+                        capacity: 40 to 1000 kW,
+                        use: cold air, hot air, flat flame, high-temperature applications,
+                        gas type: natural gas, coke oven gas, town gas or liquefied gases as well as biologically produced methane or low calorific value gases upon consultation,
+                        burner length: 50 to 1000 mm,
+                        gas connection: thread,
+                        air connection: thread or flange (BIOA: tube connection).
+                        The following versions are available:
+                        burner with integrated ignition lance,
+                        housing with internal insulation.
+                </p>
+                
+                </div>
+             </div>
+
+
+              <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k47.jpg">
+                   </div>
+                        <div class="title">SELF-RECUPERATIVE AND RADIANT TUBE BURNERS- BURNER WITH INTEGRATED RECUPERATOR : BICR</div>
+                    <p><b>Description:</b></p>
+                    <p> for direct or indirect heating of furnace systems.
+                        Burner size: 65/50 to 100/80,
+                        capacity: 20 to 100 kW,
+                        gas type: natural gas or liquefied gases,
+                        gas connection: thread,
+                        air connection: thread.
+                     
+                        
+                </p>
+   
+                </div>
+             </div>
+        </div>
+
+
+
+               <div class="monts text">
+
+                <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k48.jpg">
+                   </div>
+                        <div class="title">FURTHER IGNITION AND MONITORING COMPONENTS -IGNITION AND SENSING COMPONENTS ECLIPSE</div>
+
+                    <p><b>Description:</b></p>
+                    <p>
+                     Ignition transformers for high-voltage ignition of gas or oil burners, suitable for ignition and control with one electrode, 
+                     TZI for cabinet installation, enclosure IP 00, 
+                     TGI for wall installation, enclosure IP 65.
+                     Ignition voltage: 5 to 7.5 kV,
+                     duty cycle: 20 to 33% or continuous operation,
+                     mains voltage: 115 V AC or 230 V AC.      
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     <div class="im-images">
+                      <img src="assets/images/k49.jpg">
+                   </div>
+
+                     <div class="title">FURTHER IGNITION AND MONITORING COMPONENTS -UV SENSOR FOR CONTINUOUS OPERATION : UVC, UVD</div>
+                    <p><b>Description:</b></p>
+                    <p> UV flame detector UVC 1/UV sensor for continuous operation UVD for monitoring gas burners for intermittent or continuous operation in conjunction with burner control units BCU..U or PFU..U
+                     
+                </p>
+                
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k50.jpg">
+                   </div>
+                        <div class="title">FURTHER IGNITION AND MONITORING COMPONENTS : UV SENSORS UVS</div>
+
+                    <p><b>Description:</b></p>
+                    <p>
+                    For monitoring gas burners of unlimited capacity with or
+                    without fan, on hot-air furnaces, gas-fired boilers, industrial furnaces and excess-gas flaring installations in conjunction with Elster Kromschröder burner control units and automatic burner control units.
+                    The UV sensor UVS 10 monitors the gas burners in intermittent operation.
+                    The burners can either be ignited directly or operated as pilot and main burners.
+                    UV sensors UVS 1, UVS 6 and UVS 8 can be replaced by using various adapters.
+                         
+                </p>
+   
+                </div>
+             </div>
+
+              </div>
+
+               <div class="burne text">
+
+                <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k51.jpg">
+                   </div>
+                        <div class="title">PILOT BURNERS AND THERMO-ELECTRIC SAFETY DEVICES : PILOT BURNER ZAI</div>
+
+                    <p><b>Description:</b></p>
+                    <p>Thermo pilot burner for safe ignition of atmospheric gas burners in conjunction with automatic burner control units IFS/IFD or PFS/PFD. Capacity: approx. 3 kW, gas type: natural gas or propane.
+                          
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-12" style="margin-top: 40px;">
+                     
+
+                     <div class="title">PILOT BURNERS AND THERMO : PILOT BURNER ZIO 40 </div>
+                    <p><b>Description:</b></p>
+                    <p>Pilot burner with forced air supply for safe ignition of gas burners in conjunction with automatic burner control units IFS/IFD or PFS/PFD.
+                    Capacity: 20 kW, 
+                    gas type: natural gas, town gas or LPG, 
+                    length of burner tube: 100 to 1000 mm, 
+                    connection: thread. 
+                     
+                     
+                </p>
+                
+                </div>
+             </div>
+
+
+             <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k52.jpg">
+                   </div>
+                        <div class="title">PILOT BURNERS AND THERMO : PILOT BURNER ZKIH</div>
+
+                    <p><b>Description:</b></p>
+                    <p>
+                     Pilot burner with forced air supply for safe ignition of gas burners in conjunction with automatic burner control units IFS/IFD or PFS/PFD.
+                     Capacity: 2 to 7 kW,
+                     gas type: natural gas, town gas or LPG,
+                     length of burner tube: 150/100 to 1000/100 mm,
+                     connection: thread.          
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-6">
+                      <div class="im-images">
+                      <img src="assets/images/k53.jpg">
+                   </div>
+
+                     <div class="title">PILOT BURNERS AND THERMO : PILOT BURNER ZMI</div>
+                    <p><b>Description:</b></p>
+                    <p>Pilot burner with one ignition/monitoring electrode for safe ignition of gas burners in  conjunction with automatic burner control units IFS/IFD or PFS/PFD, with forced air supply.
+                    Capacity: 0.8 to 3.4 kW,
+                    gas type: natural gas, town gas or LPG,
+                    length of burner tube:
+                    150 to 1000 mm,
+                    connection: thread.      
+                </p>
+                
+                </div>
+             </div>
+
+              </div>
+
+               <div class="acces text">
+
+                <div class="row c-botm">
+                     <div class="col-md-6">
+                     <div class="im-images">
+                      <img src="assets/images/k54.jpg">
+                   </div>
+                        <div class="title">FLOW ADJUSTING COCKS : GEHV, GEH, LEH</div>
+
+                    <p><b>Description:</b></p>
+                    <p> Adjusting cocks for precise flow rate adjustment. 
+                        GEHV: for gas: pu max. 1 bar, 
+                        for air: pu max. 4 bar, 
+                        operated by hand wheel with adjusting scale, DIN-DVGW tested and registered.
+                        GEH: for gas, pu max. 1 bar, tool-operated.
+                        LEH: for air, pu max. 4 bar, 
+                        operated by hand wheel.
+                        DN: 8 to 50,
+                        connection: internal thread on both ends or internal/external thread.
+                             
+                </p>
+   
+                </div>
+
+
+                     <div class="col-md-6">
+                      <div class="im-images">
+                      <img src="assets/images/k55.jpg">
+                   </div>
+
+                     <div class="title">PRESSURE GAUGES : KFM, RFM</div>
+                    <p><b>Description:</b></p>
+                    <p>Pressure gauges with capsule element or Bourdon tube for pressure display, positive-pressure-proof, with zero point correction, for gas and air.
+                        Measuring ranges: 
+                        KFM: 0 to 400 mbar,
+                        RFM: 0 to 16 bar,
+                        diameter: 63 or 100 mm.        
+                </p>
+                
+                </div>
+             </div>
+
+              </div>
+
+               <div class="gas text">
+
+                 <div class="row c-botm">
+                     <div class="col-md-12">
+                     <div class="im-images">
+                      <img src="assets/images/k56.jpg">
+                   </div>
+                        <div class="title">FLOW METERS : DM, DE</div>
+
+                    <p><b>Description:</b></p>
+                    <p>
+                        Turbine wheel meters for measuring gas flow on gas consumption equipment, for gas burner adjustment, for gas and air. 
+                        DM: mechanical index, 
+                        DE: electronic index, 
+                        measuring range: 1.6 to 1600 m3/h, 
+                        DN: 25 to 150, 
+                        connection: thread or installation between two flanges, 
+                        pu: max. 4 bar, 
+                        M-bus interface for DE available.            
+                </p>
+   
+                </div>
+              </div>
+              </div>
+               
+            </div>
+        </div>
+    </div>
+     
+
+
+         
+
+
+            <section class="newsteller style_one bg_dark_1">
+               <div class="pd_top_40"></div>
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-6 col-md-12">
+                        <div class="content">
+                           <h2>Join us for a Safer</h2>
+                           <p>More Secure Industrial Future.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12">
+                        <div class="item_scubscribe">
+                           <div class="input_group">
+                              <form class="mc4wp-form" method="post" data-name="Subscibe">
+                                 <div class="mc4wp-form-fields">
+                                    <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                                    <input type="submit" value="Sign up">
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pd_bottom_40"></div>
+            </section>
+         </div>
+      </div>
+      
+      
+      
+      <div class="sliding_form slide_out">
+        <a href="javascript:;" id="form_trigger">Get Quote</a>
+        <div class="sliding_form_inner">
+            <form class="fastconc"  method="post">
+
+               <h4 class="g-qute">Get Quote</h4>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="name" placeholder="Name" class="fields_box" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="email" placeholder="Email" class="fields_box" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="phone" placeholder="Phone" class="fields_box" required>
+                    </div>
+                </div>
+               
+               
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea name="enquiry" placeholder="Enquiry" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                     <button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button>
+                    </div>
+                 </div>
+               
+            </form>
+        </div>
+    </div>
+
+
+
+      <div class="footer_area" id="footer_contents">
+         <div class="footer_widgets_wrap bg_dark_2">
+            <div class="pd_top_80"></div>
+            <div class="container">
+               <div class="row">
+
+               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Get In Touch</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6> Location</h6>
+                                 <p>
+                                    614, Kirti Shikhar, District Centre, Janak Puri, New Delhi -110 058, Delhi
+                                 </p>
+                              </div>
+                              <div class="bottom">
+                                 <h6> Contact</h6>
+                                 <div class="con_content">
+                                    <h5> Phone :</h5>
+                                    <a href="tel:011-25516281"> 011-25516281</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5> Mail Us :</h5>
+                                    <a href="tel:mantech@mantech.in"> mantech@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Quick Links</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+
+                              <ul class="menu">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>
+                                 <li><a href="client.html">Clients</a></li>
+                                 <li><a href="knowledge-bank.html">Knowledge Bank</a></li>
+                                 <li><a href="case.html">Case Studies</a></li>
+                                 <li><a href="career.html">Career</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Our Expertise</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+
+                                   <ul class="menu">
+                                    <li><a href="honeywell-thermal-solutions.html">Honeywell Thermal Solutions</a></li>
+                                    <li><a href="honeywell-analytics.html">Honeywell Analytics</a></li>
+                                    <li><a href="drae-ger.html">Draeger</a></li>
+                  
+                                 </ul>
+
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+                              </a>
+                              <div class="pd_bottom_30"></div>
+                           </div>
+                           <div class="content_box">
+                              <p>
+                                 Established in 1996, MANTECH AUTOMATION today is the leading products and solution provider in the field of Industrial Automation, Thermal Solutions, Gas Leak Detection, and Fluid Control.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            
+            <div class="pd_bottom_50"></div>
+         </div>
+         <div class="creote-footer-copyright bg_dark_3">
+
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content color_white">
+                        © 2023 - Mantech. Designed and Developed by 
+                        <a target="_blank" rel="nofollow" href="https://mararmedia.com/" style="color: #fff;">Marar Media</a>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 text-md-end">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content_right">
+                        <div class="social_media_v_one">
+                           <ul>
+                              <li>
+                                 <a href="https://www.facebook.com/mantech.automation.33" target="_blank">
+                                    <span class="fa fa-facebook"></span>
+                                    <small>facebook</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                                    <span class="fa fa-instagram"></span>
+                                    <small>instagram</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                    <small>linkedin</small>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="crt_mobile_menu">
+         <div class="menu-backdrop"></div>
+         <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <form role="search" method="get" action="#">
+               <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+               <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+            </form>
+            <div class="menu-outer">
+               
+            </div>
+         </nav>
+      </div>
+    
+      <div id="search-popup" class="search-popup">
+         <div class="close-search"><i class="fa fa-times"></i></div>
+         <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+               <fieldset>
+                  <form role="search" method="get" action="#">
+                     <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                  </form>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+   
+      <div class="modal_popup one">
+         <div class="modal-popup-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <div class="modal_box">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12 form_inner">
+                     <div class="form_content">
+                        <form class="contact-form fastconc" method="post" action="">
+                           <p>
+                              <label>Name<br />
+                                 <input type="text" name="name" value="" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Name" />
+                                 <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label>Email<br />
+                                 <input type="email" name="email" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Email" />
+                                 <br />
+                                 <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Phone<br />
+                                 <input type="text" name="phone" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Phne no" />
+                                 <br />
+                                 <i class="fa fa-phone"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Enquiry<br />
+                                 <textarea name="enquiry" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    aria-invalid="false" placeholder="Enquiry"></textarea>
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button></p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about_company_inner">
+                     <div class="abt_content">
+                        <div class="logo">
+                           <img src="assets/images/logo.png" alt="img" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                           <p> Thank you for reaching out to us! We appreciate the time you took to fill out our inquiry form. Your message is important to us, and we will make every effort to respond as quickly as possible.</p>
+                            <p>Our team is dedicated to providing excellent service, and we are thrilled that you are considering us</p>
+                            <p>Rest assured that we have received your information and will get back to you shortly</p>
+                            <p>In the meantime, if you have any urgent matters or additional details to share, please feel free to contact us directly at enquiry@mantech.in, mantech@mantech.in</p>
+                            <p>Thank you once again for choosing Mantech. We look forward to the opportunity to assist you.</p>
+                        </div>
+                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="side_bar_cart" id="mini_cart">
+         <div class="cart_overlay"></div>
+         <div class="cart_right_conten">
+            <div class="close">
+               <div class="close_btn_mini"><i class="icon-close"></i></div>
+            </div>
+            <div class="cart_content_box">
+               <div class="contnet_cart_box">
+                  <div class="widget_shopping_cart_content">
+                     <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="floating_menu_box">
+         <ul class="float_menu_box">
+            <i class="close fa fa-times"></i>
+            <li class="floating_menu_text active">
+               <a href="index.html"> Home </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="about.html">About Us</a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="client.html"> Clients </a>
+            </li>
+
+             <li class="floating_menu_text ">
+               <a href="knowledge-bank.html">Knowledge Bank </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="case.html"> Case Studies </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="career.html"> Career </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="contact.html"> Contact </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+   
+   <script>
+      $(document).ready(function() {
+
+    var formWidth = $('.sliding_form').width();
+    $('.sliding_form').css('right', '-' + formWidth + 'px');
+    $("#form_trigger").on('click', function() {
+
+        if ($('.sliding_form').hasClass('slide_out')) {
+            $('.sliding_form').removeClass('slide_out').addClass('slide_in')
+            $(".sliding_form").animate({ right: 0 + 'px' });
+        } else {
+            $('.sliding_form').removeClass('slide_in').addClass('slide_out')
+            $('.sliding_form').animate({ right: '-' + formWidth + 'px' });
+        }
+
+    });
+});
+   </script>
+   
+   
+</body>
+</html>

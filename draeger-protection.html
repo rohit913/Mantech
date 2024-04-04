@@ -1,0 +1,2753 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <title>Mantech | Draeger Protection Portfolio</title>
+   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+   <link rel='stylesheet'
+      href='https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext'
+      type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/owl.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/swiper.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/jquery.fancybox.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/icomoon.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/flexslider.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/scss/elements/theme-css.css' type='text/css' media='all' />
+   <link rel='stylesheet' id="creote-color-switcher-css" href='assets/css/scss/elements/color-switcher/color.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce-layout.css' type='text/css' media='all' />
+   <link rel='stylesheet' href='assets/css/woocommerce.css' type='text/css' media='all' />
+
+
+   <style>
+      .news_box.default_style.list_view .image {
+    margin-bottom: 20px;
+   }
+      .c-height
+      {
+         height: 400px;
+      }
+
+      .im-sr
+      {
+         border: 1px solid #eee;
+         text-align: center;
+         padding: 5px 0px 10px 0px;
+         margin-bottom: 30px;
+      }
+
+      .container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content input{
+  display: none;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 32%;
+  margin-right: 50px;
+}
+
+.content .list label{
+  cursor: pointer;
+  height: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  /*padding-left: 25px;*/
+  color: #2f2f2f;
+  transition: all 0.5s ease;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #AE0809;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  /*border-radius: 12px;*/
+  transition: all 0.5s ease;
+  
+  /*background: #ae0809;*/
+}
+
+#home:checked ~ .list .slider{
+  top: 0;
+}
+
+#blog:checked ~ .list .slider{
+  top: 60px;
+}
+
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+
+.content .text-content{
+  width: 68%;
+  height: 100%;
+  color: #2f2f2f;
+}
+
+.content .text{
+  display: none;
+}
+
+.content .text .title{
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.container .text p{
+  text-align: justify;
+}
+
+.content .text-content .home{
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+
+.im-image
+{
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.im-images
+{
+   border: 1px solid #ccc;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.c-botm
+{
+   margin-bottom: 40px;
+}
+
+.dn-botm
+{
+  margin-bottom: 5px!important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.pr-type
+{
+  font-size: 16px!important
+}
+
+.c-pr-img
+{
+  width: 85%;
+}
+
+
+
+   </style>
+</head>
+<body class="theme-creote">
+   <div id="page" class="page_wapper hfeed site">
+      <div id="wrapper_full" class="content_all_warpper">
+         <div class="header_area" id="header_contents">
+            <div class="top_bar style_one">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-12">
+                        <div class="top_inner">
+                           <div class="left_side common_css">
+                              <div class="contntent address">
+                                 <i class="icon-placeholder"></i>
+                                 <div class="text">
+                                    <small>Corporate Office</small>
+                                    <span>Janakpuri, New Delhi</span>
+                                 </div>
+                              </div>
+                              <div class="contntent email">
+                                 <i class="icon-email"></i>
+                                 <div class="text">
+                                    <small>Email</small>
+                                    <a href="mailto:enquiry@mantech.in">enquiry@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="right_side common_css">
+                              <div class="contntent phone">
+                                 <i class="icon-phone-call"></i>
+                                 <div class="text">
+                                    <small>Phone</small>
+                                    <a href="tel:011-25516281">011-25516281</a>
+                                 </div>
+                              </div>
+                              <div class="contntent media">
+                                 
+                                 <div class="text">
+                                    <a href="https://www.facebook.com/mantech.automation.33" target=_blank rel=nofollow>
+                                       <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target=_blank rel=nofollow>
+                                       <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target=_blank rel=nofollow>
+                                       <i class="fa fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <header class="header header_default style_one get_sticky_header">
+               <div class="auto-container">
+                  <div class="row align-items-center">
+                     <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column">
+                        <div class="header_logo_box">
+                           <a href="index.html" class="logo navbar-brand">
+                              <img src="assets/images/logo.png" alt="" class="logo_default">
+                              <img src="assets/images/logo.png" alt="" class="logo__sticky">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column">
+                        <div class="navbar_togglers hamburger_menu">
+                           <span class="line"></span>
+                           <span class="line"></span>
+                           <span class="line"></span>
+                        </div>
+                        <div class="header_content_collapse">
+                           <div class="header_menu_box">
+                              <div class="navigation_menu">
+                                 <ul id="myNavbar" class="navbar_nav">
+                                    <li class="menu-item">
+                                       <a href="index.html" class="dropdown-toggle nav-link">
+                                          <span>Home</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="about.html" class="dropdown-toggle nav-link">
+                                          <span>About Us</span>
+                                       </a>
+                                    </li>
+                                    
+                                  <li
+                                       class="menu-item menu-item-has-children dropdown dropdown_full position-static mega_menu nav-item">
+                                       <a href="javascript:;" class="dropdown-toggle nav-link"><span>Products</span></a>
+                                       <ul class="dropdown-menu width_60_percentage">
+                                          <li>
+                                             <div class="row">
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-thermal-solutions.html"><h5 class="h-thrml">Honeywell Thermal Solutions</h5></a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="burners.html">
+                                                               <img src="assets/images/mn.png" class="im-menu">
+                                                               <p class="brn-mn">Burners</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="sequence-controllers.html">
+                                                               <img src="assets/images/mn1.png" class="im-menu">
+                                                               <p class="brn-mn">Sequence Controllers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="regulators-valves.html">
+                                                               <img src="assets/images/mn2.png" class="im-menu">
+                                                               <p class="brn-mn">Regulators, Valves & Actuators</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="filters-pressure-switch.html">
+                                                               <img src="assets/images/mn3.png" class="im-menu">
+                                                               <p class="brn-mn">Filters, Pressure Switch & Gauges</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                     <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="ignition.html">
+                                                               <img src="assets/images/mn12.png" class="im-menu">
+                                                               <p class="brn-mn">Ignition And Flame Monitoring</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                             
+                                                              <div class="menu-bx">
+                                                                 <a href="customized-solutions.html">
+                                                               <img src="assets/images/mn13.png" class="im-menu">
+                                                               <p class="brn-mn">Customized <br>Solutions</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                                
+                                                
+
+                                                <div class="col-lg-4 m_column" style="border-right: 1px solid #d0d0d0;">
+                                                   <a href="honeywell-analytics.html">
+                                                    <h5 class="h-thrml">Honeywell Analytics</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honey-fixed.html">
+                                                               <img src="assets/images/mn4.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Fixed Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="fixed-type-flame-detectors.html">
+                                                               <img src="assets/images/mn5.png" class="im-menu">
+                                                               <p class="brn-mn">Fixed Type Flame Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    
+                                                    <div class="row">
+                                                           <div class="col-md-6 pad-rt">
+                                                              <div class="menu-bx">
+                                                                 <a href="gas-detection-control-panel.html">
+                                                               <img src="assets/images/mn6.png" class="im-menu">
+                                                               <p class="brn-mn">GAS Detection Control Panel</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="honeywell-portable-gas-detectors.html">
+                                                               <img src="assets/images/mn8.png" class="im-menu">
+                                                               <p class="brn-mn">Honeywell Portable Gas Detectors</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                      
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-lg-4 m_column">
+                                                   <a href="drae-ger.html">
+                                                    <h5 class="h-thrml">Draeger</h5>
+                                                  </a>
+                                                   <div class="list_item_box style_one">
+                                                       
+                                                      <div class="row">
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-protection.html">
+                                                               <img src="assets/images/mn11.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Protection Portfolio</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                        
+                                                           
+                                                           <div class="col-md-6 pad-lt">
+                                                              <div class="menu-bx">
+                                                                 <a href="draeger-flue.html">
+                                                               <img src="assets/images/mn9.png" class="im-menu">
+                                                               <p class="brn-mn">Draeger Flue Gas Analyzers</p>
+                                                               </a>
+                                                         </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <br>
+                                                    
+                                                      <div class="row">
+                                                         <div class="col-md-6 pad-rt">
+                                                            <div class="menu-bx">
+                                                               <a href="draeger-impairment.html">
+                                                                  <img src="assets/images/mn10.png" class="im-menu">
+                                                                  <p class="brn-mn">Draeger Impairment Check</p>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                    
+                                                   </div>
+                                                </div>
+
+                                       
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    
+                                     
+                                    <li class="menu-item">
+                                       <a href="services.html" class="dropdown-toggle nav-link">
+                                          <span>Services</span>
+                                       </a>
+                                    </li>
+                                    
+                                    <li class="menu-item">
+                                       <a href="case.html" class="dropdown-toggle nav-link">
+                                          <span>Case Studies</span>
+                                       </a>
+                                    </li>
+                                    
+                                    
+                                       <li class="menu-item">
+                                          <a href="knowledge-bank.html" class="dropdown-toggle nav-link">
+                                             <span>Knowledge Bank</span>
+                                          </a>
+                                       </li>
+                                    <li class="menu-item">
+                                      <a href="client.html" class="dropdown-toggle nav-link">
+                                         <span>Clients</span>
+                                      </a>
+                                   </li>
+
+                                    <li class="menu-item">
+                                       <a href="career.html" class="dropdown-toggle nav-link">
+                                          <span>Career</span>
+                                       </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                       <a href="contact.html" class="dropdown-toggle nav-link">
+                                          <span>Contact</span>
+                                       </a>
+                                    </li>
+                                 
+                                 
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="header_right_content">
+                              <ul>
+                                <li>
+                                    <button type="button" class="contact-toggler"><i class="icon-bar"></i></button>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+        
+
+
+
+   <div id="content" class="site-content">
+
+   <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Air Purifying Respirators (APR)</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr29.png" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 1300/1700/1900</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Filtering Face Pieces (FFPs)</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Single-use dust masks – FFP1, FFP2, FFP3.</p>
+                                             <p class="dn-botm" style="display: list-item;">CoolSafe filter material. </p>
+                                             <p class="dn-botm" style="display: list-item;">Optional exhalation valve. </p>
+                                             <p class="dn-botm" style="display: list-item;">Typical area of application: working in dusty environments.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr30.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 2100</a>
+                                            </h2>
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Half Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">This single-filter half mask is the reusable alternative to disposable dust masks: Its replaceable filters provide protection against solid and liquid particles. </p>
+                                             <p class="dn-botm" style="display: list-item;">This half mask is ideal for frequent work in dusty environments offering both comfort, safety and cost-effectiveness.</p> 
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:0px;">
+                                          <img src="assets/images/xp-lore.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 3300</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Half Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Our twin-filter masks offer you light weight, free vision and excellent protection and comfort. Choose from the low- maintenance, cost-effective </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr31.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 3500</a>
+                                            </h2>
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Half Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">long lasting protection under tough conditions.  </p>
+                                              
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr32.jpg"  alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 4700</a>
+                                            </h2>
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Half Face Mask</a>
+                                            </h2>
+
+                                              <p class="dn-botm" style="display: list-item;">This extremely robust single-filter half mask offers excellent comfort and outstanding leak tightness for demanding  applications. Two filter connection types (Rd40 or Dräger  X-plore Rd90 filters) accommodate a variety of applications with  suitable particle, gas and combination filters.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr33.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 5500</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Full Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Specially designed for use in environments that require increased respiratory protection and clear vision.</p>
+                                             <p class="dn-botm" style="display: list-item;">Choice of impact-proof Polycarbonate material or scratch-proof and chemical-resistant Triplex glass for excellent peripheral vision and large field of view.</p>
+                                             <p class="dn-botm" style="display: list-item;">Equipped with two lateral bayonet connections for use with the comprehensive Dräger X-plore® bayonet filter series.</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr34.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 6000</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Full Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">High level of protection with secure seal for nearly every type of face thanks to double layer face seal.</p>
+                                             <p class="dn-botm" style="display: list-item;">Fast and easy donning and doffing of the mask without hair entanglement</p>
+                                             <p class="dn-botm" style="display: list-item;">Large, distortion free visor with excellent field of vision and high chemical, thermal and mechnical resistance</p>
+                                             <p class="dn-botm" style="display: list-item;">No pressure point on the head thanks to comfertable 5-point harness</p>
+                                             <p class="dn-botm" style="display: list-item;">Ease of use due to robust standard thread connection for Rd40 filter and powered air purifying respirators</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr35.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             FPS 7000</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Full Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Specially developed for use in mining and firefighting.</p>
+                                             <p class="dn-botm" style="display: list-item;">Dräger FPS® 7000’s ergonomic head harness provides an outstanding and comfortable fit on all face shapes and contours.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Offers optimal solution for field communication, such as tactical radio, voice amplifier, or the Dräger FPS-COM 5000 communication system.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The mask’s parts and components are flexible and versatile for easy maintenance and modularity.</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr36.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Panorama Nova</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Full Face Mask</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Specially designed for the highest standards of protection, sealing, and quality.</p>
+                                             <p class="dn-botm" style="display: list-item;">Made from hypoallergenic EPDM or silicone, the Dräger Panorama® Nova remains flexible at both high and low temperatures.</p>
+                                             <p class="dn-botm" style="display: list-item;">High-quality workmanship ensures long service life and long-term cost savings.</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:0px;">
+                                          <img src="assets/images/pr/pr37.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             RD40 Filters</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Filters</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The X-plore Rd40 filter series offers various filter types for major applications and protects against many hazardous substances – from phosphine to tear gas to particulates.</p>
+                                             <p class="dn-botm" style="display: list-item;">The gas filters and combination filters have a shelf-life of 6 years and the particle filters a shelf life of 12 years from date of manufacture.</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                   <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr90.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             RD90 Filters</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Filters</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Robust aluminium housing</p>
+                                             <p class="dn-botm" style="display: list-item;">To be used in combination with X-plore 4700 half masks</p>
+                                             <p class="dn-botm" style="display: list-item;">The X-plore Rd90 filter series offers an extensive range of various filter types for all major applications and protects against many gases and vapors.</p>
+                                             
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr38.png" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Bayonet Filters</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Filters</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The innovative Dräger X-plore® Bayonet filter series is designed for a wide range of applications. It combines modern design with low breathing resistance. Because the bayonet filter is positioned on the side of the respirator mask, the wearer has a wide, uninterrupted field of vision.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr39.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             X-plore 8500/ 8700</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Powered Air Purifying Respirators (PAPRs)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Specially constructed air intake  for easy breathing</p>
+                                             <p class="dn-botm" style="display: list-item;">Low breathing resistance thanks  to the innovative construction</p>
+                                             <p class="dn-botm" style="display: list-item;">Waterproofness thanks to the protective  casing and hydrophobic ilter</p>
+                                             <p class="dn-botm" style="display: list-item;">Lateral position of the filters for an unrestricted field of vision and even weight distribution</p>
+                                             <p class="dn-botm" style="display: list-item;">It is Ex-proof and can be used in ex-zones 1, 2, 21, and 22.</p>
+                                             <p class="dn-botm" style="display: list-item;"><b>approvals: ATEX, IECEx</b></p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                              </div>
+                            
+                              <div class="pd_bottom_70"></div>
+                           </section>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">SCBA, CCBA & Airline Systems</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr40.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS 3000 SCBA</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PSS 3000 is a new generation of high performing breathing apparatus for firefighters. Combining comfort with exceptional pneumatic performance, it is designed for applications where simplicity and ease of use are key essentials. Lightweight yet robust, and easy to don, this advanced breathing apparatus provides the ultimate in breathing protection.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr41.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS 4000 SCBA</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PSS 4000 is one of the lightest professional self-contained breathing apparatus for firefighters. Combining comfort with exceptional pneumatic performance, this SCBA is designed for applications where simplicity and ease of use are crucial. Lightweight yet robust, and easy to don, the PSS® 4000 provides outstanding breathing protection.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr42.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS 5000 SCBA</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PSS® 5000 SCBA is a high performance breathing apparatus for the professional firefighter. Combining advanced ergonomics with a wide range of configurable options the Dräger PSS® 5000 provides the user with the comfort and versatility to meet the demands of first responders whenever breathing protection is required.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                    <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr43.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS 7000 SCBA</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Dräger PSS® 7000 breathing apparatus is a major milestone in our continuing development of breathing devices for the professional firefighter.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr44.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS AirBoss Active</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PSS® AirBoss offers best in class ergonomics and is one of the lightest weight breathing apparatus for firefighting with twinning capability. Lessons learned from firefighters around the world as well as latest innovations in technology have led us to design an even safer and cleaner SCBA system to enable you to breathe more easily and for longer. it comes with mechanical gauge and lowest weight.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr45.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS AirBoss Agile</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Electronic gauge</p>
+                                             <p class="dn-botm" style="display: list-item;">Integrated PASS device </p>
+                                             <p class="dn-botm" style="display: list-item;">Low pressure warning </p>
+                                             <p class="dn-botm" style="display: list-item;">Motion alert</p>
+                                             <p class="dn-botm" style="display: list-item;">Thermal alert </p>
+                                             <p class="dn-botm" style="display: list-item;">Manual distress alert </p>
+                                             <p class="dn-botm" style="display: list-item;">LED buddy and status lights </p>
+                                             <p class="dn-botm" style="display: list-item;">Electronic sounders </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr46.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS AirBoss Connect</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Digital gauge </p>
+                                             <p class="dn-botm" style="display: list-item;">Telemetry PASS </p>
+                                             <p class="dn-botm" style="display: list-item;">Time-To-Whistle calculation</p>
+                                             <p class="dn-botm" style="display: list-item;">360° LED buddy and status lights </p>
+                                             <p class="dn-botm" style="display: list-item;">Automated accountability via telemetry</p>
+                                             <p class="dn-botm" style="display: list-item;">Evacuation alerts</p>
+                                             <p class="dn-botm" style="display: list-item;">Compatible with Dräger FireGround</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr47.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PAS Lite</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Self-Contained Breathing Apparatus (SCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">For use in industrial applications where a simple, robust and easy to use breathing apparatus is required, the Dräger PAS® Lite Self-Contained Breathing Apparatus (SCBA) combines reliability with comfort and performance, as well as excellent service life and easy maintenance.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr48.png" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS BG4 Plus</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Closed Circuit Breathing Apparatus (CCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Whenever emergency teams are saving lives or extinguishing fires, above or below the ground, the Dräger PSS BG 4 plus comes into its own. Whether used during rescue or fire fighting missions in mines, tunnels or underground train ducts, or in assignments with long access routes, the closed-circuit breathing apparatus is the first choice.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr49.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PSS BG ProAir</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Closed Circuit Breathing Apparatus (CCBA)</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Specially designed for longer durations: The Dräger BG ProAir is a positive pressure closed circuit breathing apparatus that combines uncompromising safety with the highest level of breathing and carrying comfort. Easier to carry, easier to breathe - giving you more time to get the job done and return safely.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr50.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PAS Airpack 1</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PAS AirPack 1 is able to accommodate up to four compressed air cylinders of up to 12 litres in capacity and is constructed from an anti-static powder coated steel material.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">A 50 metre length of hose is supplied with the PAS AirPack 1 as standard, this can be extended to a length of 100 metres with a range of extension hoses</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The PAS AirPack has been ergonomically designed to facilitate ease of operation, general handling and mobility.</p>
+                                             <p class="dn-botm" style="display: list-item;">Draeger PAS Airpack 1 incroporate fall safe pneumatic design</p>
+                                             <p class="dn-botm" style="display: list-item;">Draeger PAS Airpack 1 meet the requirement of EN14593</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr51.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PAS Airpack 2</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PAS AirPack 2 is able to accommodate one or two compressed air cylinders of up to 50 litres in capacity and is constructed from an anti-static powder coated steel material.</p>
+                                             <p class="dn-botm" style="display: list-item;">It is available with either one or two pre s sure reducers and two hose reels allowing joint use of the system or for two completely independent systems to run concurrently. A 50 metre length of hose is supplied with Dräger PAS AirPack 2 as standard, this can be extended to a length of 100 metres with a range of extension hoses.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr52.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger PAS® MAC Series (PAS MAC 1000/ 2000/ 4000) Airline Equipment</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Providing continuous breathing quality air to safety professionals in the harshest of environments, these Mobile Breathing Air Compressors meet the needs of single or multiple users over long durations. Available in electric- or diesel-driven versions, each of the four models is fully compatible with Dräger compressed air and airline breathing equipment.</p>
+                                             <p class="dn-botm" style="display: list-item;">Rugged and reliable in severe conditions</p>
+                                             <p class="dn-botm" style="display: list-item;">Safe operation by the use of a reserve system</p>
+                                             <p class="dn-botm" style="display: list-item;">Continuous breathing quality air acc. to EN 12021</p>
+                                             <p class="dn-botm" style="display: list-item;">Electric (ATEX option) and diesel driven versions</p>
+                                             <p class="dn-botm" style="display: list-item;">The mobile breathing air compressors are available in the versions PAS MAC1000, 2000, 4000 and 8000.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr53.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger PAS® Filter series (PAS FILTER 3000/ 3500/5000/ 5500/ 7000/ 7500/ 9000/9500) Airline System</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PAS® filters reliably clean air, e.g. from an existing highpressure network, from liquid and solid particles, including oil vapour and smell.</p>
+                                             <p class="dn-botm" style="display: list-item;">Wall-mounted or portable</p>
+                                             <p class="dn-botm" style="display: list-item;">Manually adjustable air pressure</p>
+                                             <p class="dn-botm" style="display: list-item;">Compatible with all Dräger breathing air systems</p>
+                                             <p class="dn-botm" style="display: list-item;">two connection options: for max. three (760 L/min) or max. five persons (1,080 L/min)</p>
+                                             <p class="dn-botm" style="display: list-item;">included in the scope of supply: active carbon and particle filters for solid and liquid particles incl. humidity,</p>
+                                             <p class="dn-botm" style="display: list-item;">oil droplets and smells</p>
+                                             <p class="dn-botm" style="display: list-item;">optional: pre-filter for heavy soiling</p>
+                                             <p class="dn-botm" style="display: list-item;">robust, stable housing made of polyethylene</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr54.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger PAS Colt & Micro (Heavy duty systems)</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">Combining versatility, ease of use and the latest in breathing apparatus design, Dräger’s PAS® Colt is among the most technologically advanced short duration and emergency escape units available.</p>
+                                             <p class="dn-botm" style="display: list-item;">Ergonomically designed harness</p>
+                                             <p class="dn-botm" style="display: list-item;">Modular Drop-down facility</p>
+                                             <p class="dn-botm" style="display: list-item;">The PAS Colt is machine washable and easy to maintain.</p>
+                                             <p class="dn-botm" style="display: list-item;">Draeger PAS Colt & Micro has Airline Connection, For use in combination with an external air supply (air hose system or compressed air network) and optional automatic switch-over valve (ASV) between the external supply and the compressed air cylinder</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr55.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger X-plore® 9x00 and PAS X-plore</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Airline Systems</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger X-plore® 9x00 series is designed for light duty industrial applications and provides comfortable and reliable respiratory protection. Thanks to such features as the unique safe-flow reducer and auto-test function, wearers can enjoy more operating convenience, safety and flexibility.</p>
+                                           
+                                             <p class="dn-botm" style="display: list-item;">Always delivers the right amount of air</p>
+                                             <p class="dn-botm" style="display: list-item;">Full compatibility for more selection</p>
+                                             <p class="dn-botm" style="display: list-item;">Rugged, robust and simple to use</p>
+                                             <p class="dn-botm" style="display: list-item;">Cost effective maintenance</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              <div class="pd_bottom_70"></div>
+                           </section>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Telemetry & Communications</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+                                <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr56.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger C-C440</a>
+                                            
+                                             <p class="dn-botm" style="display: list-item;">Specially developed for deployments using chemical protective suits. Designed to be particularly sturdy, robust, and water-repellant for a variety of applications. The large pressure area of the Dräger C-C440 push-to-talk button enables secure voice transmission when operated via the equipment or worn under protective clothing.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr57.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger C-C500</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Specially designed for a variety of applications, including potentially explosive environments. Integrated microphone and speaker make it possible to use the Dräger C-C500 without an upper unit. Two large push-to-talk buttons enable secure voice transmission when operated via the equipment or worn under protective clothing.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr58.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger C-C550</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">User-friendly control unit that allows for independent deployments with the radio receiver. Two large push-to-talk buttons enable secure voice transmission even when wearing protective clothing like gloves. Integrated microphone and speaker make it possible to use the Dräger C-C550 without a connected headset.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr59.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger E-COM</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Cost-effective, multi-purpose solution that is ideal for areas with high noise levels and for wearing under chemical protective suits.</p>
+                                             <p class="dn-botm" style="display: list-item;">In-ear bone conducive microphone with loudspeaker is positioned directly inside the ear.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr60.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger MS-COM</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Developed with additional click-on system for attachment to the Dräger Panorama Nova full-face mask. High quality speech transmission with the microphone positioned next to the speech membrane. Possible connections via universal plug to Dräger Control Units and to a number of different radio devices.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr61.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger ANP-COM</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Specially developed for use in working environments with high noise volumes, such as offshore sites, shipyards, helicopters, and engine rooms. Even if the battery of the Dräger ANP-COM runs out, it is still possible to transmit and receive radio messages. The slender and durable design makes the Dräger ANP-COM ideal for use with protective headwear like helmets. High-quality earmuff cushions make the Dräger ANP-COM ideal for lengthy periods of comfortable use.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr62.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             FPS COM 7000</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Specially developed for hands-free communication during a mission in extreme conditions, requiring protective equipment that restricts body movement. Newly developed digital noise reduction suppresses ambient noises and filters breathing noises, providing optimum voice quality. Voice-activated function provides fast and efficient full-duplex communication within one group or among different ones.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr63.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             FPS COM 5000</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Specifically developed for the full-face mask Dräger FPS® 7000 Digital noise reduction technology filters out any interference, even in the loudest environment. Communication unit shuts off automatically after a pre-alarm, increasing battery life and lowering maintenance cost.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr64.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Head Up Display</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">One of the many benefits of the FPS® 7000 Facemask is the option of fitting a head up display. Always within the field of view the head up display allows easy monitoring of the cylinder contents without any manual action by the wearer.</p>
+                                             <p class="dn-botm" style="display: list-item;">Easy to fit and remove</p>
+                                             <p class="dn-botm" style="display: list-item;">Well Protected</p>
+                                             <p class="dn-botm" style="display: list-item;">Long battery life</p>
+                                             <p class="dn-botm" style="display: list-item;">Wireless operation</p>
+                                             <p class="dn-botm" style="display: list-item;">Easy to read LED's</p>
+                                             <p class="dn-botm" style="display: list-item;">Additional low air pressure warning</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr89.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger FireGround Entry Control</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The incident commander needs live information from all SCBA wearers at all entry points and to know they are accounted for in any scenario. The Dräger FireGround Accountability System accomplishes this in a rapidly deployable mode, minimises the need for voice communication via radio and allows remote monitoring with incident reporting.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Precise monitoring with independent real time data transmission</p>
+                                             <p class="dn-botm" style="display: list-item;">Automatic activation and log-on</p>
+                                             <p class="dn-botm" style="display: list-item;">Real-time transmission with a broad range of alerts</p>
+                                             <p class="dn-botm" style="display: list-item;">Non-verbal communication allows less radio traffic</p>
+                                             <p class="dn-botm" style="display: list-item;">Rapid team deployment</p>
+                                             <p class="dn-botm" style="display: list-item;">Remote Monitoring</p>
+                                             <p class="dn-botm" style="display: list-item;">Customised incident reporting and comprehensive analysis</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+
+
+
+         <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Escape Protection</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                 
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr65.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             PARAT Escape 1260 Mouthpiece</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Short Escape Path, Sufficient Oxygen, Known Hazards</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Designed with simplicity in mind, the Dräger PARAT® 1260 is an extra small mouthpiece / nose clip filtering escape device equipped with a multi-gas ABEK filter that offers you 10 minutes of protection against a variety of toxic industrial gases and vapours. The device and filter are vacuum sealed in an aluminum barrier bag, making it better suited for diverse climate zones.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">The smallest escape respirator in the Dräger PARAT® family</p>
+                                             <p class="dn-botm" style="display: list-item;">Robust case with added safety</p>
+                                             <p class="dn-botm" style="display: list-item;">A clear view inside</p>
+                                             <p class="dn-botm" style="display: list-item;">The PARAT 1260 offers you simple, safe, and sound technology</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr66.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             PARAT 4700/5500/7500 Escape Hood</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Short Escape Path, Sufficient Oxygen, Known Hazards</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">PARAT filtering hoods protect the wearer’s respiratory tract and eyes for 15 minutes in the event of an evacuation (DIN 58647-7 approved). Its ergonomic shape suits all face types, and the internal elastic harness means no additional tightening mechanism is required. The anti-fog coating on the visor and the exhalation valve, which evacuates the warm, humid air exhaled, delivers unrivalled comfort for the wearer. The fluorescent yellow hood ensures the wearer can be seen, even through smoke during a fire.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">Depending on the model, the hoods can protect the wearer from industrial vapours and gases, combustible gases and particles.</p>
+                                             <p class="dn-botm" style="display: list-item;">PARAT hoods are available in several different forms of robust packaging which successfully protect the escape device:</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr67.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             PARAT Escape 3160/3260 Mouthpiece</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Short Escape Path, Sufficient Oxygen, Known Hazards</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger PARAT® 3160/3260 is a mouthpiece / nose clip escape device equipped with a multi-gas ABEK15 filter. Approved to the only recognized standard for filtering industrial escape devices (DIN 58647-7), it provides users a minimum of 15 minutes escape time. Compared to PARAT® 3160/3260, the device and filter are vacuum sealed in an aluminum barrier bag, making it better suited for diverse climate zones.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr68.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger Saver CF</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Short Escape Path, In-sufficient Oxygen, Unknown Hazards</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger Saver CF constant flow Emergency Escape Breathing Apparatus allows safe, effective and uncomplicated escape from hazardous environments. Simple to put on and featuring automatic operation, this hood-based, constant flow breathing device can be used with minimal training</p>
+                                             <p class="dn-botm" style="display: list-item;">When time is of the essence</p>
+                                             <p class="dn-botm" style="display: list-item;">Highly visible, even under adverse conditions</p>
+                                             <p class="dn-botm" style="display: list-item;">Up to 15 minutes of lifesaving air</p>
+                                             <p class="dn-botm" style="display: list-item;">New options for added safety and durability</p>
+                                             <p class="dn-botm" style="display: list-item;">Low-maintenance protection</p>
+                                             <p class="dn-botm" style="display: list-item;">The Dräger Saver CF complies with the essential health and safety requirements of the PPE Regulation (EU) 2016/425 and is tested and designed in accordance with EN1146 (2005), DNV GL Certificate of Fire Approval and DNV GL Certificate of Type Approval.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr69.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger Saver PP</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Short Escape Path, In-sufficient Oxygen, Unknown Hazards</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Saver PP positive pressure Emergency Escape Breathing Apparatus allows safe, effective and uncomplicated escape from hazardous environments, even if H2S is present. Simple to put on and featuring automatic operation, this positive-pressure breathing device features an integrated full-face mask and can be used in conjunction with other safety equipment such as ear protectors or helmets.</p>
+                                             <p class="dn-botm" style="display: list-item;">When time is of the essence</p>
+                                             <p class="dn-botm" style="display: list-item;">Highly visible, even under adverse conditions</p>
+                                             <p class="dn-botm" style="display: list-item;">Up to 15 minutes of lifesaving air</p>
+                                             <p class="dn-botm" style="display: list-item;">Panorama Nova full-face mask</p>
+                                             <p class="dn-botm" style="display: list-item;">Integrated hose for connection to external air supplies</p>
+                                             <p class="dn-botm" style="display: list-item;">Low-maintenance, low cost protection</p>
+                                             <p class="dn-botm" style="display: list-item;">Conforms to relevant standards and norms</p>
+                                             <p class="dn-botm" style="display: list-item;">High protection against H2S</p>
+                                             <p class="dn-botm" style="display: list-item;">Cold temperature option down to -30 °C</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr70.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Dräger Oxy® 3000/6000 MK II</a>
+                                            </h2>
+
+                                              <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Long Escape Path, In-sufficient Oxygen, Unknown Hazards</a>
+                                            </h2>
+                                            
+
+                                             <p class="dn-botm" style="display: list-item;">The oxygen self-rescuers Dräger Oxy 3000 and 6000 MK III are easy and fast to handle under extreme conditions and are service-free for up to 10 years while being worn. The unique safety eye provides you the ability to check the device without additional tools. The Oxy series provides breathing protection according to the highest standards since decades - made in Germany.</p>
+                                             <p class="dn-botm" style="display: list-item;">High level of safety and comfort</p>
+                                             <p class="dn-botm" style="display: list-item;">30 and 60 minutes</p>
+                                             <p class="dn-botm" style="display: list-item;">Less maintenance, lower costs</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr71.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger Industrial Refuge Stations</a>
+                                            </h2>
+
+                                             <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Escape to breathable atmosphere not possible</a>
+                                            </h2>
+                                            
+
+                                             <p class="dn-botm" style="display: list-item;">Refuge Stations are recommended where Escape to breathable atmosphere not possible. It makes you safe even in dengerious situation</p>
+                                             <p class="dn-botm" style="display: list-item;">whether you work in a tunneling, oil and gas or mining industries. Your daily work involve gaseous and particle hazards. The industrial refude solutions provide necessary protection from from hazards. Depending on their size, they offer  space for upto 100 person. Protection can be last from 1 hour to 96 hours and longer depending on application.</p>
+                                             <p class="dn-botm" style="display: list-item;">You can choose whether you can buy or rent a refuge chamber. </p>
+                                             <p class="dn-botm" style="display: list-item;">we also customized refuge solutions as per customer need.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+
+
+
+         <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Body Protection</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                                
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr72.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             CPS 7900</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+                                            
+                                             <p class="dn-botm" style="display: list-item;">Tailor-made for use under extreme conditions: The gas-tight Dräger CPS 7900 provides excellent protection against industrial chemicals, biological agents, and other toxic substances. Its innovative material qualifies the CPS 7900 equally well for work in explosive areas and for handling cryogenic substances.</p>
+                                             <p class="dn-botm" style="display: list-item;">SCBA worn inside the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ five suit sizes (S-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ side zipper</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material D-mex, resusable</p>
+                                             <p class="dn-botm" style="display: list-item;">Outstanding wearing comfort</p>
+                                             <p class="dn-botm" style="display: list-item;">Never again gasping for a breath</p>
+                                             <p class="dn-botm" style="display: list-item;">Ready at any time</p>
+                                             <p class="dn-botm" style="display: list-item;">available in a compressed air breathing apparatus often is insufficient to cover both activities. For this reason the suit can be equipped with optional pass thrus.</p>
+                                             <p class="dn-botm" style="display: list-item;">Intelligent details from head to toe</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr73.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             CPS 7800</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The reusable gas-tight Dräger CPS 7800 provides excellent protection against gaseous, liquid, aerosol and solid hazardous substances even in explosive areas. Due to its innovative material and the new suit design it offers increased flexibility and comfort when entering confined spaces and working with cryogenic substances.</p>
+                                             <p class="dn-botm" style="display: list-item;">SCBA worn over the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ five suit sizes (S-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ diagonal zipper for easy donning and doffing without assistance</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material D-mex, resusable</p>
+                                             <p class="dn-botm" style="display: list-item;">Reliable protection</p>
+                                             <p class="dn-botm" style="display: list-item;">integrated Panorama Nova full face mask or face cuff. Stress reduction, especially during prolonged use, can be achieved by equipping the suit with ventilation systems.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr74.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             CPS 6900</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">If you are looking for protection against cryogenic hazardous substances and low concentrations of acids and alkalis then the Dräger CPS 6900 chemical protective suit is the right choice. The new and innovative suit design is both flexible and comfortable.</p>
+                                             <p class="dn-botm" style="display: list-item;">SCBA worn inside the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ five suit sizes (S-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ side zipper for donning without assistance</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material Umex, reusable</p>
+                                             <p class="dn-botm" style="display: list-item;">Outstanding protection</p>
+                                             <p class="dn-botm" style="display: list-item;">Perfectly adapted to your needs</p>
+                                             <p class="dn-botm" style="display: list-item;">Never again gasping for a breath</p>
+                                             <p class="dn-botm" style="display: list-item;">Always ready for use with low service expenses</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr75.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Work Master Industry</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Particularly resistant against alkaline solutions and acids. The chemical protection suit WorkMaster Industry provides reliable protection during tank and boiler cleaning, during maintenance and repair work in narrow spaces or refineries, during chemical transports, cleanup operations and many other dangerous types of work.</p>
+                                             <p class="dn-botm" style="display: list-item;">Gas-tight suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ SCBA worn over the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ four suit sizes (M-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ zipper on the back</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material Symex, reusable</p>
+                                             <p class="dn-botm" style="display: list-item;">Optional Regulation valve Dräger PT 120 L</p>
+                                             <p class="dn-botm" style="display: list-item;">Optional knee and elbow reinforcement</p>
+                                             <p class="dn-botm" style="display: list-item;">Good maneuverability</p>
+                                             <p class="dn-botm" style="display: list-item;">Tool less glove exchange</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr76.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             CPS 5900</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger CPS 5900 is the ideal limited-use, gas-tight chemical protective suit for hazmat incidents. Where complete protection against hazardous gases, liquids and particles is of the utmost priority, this lightweight garment is the suit of choice.</p>
+                                             <p class="dn-botm" style="display: list-item;">Gas-tight suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ SCBA worn inside the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ five suit sizes (S-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ side zipper</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material Zytron® 500, limited use</p>
+                                             <p class="dn-botm" style="display: list-item;">The right level of protection</p>
+                                             <p class="dn-botm" style="display: list-item;">Offering even more comfort</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr77.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             CPS 5800</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger CPS 5800 is a limited-use chemical protective suit for industrial applications and operations on board that involve a gaseous, liquid or solid hazardous substance.</p>
+                                             <p class="dn-botm" style="display: list-item;">SCBA worn over the protective suit</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ four suit sizes (M-XXL)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ diagonal zipper for donning without assistance</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ suit material Zytron® 500, limited use</p>
+                                             <p class="dn-botm" style="display: list-item;">Comprehensive protection</p>
+                                             <p class="dn-botm" style="display: list-item;">Comfortable to wear</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ large opening for donning / doffing (diagonally across the front); with no additional assistance required</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ zipper with external chain and a downward direction of fastening</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ double flap with continuous hook-and-loop fastener protects zip fastener</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ soft Dräger face cuff</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ integrated gas-tight socks with boot flaps for use with multiple boot sizes</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ fixed gloves combine butyl outer with laminate inner lining for increased protection against chemicals and punctures</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ Dräger pressure relief valve for discharging air from the suit</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr78.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             SPC 4400 / SPC 4800 / SPC 4900</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">Overall with hood (SPC 4400), protective suit with facial cuff (SPC 4800) or full-body protective suit with</p>
+                                             <p class="dn-botm" style="display: list-item;">visor (SPC 4900)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ CPM (single use) or CLF (limited use)</p>
+                                             <p class="dn-botm" style="display: list-item;">‒ Antistatic version available</p>
+                                             <p class="dn-botm" style="display: list-item;">Reliable protection, yet light and comfortable</p>
+                                             <p class="dn-botm" style="display: list-item;">SPC 4400 overall with hood: The coverall has a front opening, hood, elastic leg and arm ends. It can be used</p>
+                                             <p class="dn-botm" style="display: list-item;">individually with different respiratory protection products, gloves and boots.</p>
+                                             <p class="dn-botm" style="display: list-item;">SPC 4800 protective suit with facial cuff: This protective suit variant with face cuff is used in combination with.</p>
+                                             <p class="dn-botm" style="display: list-item;">full face mask. In addition, the suit is preconfigured with gloves and integrated socks.</p>
+                                             <p class="dn-botm" style="display: list-item;">SPC 4900 full-body protective suit with visor: The full protection suit is used with an internal SCBA inside the</p>
+                                             <p class="dn-botm" style="display: list-item;">suit and is pre-configured with integrated gloves and socks.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr79.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             SPC 2400 PVC & Flexothane</a>
+                                            </h2>
+
+                                            <h2 class="title">
+                                              <a href="javascript:;" class="pr-type" rel="bookmark">Product Type : Chemical Protection Suits / Gas Tight Suits</a>
+                                            </h2>
+
+                                             <p class="dn-botm" style="display: list-item;">The Dräger SPC 2400 is a reusable suit, which is reliable in protecting you from liquids and dust. The suit is available in a specially robust version made of PVC or as a light, water vapour permeable version made of flexothane.</p>
+                                             <p class="dn-botm" style="display: list-item;">Dräger SPC 2400 PVC</p>
+                                             <p class="dn-botm" style="display: list-item;">Dräger SPC 2400 Flexothane</p>
+                                             <p class="dn-botm" style="display: list-item;">The one-piece, reusable overalls with welded seems can be used with disposable dust mask, filter mask, full face respirator, powered air purifying respirator, compressed air breathing apparatus, or compressed airline system</p>
+                                             <p class="dn-botm" style="display: list-item;">Both protective suits can be washed and thereby reused. The PVC suit can be washed at up to 30 °C and the SPC Flexothane can be washed at up to 40 °C in a washing machine with limited wash agitation.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>   
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+          </div>
+
+
+
+         <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Fire Fighting Helmets</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                              
+                              <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr80.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             HPS 7000 Series (Full Shell)</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The multipurpose Dräger HPS® 7000 firefighter’s helmet is in a class of its own, thanks to its innovative, sporty and dynamic design, ergonomic fit and components which make it a multifunctional system solution. It provides optimum protection during every operation.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr81.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             HPS Safeguard Series (Jet-Style)</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The Dräger HPS® SafeGuard is the extremely lightweight universal helmet for fire and rescue services. Its innovative design combines optimal protection with the highest levels of wearing comfort. Its sporty look, light weight and tailor-made accessories make the helmet a real all-rounder for any challenge.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr82.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             HPS 4000 Series (Half Shell)</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The Dräger HPS® 4500 is a traditional half-shell helmet with a modern design. Its robust outer shell provides you with excellent protection against impact and extreme heat. With a modern visor design, the helmet has superior wearer comfort due to ergonomic and lightweight internal components. A comprehensive range of accessories make our solution a truly versatile helmet across a variety of applications.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:0px;">
+                                          <img src="assets/images/hps-3000.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             HPS 3000 Series (Half Shell)</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The Dräger HPS® SafeGuard is the extremely lightweight universal helmet for fire and rescue services. Its innovative design combines optimal protection with the highest levels of wearing comfort. Its sporty look, light weight and tailor-made accessories make the helmet a real all-rounder for any challenge.</p>
+                                             <p class="dn-botm" style="display: list-item;">IP66 as standard</p>
+                                             <p class="dn-botm" style="display: list-item;">IP66 as standard</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+          </div>
+
+
+
+         <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Thermal Imaging Camera</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                              <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr83.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger UCF FireVista</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Small, light, robust and can be operated with just one button: The compact thermal imaging camera Dräger UCF® FireVista provides excellent picture quality even under the most difficult operating conditions. The camera is ready for immediate use and provides the best possible support on firefighting deployments. Outstanding quality – especially in the price.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr84.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Draeger UCF FireCore</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The Dräger UCF® FireCore* hands-free thermal imaging camera gives you a permanent vision of your immediate surroundings, even under the toughest conditions. That allows you to orientate yourself more quickly and safely, while also improving your situational awareness.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+    
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+          </div>
+
+
+
+          <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Special Solutions</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                              
+                                <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr85.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Training & Safety Galleries</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Training & Safety Galleries are for Simulation of emergencies. You can practice orientation and resilience under realistic conditions. We provide both mobile and stationary training Galleries as per customer need.</p>
+                                             <p class="dn-botm" style="display: list-item;">The training gallery as well as the other training facilities are individually suited to customer wishes. In exercise labyrinths across several levels with many different training elements, orientation and resilience are practiced. Additional effects like mist, background noises and darkness create realistic surroundings and test psychological resilience. To finish off the training, an exercise room can be installed with work measuring equipment like an endless ladder, a bicycle or a treadmill. The work measuring units and training course are controlled and monitored from a control room. Special training facilities such as tanks, industrial piping or heat acclimatisation rooms can be easily integrated.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:0px;">
+                                          <img src="assets/images/comp-safety.png" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Complete plant Safety Survey and report submission</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">We also provide plant safety survey and submitt the detailed report.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+    
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+          </div>
+
+
+         <section class="contact-section" style="padding-top: 10px;">
+               <div class="container">
+                  <div class="row align-items-center">
+                  <div class="col-md-12">
+                     <h3 style="text-align: center;">Rental Safety Solutions</h3>
+                  </div>
+                     
+                  </div>
+               </div>
+            </section>
+
+
+          <div class="auto-container">
+                  <div class="row default_row">
+                     <div id="primary" class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                           <section class="blog_post_section one_column style_two">
+                              <div class="pd_top_60"></div>
+                              <div class="grid_show_case grid_layout clearfix">
+                              
+                                <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr86.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Equipment Rental</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Dräger Rental and Safety Services offers cost effective and customizable equipment rental solutions designed to help optimize your budget and support your business needs. </p>
+                                             <p class="dn-botm" style="display: list-item;">Standards and certifications High Quality safety equipment that meets international standards </p>
+                                             <p class="dn-botm" style="display: list-item;">Economic Alternative Transparent and calculable cost -for full cost control</p>
+                                             <p class="dn-botm" style="display: list-item;">High flexible broad portfolio, individual solutions, and fast delivery times- Worldwide</p>
+                                             <p class="dn-botm" style="display: list-item;">competent customer consulting e.g in accordance with country specific regulations</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr87.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Safety Shop</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The safety Shop is located directly at your site and staffed around the clock. It is equipped with the complete safety technology you require. We provide you with the reliable management of safety permanently or for a defined period</p>
+                                             <p class="dn-botm" style="display: list-item;">Container on site of the customer</p>
+                                             <p class="dn-botm" style="display: list-item;">Equipped with Safety equipment based on customer requirement</p>
+                                             <p class="dn-botm" style="display: list-item;">Draeger staff will handle all daily tansactions</p>
+                                             <p class="dn-botm" style="display: list-item;">Shop opening hours based on customer need</p>
+                                             <p class="dn-botm" style="display: list-item;">Customer owned devices can be included into the safety shop processes</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:30px;">
+                                          <img src="assets/images/pr/pr88.jpg" class="c-pr-img" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Rental Robot</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">The Rental Robot is the rentable automated material logistics for your safety equipment. The issue-and-return station provides each registered user with the desired work equipment and any necessary consumables – right there on site, at any time of day, with no need for personnel to stand by and man the station. This not only saves time and resource but also grants full transparency.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">From its compartments it reliable supplies each registered user with the desired work equipment and any necessary consumables- right there on site at any time of day</p>
+                                             <p class="dn-botm" style="display: list-item;">24/7 access to safety technology at any location, modulary adaptable at any time.</p>
+                                             <p class="dn-botm" style="display: list-item;">Management & issue of rental safety material or own equipment pool</p>
+                                             <p class="dn-botm" style="display: list-item;">100% complete control- always knowing when which device was used for how long by whom.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="grid_box _card">
+                                    <div class="news_box default_style list_view has_images">
+                                       <div class="image img_hover-1" style="text-align: center;margin-top:0px;">
+                                          <img src="assets/images/safe-staf.jpg" alt="img">          
+                                       </div>
+                                       <div class="content_box">
+                                          <div class="source">
+                                             <h2 class="title">
+                                              <a href="javascript:;" rel="bookmark">
+                                             Safety Staffing</a>
+                                            </h2>
+                                             <p class="dn-botm" style="display: list-item;">Sophisticated measurement procedures, protection of personnel, supervising of critical work or project management: We can provide you with specialists for any task – even a complete safety department as well as flexible coverage for unexpected high peak demands.</p>
+
+                                             <p class="dn-botm" style="display: list-item;">When you engage personnel through our Staffing Service, you get both expertise and experience. </p>
+                                             <p class="dn-botm" style="display: list-item;"><b>Experience and overview:</b></p>
+                                             <p class="dn-botm" style="display: list-item;">Our own modular training concept ensures that our Safety Guards are extremely well prepared for their responsibilities. </p>
+                                             <p class="dn-botm" style="display: list-item;"><b>Personnel policies: </b></p>
+
+                                             <p class="dn-botm" style="display: list-item;">In order to be able to guarantee the highest possible safety standard for people and companies, Dräger only appoints trained specialists. </p>
+                                             <p class="dn-botm" style="display: list-item;">Everyone is trained in the use of: </p>
+                                             <p class="dn-botm" style="display: list-item;">- personal protection equipment</p>
+                                             <p class="dn-botm" style="display: list-item;">- fire extinguishers</p>
+                                             <p class="dn-botm" style="display: list-item;">- fall protection equipment</p>
+                                             <p class="dn-botm" style="display: list-item;">- portable gas detection devices</p>
+                                             <p class="dn-botm" style="display: list-item;">- respiratory protection equipment</p>
+                                             <p class="dn-botm" style="display: list-item;">- radio devices</p>
+                                             <p class="dn-botm" style="display: list-item;">- ventilation devices</p>
+
+                                              <p class="dn-botm" style="display: list-item;">safety staffing our area of application: safety Guard, Authorized Gas Tester, Safety Supervisor, Safety Observer, Project Coordinator, Safety Engineer, Health and safety coordinatio, Planer, Safety Shop manager, Safety Equipment Technician</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+    
+                          <div class="pd_bottom_70"></div>
+                     </div>
+                  </div>
+               </div>
+          </div>
+
+
+
+
+      </div>
+
+
+
+<div class="sliding_form slide_out">
+        <a href="javascript:;" id="form_trigger">Get Quote</a>
+        <div class="sliding_form_inner">
+            <form class="fastconc"  method="post">
+
+               <h4 class="g-qute">Get Quote</h4>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="name" placeholder="Name" class="fields_box" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" name="email" placeholder="Email" class="fields_box" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" name="phone" placeholder="Phone" class="fields_box" required>
+                    </div>
+                </div>
+               
+               
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <textarea name="enquiry" placeholder="Enquiry" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                     <button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button>
+                    </div>
+                 </div>
+               
+            </form>
+        </div>
+    </div>
+    
+    
+      <div class="footer_area" id="footer_contents">
+         <div class="footer_widgets_wrap bg_dark_2">
+            <div class="pd_top_80"></div>
+            <div class="container">
+               <div class="row">
+
+               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Get In Touch</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets get_in_touch_foo light_color">
+                        <div class="get_intouch_inrfo">
+                           <div class="foo_cont_inner">
+                              <div class="top">
+                                 <h6> Location</h6>
+                                 <p>
+                                    614, Kirti Shikhar, District Centre, Janak Puri, New Delhi -110 058, Delhi
+                                 </p>
+                              </div>
+                              <div class="bottom">
+                                 <h6> Contact</h6>
+                                 <div class="con_content">
+                                    <h5> Phone :</h5>
+                                    <a href="tel:011-25516281"> 011-25516281</a>
+                                 </div>
+                                 <div class="con_content">
+                                    <h5> Mail Us :</h5>
+                                    <a href="tel:mantech@mantech.in"> mantech@mantech.in</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Quick Links</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_inner">
+
+                              <ul class="menu">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About Us</a></li>
+                                 <li><a href="client.html">Clients</a></li>
+                                 <li><a href="knowledge-bank.html">Knowledge Bank</a></li>
+                                 <li><a href="case.html">Case Studies</a></li>
+                                 <li><a href="career.html">Career</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
+                     <div class="footer_widgets wid_tit style_one">
+                        <div class="fo_wid_title">
+                           <h2>Our Expertise</h2>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_25"></div>
+                     <div class="footer_widgets clearfix navigation_foo light_color style_one">
+                        <div class="navigation_foo_box">
+                           <div class="navigation_foo_box">
+                              <div class="navigation_foo_inner">
+
+                                  <ul class="menu">
+                                    <li><a href="honeywell-thermal-solutions.html">Honeywell Thermal Solutions</a></li>
+                                    <li><a href="honeywell-analytics.html">Honeywell Analytics</a></li>
+                                    <li><a href="drae-ger.html">Draeger</a></li>
+                  
+                                 </ul>
+
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                     <div class="footer_widgets about_company light_color">
+                        <div class="about_company_inner">
+                           <div class="footer_logo">
+                              <a href="#" target="_blank" rel="nofollow">
+                                 <img src="assets/images/logo.png" class="img-fluid" alt="logo" />
+                              </a>
+                              <div class="pd_bottom_30"></div>
+                           </div>
+                           <div class="content_box">
+                              <p>
+                                 Established in 1996, MANTECH AUTOMATION today is the leading products and solution provider in the field of Industrial Automation, Thermal Solutions, Gas Leak Detection, and Fluid Control.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+            
+            <div class="pd_bottom_50"></div>
+         </div>
+         <div class="creote-footer-copyright bg_dark_3">
+
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content color_white">
+                        © 2023 - Mantech. Designed and Developed by 
+                        <a target="_blank" rel="nofollow" href="https://mararmedia.com/" style="color: #fff;">Marar Media</a>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 col-sm-12 text-md-end">
+                     <div class="pd_top_10"></div>
+                     <div class="footer_copy_content_right">
+                        <div class="social_media_v_one">
+                           <ul>
+                              <li>
+                                 <a href="https://www.facebook.com/mantech.automation.33" target="_blank">
+                                    <span class="fa fa-facebook"></span>
+                                    <small>facebook</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://instagram.com/mantech.automation?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                                    <span class="fa fa-instagram"></span>
+                                    <small>instagram</small>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/mantech-automation-415195119/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                    <small>linkedin</small>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="pd_bottom_10"></div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="crt_mobile_menu">
+         <div class="menu-backdrop"></div>
+         <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            <form role="search" method="get" action="#">
+               <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+               <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+            </form>
+            <div class="menu-outer">
+               
+            </div>
+         </nav>
+      </div>
+    
+      <div id="search-popup" class="search-popup">
+         <div class="close-search"><i class="fa fa-times"></i></div>
+         <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+               <fieldset>
+                  <form role="search" method="get" action="#">
+                     <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search" />
+                     <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                  </form>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+   
+      <div class="modal_popup one">
+         <div class="modal-popup-inner">
+            <div class="close-modal"><i class="fa fa-times"></i></div>
+            <div class="modal_box">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12 form_inner">
+                     <div class="form_content">
+                        <form class="contact-form fastconc" method="post" action="">
+                           <p>
+                              <label>Name<br />
+                                 <input type="text" name="name" value="" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Name" />
+                                 <br />
+                                 <i class="fa fa-user"></i><br />
+                              </label>
+                           </p>
+                           <p><label>Email<br />
+                                 <input type="email" name="email" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Email" />
+                                 <br />
+                                 <i class="fa fa-envelope"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Phone<br />
+                                 <input type="text" name="phone" value="" size="40" aria-required="true"
+                                    aria-invalid="false" placeholder="Enter Phne no" />
+                                 <br />
+                                 <i class="fa fa-phone"></i><br />
+                              </label>
+                           </p>
+                           <p>
+                              <label> Enquiry<br />
+                                 <textarea name="enquiry" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    aria-invalid="false" placeholder="Enquiry"></textarea>
+                                 <br />
+                                 <i class="fa fa-comments"></i><br />
+                              </label>
+                           </p>
+                           <p><button class="theme-btn one animated" style="background: #ae0809;color: #fff;width: 100%;">Submit</button></p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12 about_company_inner">
+                     <div class="abt_content">
+                        <div class="logo">
+                           <img src="assets/images/logo.png" alt="img" class="company_logo_modal">
+                        </div>
+                        <div class="text">
+                           <p> Thank you for reaching out to us! We appreciate the time you took to fill out our inquiry form. Your message is important to us, and we will make every effort to respond as quickly as possible.</p>
+                            <p>Our team is dedicated to providing excellent service, and we are thrilled that you are considering us</p>
+                            <p>Rest assured that we have received your information and will get back to you shortly</p>
+                            <p>In the meantime, if you have any urgent matters or additional details to share, please feel free to contact us directly at enquiry@mantech.in, mantech@mantech.in</p>
+                            <p>Thank you once again for choosing Mantech. We look forward to the opportunity to assist you.</p>
+                        </div>
+                  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="side_bar_cart" id="mini_cart">
+         <div class="cart_overlay"></div>
+         <div class="cart_right_conten">
+            <div class="close">
+               <div class="close_btn_mini"><i class="icon-close"></i></div>
+            </div>
+            <div class="cart_content_box">
+               <div class="contnet_cart_box">
+                  <div class="widget_shopping_cart_content">
+                     <p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+     
+      <div class="floating_menu_box">
+         <ul class="float_menu_box">
+            <i class="close fa fa-times"></i>
+            <li class="floating_menu_text active">
+               <a href="index.html"> Home </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="about.html">About Us</a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="client.html"> Clients </a>
+            </li>
+
+             <li class="floating_menu_text ">
+               <a href="knowledge-bank.html">Knowledge Bank </a>
+            </li>
+
+            <li class="floating_menu_text ">
+               <a href="case.html"> Case Studies </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="career.html"> Career </a>
+            </li>
+
+            <li class="floating_menu_text">
+               <a href="contact.html"> Contact </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <script type='text/javascript' src='assets/js/jquery-3.6.0.min.js'></script>
+   <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.fancybox.js'></script>
+   <script type='text/javascript' src='assets/js/jQuery.style.switcher.min.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.flexslider-min.js'></script>
+   <script type='text/javascript' src='assets/js/color-scheme.js'></script>
+   <script type='text/javascript' src='assets/js/owl.js'></script>
+   <script type='text/javascript' src='assets/js/swiper.min.js'></script>
+   <script type='text/javascript' src='assets/js/isotope.min.js'></script>
+   <script type='text/javascript' src='assets/js/countdown.js'></script>
+   <script type='text/javascript' src='assets/js/simpleParallax.min.js'></script>
+   <script type='text/javascript' src='assets/js/appear.js'></script>
+   <script type='text/javascript' src='assets/js/jquery.countTo.js'></script>
+   <script type='text/javascript' src='assets/js/sharer.js'></script>
+   <script type='text/javascript' src='assets/js/validation.js'></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+   <script src="assets/js/gmaps.js"></script>
+   <script src="assets/js/map-helper.js"></script>
+   <script type='text/javascript' src='assets/js/creote-extension.js'></script>
+   
+   <script>
+      $(document).ready(function() {
+
+    var formWidth = $('.sliding_form').width();
+    $('.sliding_form').css('right', '-' + formWidth + 'px');
+    $("#form_trigger").on('click', function() {
+
+        if ($('.sliding_form').hasClass('slide_out')) {
+            $('.sliding_form').removeClass('slide_out').addClass('slide_in')
+            $(".sliding_form").animate({ right: 0 + 'px' });
+        } else {
+            $('.sliding_form').removeClass('slide_in').addClass('slide_out')
+            $('.sliding_form').animate({ right: '-' + formWidth + 'px' });
+        }
+
+    });
+});
+   </script>
+   
+   
+</body>
+</html>
